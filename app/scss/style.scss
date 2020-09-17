@@ -1,0 +1,82 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+@import "partials/fonts";
+
+// Mixins
+@import "mixins/adaptive-font";
+
+// Partials
+@import "partials/libs";
+
+// Blocks
+@import "blocks/header";
+@import "blocks/footer";
+
+// Components
+@import "components/menu";
+
+/* ==========================================================================
+  Vars
+========================================================================== */
+// Adaptive md
+$minwidth: 320px;
+$maxWidth: 1920;
+$maxWidthContainer: 1280;
+$md1: $maxWidthContainer + 12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+
+// Fonts
+$font-family: "Raleway", sans-serif;
+/* ==========================================================================
+  General Styles
+========================================================================== */
+@import "partials/null";
+
+.container {
+  max-width: $maxWidthContainer + px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+body {
+	font-size: 14px;
+
+	&.lock {
+		overflow: hidden;
+	}
+}
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	&.loaded {
+	}
+}
+
+.page {
+	flex: 1 1 auto;
+}
+
+.main-screen {
+	position: relative;
+	
+	&__bg {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+}
+
+._ibg{
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	img{
+		display: none;
+	}
+}
