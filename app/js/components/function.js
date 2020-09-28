@@ -1,3 +1,14 @@
+let searchIcon = document.querySelector('.header__search-icon');
+let searchMenu = document.querySelector('.header__search-box');
+searchIcon.addEventListener("click", function (e) {
+	searchMenu.classList.toggle('active');
+});
+
+document.documentElement.addEventListener("click", function (e) {
+	if (!e.target.closest('.header__search')) {
+		searchMenu.classList.remove('active');
+	}
+});
 
 /***************** Menu-btn ********************/
 let menu_burger = document.querySelector('.menu__burger');

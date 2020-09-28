@@ -1,6 +1,6 @@
 .menu {
-	
-	@media (max-width: 1000px) {
+
+	@media (max-width: $md2+px) {
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -26,7 +26,7 @@
 		position: relative;
 		z-index: 3;
 
-		@media (max-width: 1000px) {
+		@media (max-width: $md2+px) {
 			display: block;
 		}
 	}
@@ -35,23 +35,91 @@
 
 	&__item {
 		display: flex;
-		font-weight: 600;
-	}
+		position: relative;
+		margin: 0px 40px 0px 0px;
 
-	&__item:not(:last-child) {
-		margin-right: 50px;
+		@media (max-width: $md1+px) {
+			margin: 0px 30px 0px 0px;
+		}
+		
+		&:hover::after {
+			@media (min-width: $md2+px) {
+				content: "";
+				position: absolute;
+				left: 0;
+				bottom: 25px;
+				width: 100%;
+				height: 1px;
+				background: #313131;
+			}
+		}
 	}
 
 	// .menu__link
 
 	&__link {
 		position: relative;
-		padding: 39px 0px;
-		color: #fff;
+		font-size: 16px;
+		font-weight: 400;
+		letter-spacing: 0.4px;
+		font-family: 'Oxygen', sans-serif;
+		color: #313131;
 		text-transform: capitalize;
+		padding: 0px 0px 30px 0px;
+	}
+
+	// .menu__item-dropdown
+
+	&__item-dropdown {
+
+		@media (min-width: $md2+px) {
+			&:hover {
+				.menu__dropdown {
+					visibility: visible;
+					opacity: 1;
+					transform: translateY(0);
+				}
+			}
+		}
+		
+	}
+
+	// .menu__dropdown
+
+	&__dropdown {
+		position: absolute;
+		visibility: hidden;
+		opacity: 0;
+		left: -30px;
+		top: 100%;
+		width: 300px;
+		border-radius: 7px;
+		padding: 30px 27px;
+		background: rgba(#212121, .9);
+		transform: translateY(30px);
+		transition: all .3s;
+	}
+
+	// .menu__dropdown-item
+
+	&__dropdown-item {
+		margin-bottom: 25px;
+
+		&:last-child {
+			margin: 0;
+		}
+	}
+
+	// .menu__dropdown-link
+
+	&__dropdown-link {
+		color: #fff;
+		font-size: 14px;
 
 		&:hover {
-			color: red;
+			@media (min-width: $md2+px) {
+				border-bottom: 1px solid #fff;
+			}
 		}
 	}
 
@@ -60,24 +128,24 @@
 	&__burger {
 		display: none;
 
-		@media (max-width: 1000px) {
+		@media (max-width: $md2+px) {
 			display: block;
 			position: absolute;
 			width: 30px;
 			height: 20px;
 			right: 20px;
-			top: 26px;
+			top: 15px;
 			cursor: pointer;
 			z-index: 5;
 
 			&.active{
-				position: fixed;
+				position: absolute;
 			}
 
 			&::after,
 			&::before {
 				content: "";
-				background-color: #fff;
+				background-color: #313131;
 				position: absolute;
 				width: 100%;
 				height: 2px;
@@ -87,7 +155,7 @@
 
 			span {
 				position: absolute;
-				background-color: #fff;
+				background-color: #313131;
 				width: 100%;
 				height: 2px;
 				left: 0;
@@ -114,6 +182,9 @@
 			}
 		}
 
+		@media (max-width: $md4+px) {
+			top: 11px;
+		}
+
 	}
 }
- 

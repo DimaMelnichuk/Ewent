@@ -1,1 +1,1 @@
-@@include('libs/slick.js')
+@@include('libs/swiper-bundle.js')

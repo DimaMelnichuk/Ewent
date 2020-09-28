@@ -1,14 +1,47 @@
 	<header class="header">
-			<div class="header__container container">
+		<div class="header__container">
 
-				<div class="menu__burger">
-					<span></span>
-				</div>
-				<nav class="menu">
-					<ul class="menu__list">           
-						<li class="menu__item"><a class="menu__link" href="">Home</a></li>
-					</ul>
-				</nav>
+			<div class="header__logo">
+				<a class="header__logo-link" href="index.html">
+					<img src="img/header/logo.png" alt="">
+				</a>
 			</div>
+
+			<div class="menu__burger">
+				<span></span>
+			</div>
+				<nav class="menu">
+				<ul class="menu__list">           
+					<li class="menu__item menu__item-dropdown"><a class="menu__link" href="">Home</a>
+						<ul class="menu__dropdown">
+							<li class="menu__dropdown-item"><a href="index.html" class="menu__dropdown-link">Home - Graphic Design Conference v1</a></li>
+							<li class="menu__dropdown-item"><a href="#" class="menu__dropdown-link">Home - Graphic Design Conference v2</a></li>
+							<li class="menu__dropdown-item"><a href="#" class="menu__dropdown-link">Home - Graphic Design Conference v3</a></li>
+							<li class="menu__dropdown-item"><a href="#" class="menu__dropdown-link">Home - Graphic Design Conference v4</a></li>
+						</ul>
+					</li>
+					<li class="menu__item"><a class="menu__link" href="">Pages</a></li>
+					<li class="menu__item"><a class="menu__link" href="">Speakers</a></li>
+					<li class="menu__item"><a class="menu__link" href="">Schedule</a></li>
+					<li class="menu__item"><a class="menu__link" href="">Features</a></li>
+					<li class="menu__item"><a class="menu__link" href="">Blog</a></li>
+					<li class="menu__item"><a class="menu__link" href="">Shop</a></li>
+				</ul>
+			</nav>
+
+			<div class="header__search">
+				<div class="header__search-icon">
+					<i class="icon-search"></i>
+				</div>
+				<div class="header__search-box search">
+					<form class="search__form" action="search__form">
+						<input class="search__form-input" type="text" name="search__form-input" placeholder="Search" required>
+						<button class="search__form-btn"><i class="icon-search"></i></button>
+					</form>
+				</div>
+			</div>
+			
+			<a class="header__btn btn" href="#">Buy Tickets</a>
+		</div>
 	</header>
 
