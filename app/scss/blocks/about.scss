@@ -1,0 +1,160 @@
+.about {
+	padding: 0px 0px 35px 0px;
+	// .about__row
+
+	&__row {
+		display: flex;
+
+		@media (max-width: $md3+px) {
+			flex-direction: column;
+		}
+	}
+
+	// .about__img
+
+	&__img {
+		position: relative;
+		z-index: 1;
+		margin: 0px 100px 0px 0px;
+		text-align: center;
+
+		@media (max-width: $md1+px) {
+			margin: 0px 80px 0px 0px;
+		}
+
+		@media (max-width: $md2+px) {
+			margin: 0px 60px 0px 0px;
+		}
+
+		@media (max-width: $md3+px) {
+			margin: 0px 0px 30px 0px;
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			z-index: -1;
+			width: 545px;
+			height: 545px;
+			left: 23px;
+			top: 10px;
+			background: url("../img/about/decoration-1.png") no-repeat;
+
+			@media (max-width: $md1+px) {
+				width: 406px;
+				height: 405px;
+				left: 25px;
+				top: 16px;
+			}
+
+			@media (max-width: $md2+px) {
+				width: 306px;
+				height: 324px;
+				left: 32px;
+				border-radius: 100%;
+			}
+		}
+
+		&::before {
+			content: "";
+			position: absolute;
+			z-index: 2;
+			width: 84px;
+			height: 84px;
+			left: -17px;
+			top: 334px;
+			background: url("../img/about/decoration-2.png") no-repeat;
+
+			@media (max-width: $md1+px) {
+				left: 7px;
+				top: 295px;
+			}
+
+			@media (max-width: $md2+px) {
+				left: 0;
+				top: 230px;
+				width: 74px;
+				height: 74px;
+				border-radius: 100%;
+			}
+
+			@media (max-width: $md3+px) {
+				left: 200px;
+				top: 200px;
+			}
+		}
+
+		img {
+			border-radius: 100%;
+			width: 510px;
+			height: 510px;
+			object-fit: cover;
+			background-color: #2e4379;
+
+			@media (max-width: $md1+px) {
+				width: 410px;
+				height: 410px;
+			}
+
+			@media (max-width: $md2+px) {
+				width: 310px;
+				height: 310px;
+			}
+
+			@media (max-width: $md3+px) {
+				width: 260px;
+				height: 260px;
+			}
+		}
+	}
+
+	// .about__title
+
+	&__title {
+		margin: 0px 0px 55px 0px;
+
+		@media (max-width: $md1+px) {
+			margin: 0px 0px 30px 0px;
+		}
+	}
+
+	// .about__text
+
+	&__text {
+		margin: 0px 0px 35px 0px;
+		font-family: "Oxygen";
+
+		@media (max-width: $md1+px) {
+			margin: 0px 0px 25px 0px;
+		}
+
+		p {
+			font-size: 18px;
+			line-height: 30px;
+
+			@media (max-width: $md3+px) {
+				font-size: 16px;
+				line-height: 28px;
+			}
+			
+			&:first-child {
+				font-weight: 700;
+				margin: 0px 0px 30px 0px;
+				color: #313131;
+
+				@media (max-width: $md1+px) {
+					margin: 0px 0px 25px 0px;
+				}
+
+				@media (max-width: $md4+px) {
+					margin: 0 0 15px 0;
+				}
+			}
+
+			&:last-child {
+				font-weight: 400;
+				color: #616161;
+			}
+		}
+	}
+}

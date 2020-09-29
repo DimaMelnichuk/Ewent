@@ -14,18 +14,18 @@
 	&__content {
 		position: relative;
 		z-index: 1;
-		padding: 375px 0px 595px 106px;
+		padding: 375px 0px 595px 0px;
 
 		@media (max-width: $md1+px) {
-			padding: 200px 0 330px 90px;
+			padding: 200px 0 330px 0px;
 		}
 
 		@media (max-width: $md3+px) {
-			padding: 190px 0 150px 60px;
+			padding: 190px 0 190px 60px;
 		}
 
 		@media (max-width: $md4+px) {
-			padding: 190px 0 50px 0px;
+			padding: 190px 0 100px 0px;
 		}
 	}
 
