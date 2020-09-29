@@ -6,12 +6,11 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
+		padding: 150px 15px;
 		overflow: auto;
-		display: flex;
-		align-items: center;
-		justify-content: center;
+		display: block;
 		text-align: center;
-		background-color: rgba(#000, .8);
+		background-color: rgba(#fff, .9);
 		transform: translateY(-100%);
 		transition: transform 0.6s ease 0s;
 
@@ -27,7 +26,8 @@
 		z-index: 3;
 
 		@media (max-width: $md2+px) {
-			display: block;
+			flex-direction: column;
+			align-items: center;
 		}
 	}
 
@@ -36,10 +36,14 @@
 	&__item {
 		display: flex;
 		position: relative;
-		margin: 0px 40px 0px 0px;
+		margin: 30px 40px 0px 0px;
 
 		@media (max-width: $md1+px) {
-			margin: 0px 30px 0px 0px;
+			margin: 30px 30px 0px 0px;
+		}
+
+		@media (max-width: $md2+px) {
+			margin: 10px 0px;
 		}
 		
 		&:hover::after {
@@ -66,6 +70,11 @@
 		color: #313131;
 		text-transform: capitalize;
 		padding: 0px 0px 30px 0px;
+
+		@media (max-width: $md2+px) {
+			font-size: 30px;
+			padding: 15px 0px;
+		}
 	}
 
 	// .menu__item-dropdown
@@ -134,7 +143,7 @@
 			width: 30px;
 			height: 20px;
 			right: 20px;
-			top: 15px;
+			top: 30px;
 			cursor: pointer;
 			z-index: 5;
 
@@ -183,7 +192,7 @@
 		}
 
 		@media (max-width: $md4+px) {
-			top: 11px;
+			top: 20px;
 		}
 
 	}

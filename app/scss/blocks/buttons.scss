@@ -1,0 +1,117 @@
+.btn {
+	display: inline-block;
+	font-family: Oxygen;
+	font-weight: 400;
+	letter-spacing: 0.33px;
+	border-radius: 7px;
+	box-shadow: 0 7px 13px rgba(0, 0, 0, 0.1);
+
+	&--size-s {
+		font-size: 13px;
+		padding: 8.5px 20.07px;
+	}
+	&--size-md {
+		font-size: 14px;
+		padding: 15.5px 29.82px;
+	}
+	&--size-b {
+		font-size: 16px;
+		padding: 22px 39.35px;
+	}
+
+	&--theme-yellow {
+		color: #313131;
+		background-color: #faf097;
+	}
+
+	&--theme-yellow-gradient {
+		color: #313131;
+		background-color: #000000;
+		background-image: linear-gradient(-16deg, #efd855 0%, #fffbb6 100%);
+	}
+	&--theme-silver {
+		color: #313131;
+		background-color: #e3e3e3;
+	}
+	&--theme-silver-gradient {
+		color: #313131;
+		background-color: #000000;
+		background-image: linear-gradient(-16deg, #cccccc 0%, #f3f3f3 100%);
+	}
+	&--theme-sky{
+		color: #313131;
+		background-color: #96f9d8;
+	}
+	&--theme-sky-gradient {
+		color: #313131;
+		background-color: #ffffff;
+		background-image: linear-gradient(-16deg, rgba(54, 242, 227, 0.8) 0%, rgba(230, 255, 175, 0.8) 100%);
+	}
+	&--theme-black{
+		color: #ffffff;
+		background-color: #414141;
+	}
+	&--theme-black-gradient {
+		color: #ffffff;
+		background-color: #ffffff;
+		background-image: linear-gradient(-16deg, rgba(33, 33, 33, 0.8) 0%, rgba(145, 145, 145, 0.8) 100%);
+	}
+	&--theme-violet{
+		color: #ffffff;
+		background-color: #805ea8;
+	}
+	&--theme-violet-gradient {
+		color: #ffffff;
+		background-color: #000000;
+		background-image: linear-gradient(-16deg, #594174 0%, #ba89f4 100%);
+	}
+	&--theme-pink{
+		color: #313131;
+		background-color: #edc1e4;
+	}
+	&--theme-pink-gradient {
+		color: #313131;
+		background-color: #000000;
+		background-image: linear-gradient(-16deg, #c99cff 0%, #f4c9df 100%);
+	}
+
+	&--icon-s,
+	&--icon-md,
+	&--icon-bg {
+		position: relative;
+
+		&::after {
+			content: "";
+			position: absolute;
+			display: inline-block;
+			margin: 0px 0px 0px 7px;
+			background: url("../img/icons/chevron-right-circle.svg") right no-repeat;
+		}
+	}
+
+	&--icon-s {
+		padding: 8.5px 39px 8.5px 20px;
+
+		&::after {
+			width: 12px;
+			height: 12px;
+		}
+	}
+
+	&--icon-md {
+		padding: 15.5px 52px 15.5px 31px;
+
+		&::after {
+			width: 14px;
+			height: 13px;
+		}
+	}
+	&--icon-bg {
+		padding: 22px 64px 22px 41px;
+
+		&::after {
+			width: 16px;
+			height: 15px;
+		}
+	}
+}

@@ -1,0 +1,91 @@
+.pricing-card-horizontally {
+	padding: 90px 0px;
+	background-color: #ffffff;
+	background-image: linear-gradient(-16deg, rgba(54, 242, 227, 0.8) 0%, rgba(230, 255, 175, 0.8) 100%);
+
+	// .pricing-card-horizontally__row
+
+	&__row {
+		margin: -15px 0px;
+	}
+
+	// .pricing-card-horizontally__column
+
+	&__column {
+		display: flex;
+		justify-content: center;
+		padding: 15px 0px;
+	}
+
+	// .pricing-card-horizontally__item
+
+	&__item {
+		max-width: 690px;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		justify-content: space-between;
+		border-radius: 7px;
+		box-shadow: 0 7px 27px rgba(0, 0, 0, 0.05);
+		background-color: #ffffff;
+		padding: 45px;
+
+		@media (max-width: $md3+px) {
+			padding: 30px 15px;
+		}
+
+		@media (max-width: 550px) {
+			flex-direction: column;
+		}
+	}
+
+	// .pricing-card-horizontally__title
+
+	&__title {
+		flex: 0 1 180px;
+		color: #313131;
+		font-size: 24px;
+		font-weight: 400;
+
+		@media (max-width: 550px) {
+			flex: 0 1 0px;
+			margin: 0px 0px 30px 0px;
+			text-align: center;
+		}
+	}
+
+	// .pricing-card-horizontally__date
+
+	&__date {
+		color: #919191;
+		font-family: Oxygen;
+		font-size: 16px;
+		font-weight: 400;
+		padding: 10px 0px 0px 0px;
+	}
+
+	// .pricing-card-horizontally__price
+
+	&__price {
+		position: relative;
+		color: #8965b4;
+		font-size: 60px;
+		font-weight: 400;
+		padding: 0px 0px 0px 15px;
+		margin: 0px 80 / $maxWidthContainer * 100vw 0px 55 / $maxWidthContainer * 100vw;
+
+		@media (max-width: 550px) {
+			margin: 0px 0px 30px 0px;
+		}
+
+		&::after {
+			content: "$";
+			position: absolute;
+			left: 0;
+			font-size: 24px;
+			margin: 10px 0px 0px 0px;
+			font-weight: 700;
+		}
+	}
+}
