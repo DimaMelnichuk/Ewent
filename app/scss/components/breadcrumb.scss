@@ -9,12 +9,23 @@
 		white-space: nowrap;
 
 		li {
-			margin: 0px 10px 0px 0px;
-			padding: 0px 20px 0px 0px;
+			position: relative;
+			margin: 0px 4px 0px 0px;
+			padding: 0px 11px 0px 0px;
+
+			&::after {
+				content: "/";
+				position: absolute;
+				right: 0;
+			}
 			
 			&:last-child {
 				margin: 0;
 				padding: 0;
+
+				&::after {
+					content: none;
+				}
 			}
 		}
 	}
@@ -22,12 +33,16 @@
 	// .breadcrumb__link
 
 	&__link {
-		color: #EA4127FF;
+		font-family: Oxygen;
+		font-size: 14px;
+		font-weight: 400;
+		letter-spacing: 0.7px;
+		color: #313131;
 	}
 
 	// .breadcrumb__item
 
 	&__item {
-		color: #dddd;
+		color: #919191;
 	}
 }

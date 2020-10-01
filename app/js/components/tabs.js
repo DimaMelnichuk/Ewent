@@ -33,4 +33,3 @@ document.querySelectorAll('.tabs__title-item').forEach((item) =>
 	})
 );
 
-document.querySelector('.tabs__title-item').click();

@@ -20,10 +20,13 @@
 @import "blocks/header/header";
 @import "blocks/main-screen/main-screen";
 @import "blocks/about";
+@import "blocks/counters";
 @import "blocks/footer/footer";
 
 // Components
 @import "components/menu";
+@import "components/breadcrumb";
+@import "components/tabs";
 
 /* ==========================================================================
   General Styles
@@ -138,6 +141,10 @@ body {
 
 		align-items: flex-start;
 		flex: 0 1 16.666%;
+
+		&--tabs {
+			flex: 0 1 50%;
+		}
 	}
 
 	&__block {
@@ -196,9 +203,55 @@ body {
 		background-color: #000000;
 		background-image: linear-gradient(to left, #fff 0%, #36f2e3 100%);
 		opacity: 0.6;
+
+		@media (max-width: $md3+px) {
+			bottom: 2px;
+		}
 	}
 	
 	span {
 		text-transform: uppercase;
+	}
+}
+
+.hero {
+	background-color: #f9f9f9;
+	padding: 210px 0px 90px;
+	text-align: center;
+
+	@media (max-width: $md1+px) {
+		padding: 140px 0px 60px;
+	}
+
+	@media (max-width: $md3+px) {
+		padding: 110px 0px 30px;
+	}
+
+	@media (max-width: $md4+px) {
+		padding: 90px 0px 30px;
+	}
+	// .hero__title
+
+	&__title {
+		margin: 0px 0px 30px 0px;
+
+		@media (max-width: $md2+px) {
+			margin: 0px 0px 25px 0px;
+		}
+
+		@media (max-width: $md3+px) {
+			margin: 0px 0px 20px 0px;
+		}
+
+		@media (max-width: $md4+px) {
+			margin: 0px 0px 10px 0px;
+		}
+	}
+
+	// .hero__breadcrumbs
+
+	&__breadcrumbs {
+		display: flex;
+		justify-content: center;
 	}
 }
