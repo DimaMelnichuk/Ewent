@@ -1,0 +1,222 @@
+.speakers {
+	background-color: #f9f9f9;
+	padding: 135px 0px;
+
+	@media (max-width: $md1+px) {
+		padding: 80px 0px;
+	}
+
+	@media (max-width: $md2+px) {
+		padding: 60px 0px;
+	}
+
+	@media (max-width: $md3+px) {
+		padding: 50px 0px;
+	}
+
+	@media (max-width: $md4+px) {
+		padding: 30px 0px;
+	}
+
+	// .speakers__content
+
+	&__content {
+		text-align: center;
+	}
+	// .speakers__title
+
+	&__title {
+		margin: 0px 0px 45px 0px;
+
+		@media (max-width: $md1+px) {
+			margin: 0px 0px 30px 0px;
+		}
+
+		@media (max-width: $md3+px) {
+			margin: 0px 0px 20px 0px;
+		}
+
+		@media (max-width: $md4+px) {
+			margin: 0px 0px 15px 0px;
+		}
+	}
+
+	// .speakers__descr
+
+	&__descr {
+		margin: 0 auto 45px;
+		max-width: 690px;
+		color: #616161;
+		font-family: Oxygen;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 30px;
+
+		@media (max-width: $md1+px) {
+			margin: 0 auto 30px;
+		}
+
+		@media (max-width: $md4+px) {
+			font-size: 16px;
+    		line-height: 26px;
+		}
+	}
+
+	// .speakers__row
+
+	&__row {
+		display: flex;
+		flex-flow: row wrap;
+		margin: -15px;
+		/* margin: 0px 0px 35px 0px; */
+	}
+
+	// .speakers__column
+
+	&__column {
+		flex: 0 1 33.333%;
+		padding: 15px;
+
+		@media (max-width: $md3+px) {
+			flex: 0 1 50%;
+		}
+
+		@media (max-width: 500px) {
+			flex: 0 1 100%;
+		}
+	}
+
+	// .speakers__item
+
+	&__item {
+		padding: 45px 0px;
+
+		@media (max-width: $md1+px) {
+			padding: 35px 0px;
+		}
+
+		@media (max-width: $md3+px) {
+			padding: 25px 0px;
+		}
+
+		@media (max-width: 500px) {
+			padding: 15px 0px;
+		}
+		
+		@media (min-width: $md2+px) {
+			&:hover {
+				box-shadow: 0 7px 27px rgba(0, 0, 0, 0.05);
+				background-color: #ffffff;
+
+				.speakers__item-img {
+					&::after {
+						content: "";
+						display: block;    
+						width: 100%;
+						height: 100%;    
+						position: absolute;
+						top: 0;      
+						left: 0;   
+						border-radius: 100%;
+						background: transparent;
+						background-color: #1da7ba;
+						background-image: linear-gradient(to left, #e6ffaf 0%, #36f2e3 100%);
+						opacity: 0.6;
+					}
+				}
+			}
+		}
+	}
+
+	// .speakers__item-img
+
+	&__item-img {
+		position: relative;
+		margin: 0 auto 40px;
+		width: 340px;
+		height: 340px;
+		
+		@media (max-width: $md1+px) {
+			width: 240px;
+			height: 240px;
+			margin: 0 auto 30px;
+		}
+
+		@media (max-width: $md2+px) {
+			width: 220px;
+    		height: 220px;
+		}
+
+		@media (max-width: $md3+px) {
+			margin: 0 auto 20px;
+		}
+
+		img {
+			border-radius: 100%;
+			object-fit: cover;
+			filter: grayscale(100%);
+			height: 100%;
+			max-width: 100%;
+		}
+	}
+
+	// .speakers__item-name
+
+	&__item-name {
+		color: #313131;
+		font-size: 24px;
+		font-weight: 500;
+		margin: 0px 0px 20px 0px;
+
+		@media (max-width: $md3+px) {
+			margin: 0px 0px 15px 0px;
+		}
+	}
+
+	// .speakers__item-job
+
+	&__item-job {
+		font-family: Oxygen;
+		font-size: 14px;
+		font-weight: 400;
+		color: #919191;
+		letter-spacing: 0.7px;
+		margin: 0px 0px 15px 0px;
+
+		a {
+			color: #936cc1;
+			
+			@media (min-width: $md2+px) {
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+
+	// .speakers__item-link
+
+	&__item-link {
+		font-family: Oxygen;
+		font-size: 14px;
+		font-weight: 400;
+		color: #936cc1;
+		letter-spacing: 0.7px;
+
+		@media (min-width: $md2+px) {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	// .speakers__btn
+
+	&__btn {
+		margin: 35px 0px 0px 0px;
+
+		@media (max-width: $md1+px) {
+			margin: 30px 0px 0px 0px;
+		}
+	}
+}
