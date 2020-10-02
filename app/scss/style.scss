@@ -22,6 +22,7 @@
 @import "blocks/about";
 @import "blocks/counters";
 @import "blocks/speakers";
+@import "blocks/attend";
 @import "blocks/footer/footer";
 
 // Components
@@ -169,7 +170,6 @@ body {
 	position: relative;
 	z-index: 1;
 	display: inline-block;
-	color: #313131;
 	font-size: 48px;
 	font-weight: 700;
 	text-transform: capitalize;
@@ -189,6 +189,14 @@ body {
 
 	@media (max-width: $md4+px) {
 		font-size: 36px;
+	}
+
+	&--theme-white {
+		color: #ffffff;
+	}
+
+	&--theme-black {
+		color: #313131;
 	}
 
 	&::after {
