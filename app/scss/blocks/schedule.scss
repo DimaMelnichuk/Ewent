@@ -1,0 +1,320 @@
+.schedule {
+	padding: 135px 0px;
+
+	@media (max-width: $md1+px) {
+		padding: 80px 0px;
+	}
+
+	@media (max-width: $md2+px) {
+		padding: 60px 0px;
+	}
+
+	@media (max-width: $md3+px) {
+		padding: 50px 0px;
+	}
+
+	@media (max-width: $md4+px) {
+		padding: 30px 0px;
+	}
+	// .schedule__title
+
+	&__title {
+		text-align: center;
+
+		.title__main {
+			margin: 0px 0px 55px 0px;
+
+			@media (max-width: $md2+px) {
+				margin: 0px 0px 45px 0px;
+			}
+
+			@media (max-width: $md3+px) {
+				margin: 0px 0px 35px 0px;
+			}
+
+			@media (max-width: $md4+px) {
+				margin: 0px 0px 25px 0px;
+			}
+		}
+	}
+
+	// .schedule__descr
+
+	&__descr {
+		max-width: 690px;
+		color: #616161;
+		font-family: Oxygen;
+		font-size: 18px;
+		line-height: 22px;
+		font-weight: 400;
+		margin: 0 auto 65px;
+
+		@media (max-width: $md2+px) {
+			margin: 0 auto 55px;
+		}
+
+		@media (max-width: $md3+px) {
+			margin: 0 auto 45px;
+			font-size: 16px;
+			line-height: 20px;
+		}
+
+		@media (max-width: $md4+px) {
+			margin: 0 auto 35px;
+		}
+	}
+
+	// .schedule__row
+
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0px -15px;
+
+		@media (max-width: $md2+px) {
+			margin: -7.5px;
+		}
+	}
+
+	// .schedule__column
+
+	&__column {
+		flex: 0 1 33.333%;
+		padding: 0px 15px;
+
+		@media (max-width: $md2+px) {
+			padding: 7.5px
+		}
+
+		@media (max-width: $md3+px) {
+			flex: 0 1 50%;
+		}
+
+		@media (max-width: 550px) {
+			flex: 0 1 100%;
+		}
+	}
+
+	// .schedule__item
+
+	&__item {
+		border-radius: 7px;
+		box-shadow: 0 7px 27px rgba(0, 0, 0, 0.05);
+		border: 1px solid #eeeeee;
+		background-color: #ffffff;
+	}
+
+	// .schedule__body
+
+	&__body {
+		border-bottom: 1px solid #eeeeee;
+	}
+
+	// .schedule__header
+
+	&__header {
+		padding: 24px 40px 40px 40px;
+		height: 95px;
+		background-image: url("../img/schedule/header-bg.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		color: #313131;
+		font-family: Jost;
+		font-size: 30px;
+		font-weight: 300;
+
+		@media (max-width: $md1+px) {
+			padding: 24px 30px 40px 30px;
+			font-size: 28px;
+		}
+
+		@media (max-width: 1150px) {
+			padding: 25px 20px;
+			font-size: 25px;
+		}
+
+		@media (max-width: $md2+px) {
+			padding: 26px 15px;
+    		font-size: 20px;
+		}
+
+		@media (max-width: 550px) {
+			background-position: 0 100%;
+		}
+		
+		@media (max-width: $md4+px) {
+			background-position: top;
+		}
+
+		span {
+			font-weight: 500;
+		}
+	}
+
+	// .schedule__content
+
+	&__content {
+		padding: 40px;
+
+		@media (max-width: $md1+px) {
+			padding: 30px;
+		}
+
+		@media (max-width: 1150px) {
+			padding: 20px;
+		}
+
+		@media (max-width: $md2+px) {
+			padding: 15px;
+		}
+
+		&--active {
+			.schedule__about {
+				display: block;
+			}
+
+			.schedule__icon {
+
+				&::after {
+					background: url("../img/icons/minus-thin.svg") 0 0 no-repeat;
+				}
+			}
+		}
+	}
+
+	// .schedule__time
+
+	&__time {
+		color: #616161;
+		font-family: Oxygen;
+		font-size: 16px;
+		font-weight: 400;
+		margin: 0px 0px 20px 0px;
+
+		@media (max-width: $md1+px) {
+			margin: 0px 0px 15px 0px;
+		}
+
+		@media (max-width: $md2+px) {
+			margin: 0px 0px 10px 0px;
+		}
+	}
+
+	// .schedule__event
+
+	&__event {
+		font-size: 24px;
+		line-height: 30px;
+		font-weight: 500;
+		margin: 0px 0px 10px 0px;
+		color: #313131;
+
+		@media (max-width: $md1+px) {
+			font-size: 22px;
+    		line-height: 28px;
+		}
+
+		@media (max-width: $md2+px) {
+			font-size: 18px;
+			line-height: 22px;
+		}
+	}
+
+	// .schedule__location
+
+	&__location {
+		color: #616161;
+		font-size: 16px;
+		font-weight: 400;
+	}
+
+	// .schedule__about
+
+	&__about {
+		color: #616161;
+		font-family: Oxygen;
+		font-size: 13px;
+		font-weight: 400;
+		line-height: 15px;
+		letter-spacing: 0.33px;
+		margin: 25px 0px 0px 0px;
+		display: none;
+
+		@media (max-width: $md2+px) {
+			margin: 15px 0px 0px 0px;
+		}
+	}
+
+	// .schedule__icon
+
+	&__icon {
+		position: relative;
+
+		&::after {
+			content: "";
+			position: absolute;
+			right: 0;
+			top: -4px;
+			background: url("../img/icons/plus-thin.svg") 0 0 no-repeat;
+			height: 21px;
+			width: 21px;
+			cursor: pointer;
+		}
+	}
+
+	// .schedule__coach
+
+	&__coach {
+		display: flex;
+		margin: 20px 0px 0px 0px;
+	}
+
+	// .schedule__coach-img
+
+	&__coach-img {
+		margin: 0px 20px 0px 0px;
+
+		@media (max-width: $md2+px) {
+			margin: 0px 15px 0px 0px;
+		}
+
+		img {
+			width: 60px;
+			height: 60px;
+			background-color: #1da7ba;
+			object-fit: cover;
+			border-radius: 100%;
+
+			@media (max-width: $md2+px) {
+				width: 50px;
+    			height: 50px;
+			}
+		}
+	}
+
+	// .schedule__coach-name
+
+	&__coach-name {
+		color: #313131;
+		font-family: Jost;
+		font-size: 18px;
+		font-weight: 500;
+		margin: 8px 0px 0px 0px;
+	}
+
+	// .schedule__coach-job
+
+	&__coach-job {
+		padding: 5px 0px 0px 0px;
+		color: #919191;
+		font-family: Oxygen;
+		font-size: 13px;
+		font-weight: 400;
+		letter-spacing: 0.65px;
+		
+		a {
+			color: #936cc1;
+		}
+	}
+}

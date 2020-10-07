@@ -46,7 +46,7 @@
 			margin: 10px 0px;
 		}
 		
-		&:hover::after {
+		&::after {
 			@media (min-width: $md2+px) {
 				content: "";
 				position: absolute;
@@ -55,6 +55,14 @@
 				width: 100%;
 				height: 1px;
 				background: #313131;
+				opacity: 0;
+				transition: all .3s;
+			}
+		}
+
+		@media (min-width: $md2+px) {			
+			&:hover::after {
+				opacity: 1;
 			}
 		}
 	}
