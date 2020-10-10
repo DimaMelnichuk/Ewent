@@ -10,6 +10,7 @@
 @import "partials/libs";
 @import "partials/vars";
 @import "partials/fonts";
+@import "partials/animation";
 
 // General Blocks
 @import "blocks/pricing-card-horizontally";
@@ -24,12 +25,18 @@
 @import "blocks/speakers";
 @import "blocks/attend";
 @import "blocks/schedule";
+@import "blocks/last-year";
+@import "blocks/testimonials";
+@import "blocks/error";
+@import "blocks/informed";
+@import "blocks/map";
 @import "blocks/footer/footer";
 
 // Components
 @import "components/menu";
 @import "components/breadcrumb";
 @import "components/tabs";
+@import "components/swiper";
 
 /* ==========================================================================
   General Styles
@@ -168,7 +175,6 @@ body {
 }
 
 .title {
-
 	
 	&__main {
 		position: relative;
@@ -201,12 +207,11 @@ body {
 			position: absolute;
 			z-index: -1;
 			display: inline-block;
-			width: 100%;
+			width: 80%;
 			height: 10px;
 			border-radius: 7px;
 			left: 0;
 			bottom: 3px;
-			background-color: #000000;
 			background-image: linear-gradient(to left, #fff 0%, #36f2e3 100%);
 			opacity: 0.6;
 	
@@ -226,6 +231,10 @@ body {
 		&--theme-black {
 			color: #313131;
 		}
+	}
+
+	&__descr {
+
 	}
 
 }

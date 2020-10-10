@@ -2,3 +2,4 @@
 @@include('components/header-fixed.js')
 @@include('components/tabs.js')
 @@include('components/schedule.js')
+@@include('components/script.js')
