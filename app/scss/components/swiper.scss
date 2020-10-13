@@ -1,13 +1,13 @@
 .swiper-slide {
-
+	display: flex;
+	
 	&-active {
 
 	}
 }
 
 .swiper-container {
-	padding: 15px 0px;
-	height:auto; 
+	padding: 15px 0px 85px;
 }
 
 
@@ -29,14 +29,15 @@
 }
 
 // buttons 
-.swiper-button-prev,
-.swiper-button-next {
+.testimonials__slider .swiper-button-prev,
+.testimonials__slider .swiper-button-next {
 	background-color: transparent;
 	width: 45px;
 	height: 45px;
 	border-radius: 100%;
-	color: #fff;
+	color: #313131;
 	border: 2px solid;
+	top: 100%;
 
 	// svg
 /* 	background-position: center;

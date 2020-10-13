@@ -42,26 +42,25 @@
 				margin: 0px 0px 15px 0px;
 			}
 		}
-	}
 
-	// .speakers__descr
+		.title__descr {
+			margin: 0 auto 45px;
+			max-width: 695px;
+			line-height: 30px;
+	
+			@media (max-width: $md1+px) {
+				margin: 0 auto 30px;
+			}
 
-	&__descr {
-		margin: 0 auto 45px;
-		max-width: 690px;
-		color: #616161;
-		font-family: Oxygen;
-		font-size: 18px;
-		font-weight: 400;
-		line-height: 30px;
-
-		@media (max-width: $md1+px) {
-			margin: 0 auto 30px;
-		}
-
-		@media (max-width: $md4+px) {
-			font-size: 16px;
-    		line-height: 26px;
+			@media (max-width: $md3+px) {
+				margin: 0 auto 25px;
+			}
+	
+			@media (max-width: $md4+px) {
+				font-size: 16px;
+				line-height: 26px;
+				margin: 0 auto 20px;
+			}
 		}
 	}
 

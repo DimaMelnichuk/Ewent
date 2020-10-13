@@ -28,7 +28,7 @@
 }); */
 
 const scrollUp = document.querySelector('.scroll-up');
-const offset = 100;
+const offset = 1000;
 const getTop = () => window.pageYOffset || document.documentElement.scrollTop;
 
 // onScroll

@@ -46,6 +46,7 @@
 	&__row {
 		display: flex;
 		flex-wrap: wrap;
+		justify-content: center;
 		margin: -35px;
 
 		@media (max-width: $md1+px) {

@@ -131,6 +131,8 @@
 		font-size: 16px;
 		font-weight: 400;
 		letter-spacing: 0.16px;
+		border-bottom: 1px solid transparent;
+		transition: border .3s;
 
 		@media (min-width: $md2+px) {
 			&:hover {

@@ -3,3 +3,5 @@
 @@include('components/tabs.js')
 @@include('components/schedule.js')
 @@include('components/script.js')
+@@include('components/scroll-up.js')
+@@include('components/countdown.js')

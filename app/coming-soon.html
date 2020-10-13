@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('_head.html',{
+"title":"Home"
+})
+
+<body>
+
+	<div class="wrapper">
+		
+		<header class="header header--bg">
+			<div class="header__container">
+	
+				<div class="header__logo">
+					<a class="header__logo-link" href="index.html">
+						<img src="img/header/logo.png" alt="">
+					</a>
+				</div>
+				
+			</div>
+		</header>
+
+		<main class="page">
+
+			<div class="coming-soon">
+				<div class="container">
+					<div class="coming-soon__title title">
+						<div class="title__main">We’re Coming Soon</div>
+						<div class="title__descr">Our website is under construction. We’ll be here soon in</div>
+					</div>
+					<div class="coming-soon__countdown countdown" id=countdown>
+						<div class="countdown__time">
+							<div class="countdown__item" id="days">
+								00
+							</div>
+							<span>Days</span>
+						</div>
+						<div class="countdown__time">
+							<div class="countdown__item" id="hours">
+								00
+							</div>
+							<span>Hours</span>
+						</div>
+						<div class="countdown__time">
+							<div class="countdown__item" id="minutes">
+								00
+							</div>
+							<span>Minutes</span>
+						</div>
+						<div class="countdown__time">
+							<div class="countdown__item" id="seconds">
+								00
+							</div>
+							<span>Seconds</span>
+						</div>
+				  </div>
+				</div>
+			</div>
+
+			<div class="informed">
+				<div class="container">
+					<div class="informed__title title">
+						<div class="title__main title__main--theme-white">Stay Informed</div>
+						<div class="title__descr title__descr--theme-white">Subscribe to our newsletter to get the latest news
+						</div>
+					</div>
+					<form class="informed__form" action="#">
+						<input class="informed__form-input" type="text" placeholder="Enter email address" required>
+						<button class="informed__form-btn btn btn--size-b btn--theme-yellow-gradient">Subscribe</button>
+					</form>
+					<div class="informed__socials">
+						<ul class="informed__socials-list">
+							<li class="informed__socials-item"><a class="informed__socials-link" href=""><i
+										class="icon-search"></i></a></li>
+							<li class="informed__socials-item"><a class="informed__socials-link" href=""><i
+										class="icon-search"></i></a></li>
+							<li class="informed__socials-item"><a class="informed__socials-link" href=""><i
+										class="icon-search"></i></a></li>
+							<li class="informed__socials-item"><a class="informed__socials-link" href=""><i
+										class="icon-search"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</main>
+
+		<footer class="footer">
+			<div class="footer__copiryght">
+				<div class="container">
+					<div class="footer__copiryght-text">
+						© 2020  Ewent. All Rights Reserved.
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<div class="scroll-up">
+
+		</div>
+	</div>
+
+	<script src="js/countdown.js"></script>
+
+</body>
+
+</html>

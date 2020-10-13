@@ -36,31 +36,25 @@
 				margin: 0px 0px 25px 0px;
 			}
 		}
-	}
 
-	// .schedule__descr
-
-	&__descr {
-		max-width: 690px;
-		color: #616161;
-		font-family: Oxygen;
-		font-size: 18px;
-		line-height: 22px;
-		font-weight: 400;
-		margin: 0 auto 65px;
-
-		@media (max-width: $md2+px) {
-			margin: 0 auto 55px;
-		}
-
-		@media (max-width: $md3+px) {
-			margin: 0 auto 45px;
-			font-size: 16px;
-			line-height: 20px;
-		}
-
-		@media (max-width: $md4+px) {
-			margin: 0 auto 35px;
+		.title__descr {
+			max-width: 690px;
+			color: #616161;
+			line-height: 22px;
+			margin: 0 auto 65px;
+	
+			@media (max-width: $md2+px) {
+				margin: 0 auto 55px;
+			}
+	
+			@media (max-width: $md3+px) {
+				margin: 0 auto 45px;
+				line-height: 20px;
+			}
+	
+			@media (max-width: $md4+px) {
+				margin: 0 auto 35px;
+			}
 		}
 	}
 
