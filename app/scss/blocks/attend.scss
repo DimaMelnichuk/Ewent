@@ -1,4 +1,5 @@
 .attend {
+	position: relative;
 	padding: 135px 0px;
 	background: url("../img/attend/decoration.png") 10% 0% no-repeat, #8965b4;
 
@@ -26,6 +27,8 @@
 
 	&__content {
 		text-align: center;
+		position: relative;
+		z-index: 1;
 	}
 
 	// .attend__title
@@ -35,7 +38,7 @@
 		.title__main {
 			margin: 0px 0px 50px 0px;
 	
-			@media (max-width: $md1+px) {
+			@media (max-width: $md2+px) {
 				margin: 0px 0px 30px 0px;
 			}
 		}

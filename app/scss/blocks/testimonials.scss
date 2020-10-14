@@ -35,20 +35,19 @@
 		line-height: 30px;
 		text-align: left;
 		margin: 0px 0px 27px 0px;
+		padding: 0px 0px 0px 77px;
 
 		&::before {
 			content: "“";
 			position: absolute;
 			left: 0;
-			top: 0;
-
+			top: 15px;
 			background-image: linear-gradient(-16deg, #efd855 0%, #fffbb6 100%);
 			background-clip: text;
 			color: #efd855;
 			font-family: Oxygen;
 			font-size: 120px;
 			font-weight: 700;
-			text-align: left;
 		}
 	}
 
@@ -56,6 +55,7 @@
 
 	&__author {
 		display: flex;
+		padding: 0px 0px 0px 77px;
 	}
 
 	// .item-slider__author-img

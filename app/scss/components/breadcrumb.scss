@@ -38,6 +38,13 @@
 		font-weight: 400;
 		letter-spacing: 0.7px;
 		color: #313131;
+		transition: color .3s;
+
+		@media (min-width: $md2+px) {
+			&:hover {
+				color:  #936cc1;
+			}
+		}
 	}
 
 	// .breadcrumb__item

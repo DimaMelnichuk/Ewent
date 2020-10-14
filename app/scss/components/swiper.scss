@@ -32,12 +32,8 @@
 .testimonials__slider .swiper-button-prev,
 .testimonials__slider .swiper-button-next {
 	background-color: transparent;
-	width: 45px;
-	height: 45px;
-	border-radius: 100%;
 	color: #313131;
-	border: 2px solid;
-	top: 100%;
+	top: 93%;
 
 	// svg
 /* 	background-position: center;
@@ -54,46 +50,32 @@
 		}
 	}
 }
-
-.swiper-button-prev {
-	/* background-image: url("img/icons/back.svg"); */
-
-	@media (min-width: $md2+px) {
-		&:hover {
-			&::after {
-				
-			}
-		}
-	}
+.testimonials__slider .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+	left: 47%;
+	transform: translateX(-47%);
 }
-.swiper-button-next {
-	/* background-image: url("img/icons/right.svg"); */
-
-	@media (min-width: $md2+px) {
-		&:hover {
-			&::after {
-				
-			}
-		}
-	}
+.testimonials__slider .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+	right: 47%;
+	transform: translateX(-47%);
 }
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
 	position: absolute;
-	font-family: "FontAwesome";
-	font-size: 18px;
-
+	font-family: "fontello";
+	font-size: 24px;
+	color: #313131;
+	transition: color .3s;
 	// svg
 	/* display: none; */
 }
 
 .swiper-button-prev::after {
-	content: "\f060";
+	content: "\e803";
 }
 
 .swiper-button-next::after {
-	content: "\f061";
+	content: "\e804";
 }
 
 // numbers

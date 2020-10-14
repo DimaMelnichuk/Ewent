@@ -31,6 +31,7 @@
 @import "blocks/informed";
 @import "blocks/map";
 @import "blocks/coming-soon";
+@import "blocks/about-tickets";
 @import "blocks/footer/footer";
 
 // Components
@@ -266,9 +267,6 @@ body {
 		padding: 110px 0px 30px;
 	}
 
-	@media (max-width: $md4+px) {
-		padding: 90px 0px 30px;
-	}
 	// .hero__title
 
 	&__title {

@@ -6,6 +6,7 @@
 	width: 45px;
 	height: 45px;
 	display: flex;
+	font-size: 20px;
 	justify-content: center;
 	align-items: center;
 	border-radius: 50%;
@@ -16,6 +17,11 @@
 	visibility: hidden;
 	transition: .2s ease;
 	transform: translateY(100px);
+
+	@media (max-width: $md1+px) {
+		bottom: 30px;
+		right: 50px;
+	}
 
 	&--active {
 		visibility: visible;

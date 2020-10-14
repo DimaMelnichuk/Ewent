@@ -171,6 +171,7 @@
 			.schedule__icon {
 
 				&::after {
+					top: -5px;
 					background: url("../img/icons/minus-thin.svg") 0 0 no-repeat;
 				}
 			}

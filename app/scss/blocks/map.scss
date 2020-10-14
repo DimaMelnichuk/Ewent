@@ -1,6 +1,12 @@
 .map {
 	position: relative;
 	height: 555px;
+
+	@media (max-width: $md4+px) {
+		height: 655px;
+		display: flex;
+		flex-direction: column;
+	}
 	// .map__bg
 
 	&__bg {
@@ -9,6 +15,10 @@
 		width: 100%;
 		top: 0;
 		left: 0;
+
+		@media (max-width: $md4+px) {
+			position: static;
+		}
 	}
 
 	// .map__info
@@ -16,12 +26,25 @@
 	&__info {
 		position: absolute;
 		top: 95px;
-		left: 50%;
+		left: 37%;
 		width: 338px;
 		padding: 35px 35px 30px 30px;
 		box-shadow: 0 3px 50px rgba(31, 31, 30, 0.15);
 		background-color: #ffffff;
 		border-radius: 7px;
+
+		@media (max-width: $md3+px) {
+			left: 14%;
+		}
+
+		@media (max-width: $md4+px) {
+			position: static;
+			left: 0;
+			width: 100%;
+			top: 100%;
+			border-radius: 0;
+			padding: 25px;
+		}
 
 		&::after {
 			content: "";
@@ -33,6 +56,10 @@
 			border-left: 15px solid #fff;
 			border-top: 15px solid transparent;
 			border-bottom: 15px solid transparent;
+
+			@media (max-width: $md4+px) {
+				content: none;
+			}
 		}
 	}
 
@@ -43,6 +70,10 @@
 		font-size: 24px;
 		font-weight: 500;
 		margin: 0px 0px 35px 0px;
+
+		@media (max-width: $md4+px) {
+			margin: 0px 0px 15px 0px;
+		}
 	}
 
 	// .map__info-list
@@ -64,14 +95,35 @@
 		margin: 0px 0px 30px 0px;
 		padding: 0px 0px 0px 25px;
 
+		@media (max-width: $md4+px) {
+			margin: 0px 0px 10px 0px;
+		}
+
 		&::before {
 			content: "";
 			position: absolute;
 			left: 0;
 			top: 6px;
-			background: url("../img/icons/map-marker.svg") 0 0 no-repeat;
 			width: 20px;
 			height: 20px;
+		}
+
+		&--location {
+			&::before {
+				background: url("../img/map/location.png") 0 0 no-repeat;
+			}
+		}
+
+		&--dot {
+			&::before {
+				background: url("../img/map/dot.png") 0 0 no-repeat;
+			}
+		}
+
+		&--clock {
+			&::before {
+				background: url("../img/map/clock.png") 0 0 no-repeat;
+			}
 		}
 
 		a {
@@ -109,9 +161,17 @@
 		}
 	}
 
-	// .map__info-email
+	// .map__info-location
 
-	&__info-email {
+	&__info-location {
+		position: absolute;
+		top: 48%;
+		left: 108%;
+		transform: translateY(-48%);
+
+		@media (max-width: $md4+px) {
+			display: none;
+		}
 	}
 
 }
