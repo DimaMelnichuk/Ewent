@@ -1,0 +1,43 @@
+.faq {
+	padding: 111px 0px 105px;
+
+	@media (max-width: $md1+px) {
+		padding: 90px 0px 80px;
+	}
+
+	@media (max-width: $md2+px) {
+		padding: 70px 0px;
+	}
+
+	@media (max-width: $md3+px) {
+		padding: 50px 0px;
+	}
+
+	@media (max-width: $md4+px) {
+		padding: 30px 0px;
+	}
+	// .faq__title
+
+	&__title {
+		color: #313131;
+		font-size: 36px;
+		font-weight: 600;
+		line-height: 45px;
+		margin: 0px 0px 30px 0px;
+		text-align: center;
+
+		@media (max-width: $md3+px) {
+			margin: 0px 0px 25px 0px;
+		}
+
+		@media (max-width: $md4+px) {
+			margin: 0px 0px 20px 0px;
+		}
+	}
+
+	// .faq__accordion
+
+	&__accordion {
+		margin: 0 auto;
+	}
+}

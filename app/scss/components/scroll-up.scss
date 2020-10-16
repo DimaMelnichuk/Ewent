@@ -23,6 +23,10 @@
 		right: 50px;
 	}
 
+	@media (max-width: $md2+px) {
+		right: 20px;
+	}
+
 	&--active {
 		visibility: visible;
 		opacity: 1;

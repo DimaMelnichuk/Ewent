@@ -1,20 +1,14 @@
 .accordion {
-	max-width: 400px;
+	max-width: 890px;
 
 	&__item {
-		margin: 0px 0px 10px 0px;
+		margin: 0px 0px 15px 0px;
 
 		&:last-child {
 			margin: 0px 0px 0px 0px;
 		}
-
-		// for Jquery
-/* 		&:nth-child(1) .accordion__item-content{
-			display: block;
-		} */
 	}
 
-	// for JS
 	&__item--active {
 
 		.accordion__item-content {
@@ -22,60 +16,76 @@
 		}
 
 		.accordion__item-title {
-			color: #EA2027;
+			background-color: #ffffff;
+			background-image: linear-gradient(-184deg, rgba(230, 255, 175, 0.8) 0%, rgba(54, 242, 227, 0.8) 100%);
 		}
 
-		.accordion__item-title::before,
 		.accordion__item-title::after {
-			border: 2px solid #EA2027;
-			border-left-width: 0;
-			border-bottom-width: 0;
-			top: 50%;
+			content: "\e802";
 		}
 	}
 
 	&__item-title {
 		position: relative;
-		font-size: 20px;
-		color: #fff;
 		cursor:pointer;
-		background: #182C61;
-		padding: 15px 15px 15px 30px;
-		border-radius: 50px;
+		border: 1px solid #eeeeee;
+		color: #313131;
+		font-size: 24px;
+		font-weight: 500;
+		border-radius: 7px;
+		padding: 18px 60px 18px 30px;
 
-		&:before,
+		@media (max-width: $md3+px) {
+			font-size: 22px;
+			padding: 15px 60px 15px 20px;
+		}
+
+		@media (max-width: $md4+px) {
+			font-size: 18px;
+    		padding: 12px 30px 12px 10px;
+		}
+
 		&:after {
-			content: "";
-			height: 8px;
-			width: 8px;
 			position: absolute;
-			right: 20px;
-			top: 46%;
-			border: 2px solid #fff;
-			border-right-width:0;
-			border-top-width:0;
-			transform: translateY(-46%) rotate(-45deg);
+			content: "\e801";
+			font-family: "fontello";
+			right: 30px;
+			top: 50%;
+			transform: translateY(-50%);
+
+			@media (max-width: $md4+px) {
+				right: 15px;
+			}
 		}
 	}
 
-	// for Jquery
-/* 	&__item-title--active {
-		color: #EA2027;
-
-		&::before,
-		&::after {
-			border: 2px solid #EA2027;
-			border-left-width: 0;
-			border-bottom-width: 0;
-			top: 50%;
-		}
-
-	} */
-
 	&__item-content {
 		display:none;
-		padding: 15px;
 		overflow: hidden;
+		padding: 38px 30px;
+		box-shadow: 0 7px 27px rgba(0, 0, 0, 0.05);
+		background-color: #ffffff;
+
+		@media (max-width: $md3+px) {
+			padding: 30px 20px;
+		}
+
+		@media (max-width: $md4+px) {
+			padding: 15px;
+		}
+	}
+
+	&__item-text {
+		color: #616161;
+		font-family: "Oxygen";
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 30px;
+
+		@media (max-width: $md4+px) {
+			font-size: 14px;
+			line-height: 24px;
+		}
 	}
 
 }
