@@ -5,3 +5,4 @@
 @@include('components/script.js')
 @@include('components/scroll-up.js')
 @@include('components/accordion.js')
+@@include('components/dynamic_adapt.js')
