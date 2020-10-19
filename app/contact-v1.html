@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('_head.html',{
+"title":"Contact v1"
+})
+
+<body>
+
+	<div class="wrapper">
+		@@include('_header.html')
+		<main class="page">
+
+			<div class="hero">
+				<div class="hero__title title">
+					<div class="title__main">Contact v1</div>
+				</div>
+				<nav class="hero__breadcrumbs breadcrumb">
+					<ul class="breadcrumb__list">
+						<li>
+							<a class="breadcrumb__link" href="index.html">Home</a>
+						</li>
+						<li>
+							<span class="breadcrumb__item">Contact v1</span>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="page-contact-v1">
+				<div class="container">
+					<div class="page-contact-v1__row">
+						<div class="page-contact-v1__column">
+							<div class="page-contact-v1__title">
+								<div class="title__main">Contact Info</div>
+							</div>
+							<div class="page-contact-v1__map">
+								<img src="img/contact/map.jpg" alt="">
+							</div>
+							<div class="page-contact-v1__info info-contact">
+								<ul class="info-contact__list">
+									<li class="info-contact__item info-contact__item--location">
+										The Company Name Inc.
+										<span>8901 Marmora Road, Glasgow, D04 89GR</span>
+										<a href="#">Get Direction</a>
+									</li>
+									<li class="info-contact__item info-contact__item--clock">
+										<a href="tel:+18005596580">+1 800 559 6580</a>
+									</li>
+									<li class="info-contact__item info-contact__item--dot">
+										<a href="mailto:info@companyname.com">info@companyname.com</a>
+									</li>
+								</ul>
+							</div>
+							<div class="page-contact-v1__socials socials">
+								<ul class="socials__list">
+									<li class="socials__list-item">
+										<a class="socials__list-link" href="#">
+											<i class="icon-facebook"></i>
+										</a>
+									</li>
+									<li class="socials__list-item">
+										<a class="socials__list-link" href="#">
+											<i class="icon-twitter"></i>
+										</a>
+									</li>
+									<li class="socials__list-item">
+										<a class="socials__list-link" href="#">
+											<i class="icon-gplus"></i>
+										</a>
+									</li>
+									<li class="socials__list-item">
+										<a class="socials__list-link" href="#">
+											<i class="icon-youtube-play"></i>
+										</a>
+									</li>
+									<li class="socials__list-item">
+										<a class="socials__list-link" href="#">
+											<i class="icon-instagram"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="page-contact-v1__column">
+							<div class="page-contact-v1__title">
+								<div class="title__main">Feel Free To Drop Us A Line</div>
+								<div class="title__descr">Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis.</div>
+							</div>
+							<form class="page-contact-v1__form" action="#">
+								<input class="page-contact-v1__form-input" type="text" placeholder="Name" required>
+								<input class="page-contact-v1__form-input" type="email" placeholder="Email address" required>
+								<textarea class="page-contact-v1__form-textarea" name="Message" placeholder="Message" required></textarea>
+								<button class="page-contact-v1__form-btn btn btn--size-b btn--theme-yellow-gradient" type="submit">Submit</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</main>
+		@@include('_footer.html')
+
+		<div class="scroll-up">
+			<i class="icon-up-open-big"></i>
+		</div>
+	</div>
+
+	@@include('_js.html')
+</body>
+
+</html>

@@ -1,4 +1,4 @@
-.map {
+.contact {
 	position: relative;
 	height: 555px;
 
@@ -7,7 +7,7 @@
 		display: flex;
 		flex-direction: column;
 	}
-	// .map__bg
+	// .contact__bg
 
 	&__bg {
 		position: absolute;
@@ -21,7 +21,7 @@
 		}
 	}
 
-	// .map__info
+	// .contact__info
 
 	&__info {
 		position: absolute;
@@ -63,9 +63,13 @@
 		}
 	}
 
-	// .map__info-title
+}
 
-	&__info-title {
+.info-contact {
+
+	// .contact__info-title
+
+	&__title {
 		color: #313131;
 		font-size: 24px;
 		font-weight: 500;
@@ -76,16 +80,16 @@
 		}
 	}
 
-	// .map__info-list
+	// .contact__info-list
 
-	&__info-list {
+	&__list {
 		position: relative;
 		z-index: 1;
 	}
 
-	// .map__info-item
+	// .contact__info-item
 
-	&__info-item {
+	&__item {
 		position: relative;
 		font-family: Oxygen;
 		font-size: 16px;
@@ -110,19 +114,19 @@
 
 		&--location {
 			&::before {
-				background: url("../img/map/location.png") 0 0 no-repeat;
+				background: url("../img/contact/location.png") 0 0 no-repeat;
 			}
 		}
 
 		&--dot {
 			&::before {
-				background: url("../img/map/dot.png") 0 0 no-repeat;
+				background: url("../img/contact/dot.png") 0 0 no-repeat;
 			}
 		}
 
 		&--clock {
 			&::before {
-				background: url("../img/map/clock.png") 0 0 no-repeat;
+				background: url("../img/contact/clock.png") 0 0 no-repeat;
 			}
 		}
 
@@ -161,9 +165,9 @@
 		}
 	}
 
-	// .map__info-location
+	// .contact__info-location
 
-	&__info-location {
+	&__location {
 		position: absolute;
 		top: 48%;
 		left: 108%;
@@ -173,5 +177,4 @@
 			display: none;
 		}
 	}
-
 }

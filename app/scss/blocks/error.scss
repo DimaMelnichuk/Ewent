@@ -84,10 +84,12 @@
 		
 		a {
 			color: #936cc1;
+			border-bottom: 1px solid transparent;
+			transition: border .3s;
 
 			@media (min-width: $md2+px) {
 				&:hover {
-					text-decoration: underline;
+					border-bottom: 1px solid  #936cc1;
 				}
 			}
 		}

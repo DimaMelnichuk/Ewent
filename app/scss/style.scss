@@ -30,12 +30,14 @@
 @import "blocks/testimonials";
 @import "blocks/error";
 @import "blocks/informed";
-@import "blocks/map";
+@import "blocks/contact";
 @import "blocks/faq";
 @import "blocks/coming-soon";
 @import "blocks/about-tickets";
 @import "blocks/call-action";
 @import "blocks/sponsors";
+@import "blocks/page-contact-v1";
+@import "blocks/page-contact-v2";
 @import "blocks/footer/footer";
 
 // Components
@@ -98,13 +100,27 @@ body {
 	background-image: linear-gradient(-16deg, #efd855 0%, #fffbb6 100%);
 } */
 
-::placeholder {
+input,
+textarea {
+	width: 100%;
+	box-shadow: 0 7px 27px rgba(0, 0, 0, 0.05);
+	border: 1px solid #eeeeee;
+	border-radius: 7px;
+	background-color: #ffffff;
 	color: #919191;
-	font-family: Oxygen;
+	font-family: "Oxygen";
 	font-size: 16px;
 	font-weight: 400;
-}
 
+	&::placeholder {
+		color: #919191;
+		font-family: Oxygen;
+		font-size: 16px;
+		font-weight: 400;
+	}
+}
+textarea {resize: none;padding: 16px 20px;}
+input {padding: 0px 20px;}
 .search {
 
 	// .search__form
@@ -319,5 +335,36 @@ body {
 		font-weight: 700;
 		letter-spacing: 0.36px;
 		margin: 0px 0px 40px 0px;
+	}
+}
+
+.socials {
+
+	// .socials__list
+
+	&__list {
+		display: flex;
+	}
+
+	// .socials__list-item
+
+	&__list-item {
+	}
+
+	// .socials__list-link
+
+	&__list-link {
+		color: #313131;
+		font-size: 20px;
+		font-weight: 400;
+		opacity: 0.7;
+		transition: color .3s, opacity .3s;
+
+		@media (min-width: $md2+px) {
+			&:hover {
+				color: #313131;
+				opacity: 1;
+			}
+		}
 	}
 }
