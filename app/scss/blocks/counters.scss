@@ -1,5 +1,5 @@
 .counters {
-	padding: 50px 0px 137px;
+	padding: 88px 0px 92px;
 
 	@media (max-width: $md1+px) {
 		padding: 50px 0px 80px;
@@ -15,6 +15,22 @@
 
 	@media (max-width: $md4+px) {
 		padding: 30px 0px;
+	}
+
+	&--theme-violet {
+		background-color: #594174;
+		color: #fff;
+	}
+
+	&--theme-gray {
+		background-color: #f9f9f9;
+
+		.counters__number {
+			color: #313131;
+			span {
+				color: #919191;
+			}
+		}
 	}
 	// .counters__row
 
@@ -44,17 +60,25 @@
 
 	&__item {
 		display: flex;
+
+		&--column {
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+		}
+
+		&--center {
+			text-align: center;
+			justify-content: center;
+		}
 	}
 
 	// .counters__icon
 
 	&__icon {
 		position: relative;
-		padding: 0px 0px 0px 72px;
-
-		@media (max-width: $md2+px) {
-			padding: 0px 0px 0px 85px;
-		}
+		padding: 0px 0px 32px 0px;
 
 		&::after {
 			content: "";
@@ -62,27 +86,48 @@
 			left: 0;
 			width: 54px;
 			height: 53px;
+
 		}
 
 		&--people {
+			padding: 0px 0px 0px 72px;
+
+			@media (max-width: $md2+px) {
+				padding: 0px 0px 0px 85px;
+			}
 			&::after {
 				background: url("../img/counters/people.png") 0 0 no-repeat;
 			}
 		}
 
 		&--book {
+			padding: 0px 0px 0px 72px;
+
+			@media (max-width: $md2+px) {
+				padding: 0px 0px 0px 85px;
+			}
 			&::after {
 				background: url("../../img/counters/book.png") 0 0 no-repeat;
 			}
 		}
 
 		&--world {
+			padding: 0px 0px 0px 72px;
+
+			@media (max-width: $md2+px) {
+				padding: 0px 0px 0px 85px;
+			}
 			&::after {
 				background: url("../../img/counters/world.png") 0 0 no-repeat;
 			}
 		}
 
 		&--recorder {
+			padding: 0px 0px 0px 72px;
+
+			@media (max-width: $md2+px) {
+				padding: 0px 0px 0px 85px;
+			}
 			&::after {
 				background: url("../../img/counters/recorder.png") 0 0 no-repeat;
 			}
@@ -91,8 +136,7 @@
 
 	// .counters__number
 
-	&__number {
-		color: #313131;
+	&__number {	
 		font-size: 48px;
 		font-weight: 300;
 		margin: -10px 0px 0px 0px;
@@ -100,8 +144,7 @@
 		span {
 			display: block;
 			padding: 5px 0px 0px 0px;
-			color: #919191;
-			font-family: Oxygen;
+			font-family: "Oxygen";
 			font-size: 15px;
 			font-weight: 400;
 			letter-spacing: 0.75px;
