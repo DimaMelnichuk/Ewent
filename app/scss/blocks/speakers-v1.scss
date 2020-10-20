@@ -1,4 +1,4 @@
-.speakers {
+.speakers-v1 {
 	background-color: #f9f9f9;
 	padding: 135px 0px;
 
@@ -14,16 +14,17 @@
 		padding: 50px 0px;
 	}
 
-	@media (max-width: $md4+px) {
-		padding: 30px 0px;
+
+	&--theme-white {
+		background-color: #ffff;
 	}
 
-	// .speakers__content
+	// .speakers-v1__content
 
 	&__content {
 		text-align: center;
 	}
-	// .speakers__title
+	// .speakers-v1__title
 
 	&__title {
 
@@ -64,16 +65,57 @@
 		}
 	}
 
-	// .speakers__row
+	// .speakers-v1__filter-btn
+
+	&__filter {
+		margin: 0px 0px 45px 0px;
+
+		@media (max-width: $md2+px) {
+			margin: 0px 0px 35px 0px;
+		}
+
+		@media (max-width: $md3+px) {
+			margin: 0px 0px 30px 0px;
+		}
+
+		@media (max-width: $md4+px) {
+			margin: 0px 0px 20px 0px;
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+	}
+
+	// .speakers-v1__filter-btn
+
+	&__filter-btn {
+		color: #313131;
+		font-family: 'Oxygen';
+		font-size: 14px;
+		font-weight: 400;
+		margin: 0px 15px 0px 0px;
+		box-shadow: none;
+
+		@media (max-width: $md4+px) {
+			flex: 0 1 50%;
+			margin: 0;
+			padding: 15.5px 15px;
+		}
+
+		&:last-child {
+			margin: 0;
+		}
+	}
+
+	// .speakers-v1__row
 
 	&__row {
 		display: flex;
 		flex-flow: row wrap;
 		margin: -15px;
-		/* margin: 0px 0px 35px 0px; */
 	}
 
-	// .speakers__column
+	// .speakers-v1__column
 
 	&__column {
 		flex: 0 1 33.333%;
@@ -86,9 +128,10 @@
 		@media (max-width: 500px) {
 			flex: 0 1 100%;
 		}
+
 	}
 
-	// .speakers__item
+	// .speakers-v1__item
 
 	&__item {
 		padding: 45px 0px;
@@ -102,7 +145,7 @@
 		}
 
 		@media (max-width: 500px) {
-			padding: 15px 0px;
+			padding: 0px;
 		}
 		
 		@media (min-width: $md2+px) {
@@ -110,7 +153,7 @@
 				box-shadow: 0 7px 27px rgba(0, 0, 0, 0.05);
 				background-color: #ffffff;
 
-				.speakers__item-img {
+				.speakers-v1__item-img {
 					&::after {
 						content: "";
 						display: block;    
@@ -130,7 +173,7 @@
 		}
 	}
 
-	// .speakers__item-img
+	// .speakers-v1__item-img
 
 	&__item-img {
 		position: relative;
@@ -153,6 +196,11 @@
 			margin: 0 auto 20px;
 		}
 
+		@media (max-width: $md4+px) {
+			width: 200px;
+			height: 200px;
+		}
+
 		img {
 			border-radius: 100%;
 			object-fit: cover;
@@ -162,7 +210,7 @@
 		}
 	}
 
-	// .speakers__item-name
+	// .speakers-v1__item-name
 
 	&__item-name {
 		color: #313131;
@@ -175,7 +223,7 @@
 		}
 	}
 
-	// .speakers__item-job
+	// .speakers-v1__item-job
 
 	&__item-job {
 		font-family: Oxygen;
@@ -198,7 +246,7 @@
 		}
 	}
 
-	// .speakers__item-link
+	// .speakers-v1__item-link
 
 	&__item-link {
 		font-family: Oxygen;
@@ -216,7 +264,7 @@
 		}
 	}
 
-	// .speakers__btn
+	// .speakers-v1__btn
 
 	&__btn {
 		margin: 35px 0px 0px 0px;
