@@ -1,0 +1,180 @@
+.speaker-profile {
+	padding: 137px 0px 105px;
+
+	// .speaker-profile__row
+
+	&__row {
+		display: flex;
+	}
+
+	// .speaker-profile__content
+
+	&__content {
+		position: relative;
+		flex: 0 1 74%;
+		padding: 0px 40px 0px 0px;
+
+		&::after {
+			content: "";
+			position: absolute;
+			width: 1px;
+			height: 100%;
+			background-color: #eeeeee;
+			right: 0;
+			top: 0;
+		}
+	}
+
+	// .speaker-profile__aside
+
+	&__aside {
+		flex: 0 1 26%;
+		padding: 0px 0px 0px 44px;
+	}
+}
+
+.content-profile {
+
+	// .content-profile__row
+
+	&__row {
+		display: flex;
+		margin: 0px 0px 130px 0px;
+	}
+
+	// .content-profile__column
+
+	&__column {
+	}
+
+	// .content-profile__img
+
+	&__img {
+		margin: 0px 65px 0px 0px;
+		
+		img {
+			width: 430px;
+			height: 430px;
+			background-color: #1da7ba;
+			object-fit: cover;
+			border-radius: 100%;
+		}
+	}
+
+	// .content-profile__title
+
+	&__title {
+		margin: 15px 0px 0px 0px;
+
+		.title__main {
+			margin: 0px 0px 16px 0px;
+		}
+
+		.title__descr {
+			margin: 0px 0px 45px 0px;
+			color: #919191;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 30px;
+
+			a {
+				color: #936cc1;
+				border-bottom: 1px solid transparent;
+				transition: border .3s;
+
+				@media (min-width: $md2+px) {
+					&:hover {
+						border-bottom: 1px solid #936cc1;
+					}
+				}
+			}
+		}
+	}
+
+	// .content-profile__descr
+
+	&__descr {
+		color: #616161;
+		font-family: "Oxygen";
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 30px;
+		margin: 0px 0px 40px 0px;
+	}
+
+	// .content-profile__label
+
+	&__label {
+		color: #313131;
+		font-size: 18px;
+		font-weight: 500;
+		margin: 0px 0px 20px 0px;
+	}
+
+	// .content-profile__socials
+
+	&__socials {
+
+		.socials__list-item {
+			margin: 0px 20px 0px 0px;
+
+			&:last-child {
+				margin: 0;
+			}
+		}
+	}
+
+	// .content-profile__sessions
+
+	&__sessions {
+	}
+
+	// .content-profile__sessions-title
+
+	&__sessions-title {
+	}
+}
+
+.aside-profile {
+
+	// .aside-profile__title
+
+	&__title {
+		color: #313131;
+		font-size: 24px;
+		font-weight: 500;
+		margin: 0px 0px 40px 0px;
+	}
+
+	// .aside-profile__list
+
+	&__list {
+	}
+
+	// .aside-profile__list-item
+
+	&__list-item {
+		margin: 0px 0px 25px 0px;
+
+		&:last-child {
+			margin: 0;
+		}
+	}
+
+	// .aside-profile__list-link
+
+	&__list-link {
+		color: #936cc1;
+		font-family: "Oxygen";
+		font-size: 16px;
+		font-weight: 400;
+		border-bottom: 1px solid transparent;
+		transition: border .3s;
+
+		@media (min-width: $md2+px) {
+			&:hover {
+				border-bottom: 1px solid #936cc1;
+			}
+		}
+	}
+}

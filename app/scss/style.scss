@@ -25,6 +25,7 @@
 @import "blocks/speakers-v1";
 @import "blocks/speakers-v2";
 @import "blocks/speakers-v3";
+@import "blocks/speaker-profile";
 @import "blocks/icon-boxes";
 @import "blocks/schedule";
 @import "blocks/schedule-v2";
@@ -34,10 +35,13 @@
 @import "blocks/informed";
 @import "blocks/contact";
 @import "blocks/faq";
+@import "blocks/alert-boxe";
 @import "blocks/coming-soon";
 @import "blocks/about-tickets";
 @import "blocks/call-action";
 @import "blocks/sponsors";
+@import "blocks/blog-lists";
+@import "blocks/dropcaps-blockquotes";
 @import "blocks/page-contact-v1";
 @import "blocks/page-contact-v2";
 @import "blocks/footer/footer";
@@ -155,49 +159,6 @@ input {padding: 0px 20px;}
 		border: 1px solid #eeeeee;
 		border-left: none;
 		font-size: 20px;
-	}
-}
-
-.section {
-	padding: 150px 0px 135px 0px;
-
-	h1 {
-		color: #313131;
-		font-size: 36px;
-		font-weight: 400;
-		letter-spacing: 0.36px;
-		margin: 0px 0px 40px 0px;
-	}
-
-	&__row {
-		display: flex;
-	}
-	&__column {
-		display: flex;
-		flex-direction: column;
-
-		align-items: flex-start;
-		flex: 0 1 16.666%;
-
-		&--tabs {
-			flex: 0 1 50%;
-		}
-	}
-
-	&__block {
-		margin: 0px 0px 30px 0px;
-
-		&:last-child {
-			margin: 0;
-		}
-
-		&>a {
-			margin: 0px 0px 15px 0px;
-
-			&:last-child {
-				margin: 0;
-			}
-		}
 	}
 }
 
@@ -367,6 +328,104 @@ input {padding: 0px 20px;}
 			&:hover {
 				color: #313131;
 				opacity: 1;
+			}
+		}
+	}
+}
+
+.alert-boxes {
+	padding: 142px 0px 115px;
+	// .alert-boxes__title
+
+	&__title {
+
+		.title__main {
+			margin: 0px 0px 40px 0px;
+		}
+	}
+
+	// .alert-boxes__row
+
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		margin: -7.5px -15px;
+	}
+
+	// .alert-boxes__column
+
+	&__column {
+		flex: 0 1 50%;
+		padding: 7.5px 15px;
+
+		@media (max-width: $md3+px) {
+			flex: 0 1 100%;
+		}
+	}
+
+}
+
+.buttons {
+	padding: 0px 0px 135px 0px;
+
+	h1 {
+		color: #313131;
+		font-size: 36px;
+		font-weight: 400;
+		letter-spacing: 0.36px;
+		margin: 0px 0px 40px 0px;
+	}
+
+	&__row {
+		display: flex;
+		margin: -10px;
+
+		@media (max-width: $md2+px) {
+			flex-flow: row wrap;
+		}
+	}
+	&__column {
+		display: flex;
+		flex-direction: column;
+		flex: 0 1 16.666%;
+		padding: 10px;
+
+		@media (max-width: $md2+px) {
+			flex: 0 1 100%;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
+		@media (max-width: $md3+px) {
+			flex-wrap: wrap;
+		}
+	}
+
+	&__block {
+		margin: 0px 0px 30px 0px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+
+		@media (max-width: $md2+px) {
+			margin: 0px 30px 30px 0px;
+		}
+
+		@media (max-width: $md3+px) {
+			flex: 0 1 50%;
+			margin: 0px 0px 30px 0px;
+			
+		}
+
+		&:last-child {
+			margin: 0;
+		}
+
+		&>a {
+			margin: 0px 0px 15px 0px;
+
+			&:last-child {
+				margin: 0;
 			}
 		}
 	}

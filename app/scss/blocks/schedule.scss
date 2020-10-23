@@ -144,6 +144,10 @@
 		span {
 			font-weight: 500;
 		}
+
+		&--theme-solid {
+			background-image: linear-gradient(-184deg, rgba(230, 255, 175, 0.8) 0%, rgba(54, 242, 227, 0.8) 100%);
+		}
 	}
 
 	// .schedule__content
