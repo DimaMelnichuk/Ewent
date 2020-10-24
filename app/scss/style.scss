@@ -20,6 +20,7 @@
 // Blocks
 @import "blocks/header/header";
 @import "blocks/main-screen/main-screen";
+@import "blocks/main-screen/main-screen-v3";
 @import "blocks/about";
 @import "blocks/counters";
 @import "blocks/speakers-v1";
@@ -41,9 +42,13 @@
 @import "blocks/call-action";
 @import "blocks/sponsors";
 @import "blocks/blog-lists";
+@import "blocks/highlights-tooltips-listings";
+@import "blocks/blog-lists";
 @import "blocks/dropcaps-blockquotes";
 @import "blocks/page-contact-v1";
 @import "blocks/page-contact-v2";
+@import "blocks/tables";
+@import "blocks/progess-bars";
 @import "blocks/footer/footer";
 
 // Components
@@ -54,6 +59,7 @@
 @import "components/swiper";
 @import "components/scroll-up";
 @import "components/countdown";
+@import "components/tooltip";
 
 /* ==========================================================================
   General Styles
@@ -81,7 +87,6 @@ body {
 	&.loaded {
 	}
 }
-
 .page {
 	flex: 1 1 auto;
 }
@@ -94,7 +99,11 @@ body {
 		display: none;
 	}
 }
-
+.highlights {
+	background: #313131;
+	color: #ffffff;
+	padding: 0px 4px;
+}
 /* .btn {
 	display: inline-block;
 	font-family: 'Oxygen', sans-serif;
@@ -428,5 +437,49 @@ input {padding: 0px 20px;}
 				margin: 0;
 			}
 		}
+	}
+}
+
+.features-page {
+	padding: 140px 0px;
+
+	// .features-page__title
+
+	&__title {
+
+		.title__main {
+			margin: 0px 0px 40px 0px;
+		}
+	}
+
+	// .features-page__row
+
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		margin: -15px;
+	}
+
+	// .features-page__column
+
+	&__column {
+		flex: 0 1 50%;
+		padding: 15px;
+
+		@media (max-width: $md3+px) {
+			flex: 0 1 100%;
+		}
+	}
+
+	// .progess-bars__progress-bar
+
+	&__progress-bar {
+		margin: 0px 0px 115px 0px;
+	}
+
+	// .progess-bars__tables
+
+	&__tables {
+		margin: 0px 0px 115px 0px;
 	}
 }

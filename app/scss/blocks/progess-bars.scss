@@ -1,0 +1,59 @@
+.progess-bars {
+
+	// .progess-bars__item
+	&__item {
+		margin: 0px 0px 30px 0px;	
+
+		&:last-child {
+			margin: 0;
+		}
+	}
+	// .progess-bars__meter
+
+	&__meter {
+		height: 6px;
+		position: relative;
+		background-color: #eeeeee;
+		border-radius: 7px;
+		margin: 0px 0px 15px 0px;
+
+		& > span {
+			display: block;
+			height: 100%;
+			border-radius: 7px;
+			position: relative;
+			overflow: hidden;
+		}
+		
+		&--theme-violet span{
+			background-color: #c99cff;
+			background-image: linear-gradient(to left, #f4c9df 0%, #c99cff 100%);
+		}
+
+		&--theme-orange span {
+			background-color: #efd855;
+		}
+	}
+
+	// .progess-bars__text
+
+	&__text {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	// .progess-bars__text-label
+
+	&__text-label {
+		color: #313131;
+		font-family: "Oxygen";
+		font-size: 18px;
+		font-weight: 400;
+	}
+
+	// .progess-bars__text-percent
+
+	&__text-percent {
+		@extend .progess-bars__text-label;
+	}
+}

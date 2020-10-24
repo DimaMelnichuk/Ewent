@@ -12,6 +12,21 @@
 	@media (max-width: $md3+px) {
 		padding: 50px 0px;
 	}
+
+	&--theme-violet {
+		background-color: #8965b4;
+	}
+
+	&__title {
+		text-align: center;
+		.title__main {
+
+		}
+
+		.title__descr {
+
+		}
+	}
 	
 	// .schedule-v2__laptop
 
@@ -124,6 +139,7 @@
 
 	&__content-column {
 		flex: 0 1 33.333%;
+		background-color: #ffff;
 		border-right: 1px solid #eeeeee;
 		border-left: 1px solid #eeeeee;
 
@@ -152,6 +168,7 @@
 
 			.schedule-v2-laptop__content-item {
 				padding: 21px 30px;
+				background-color: #ffff;
 				border-bottom: 1px solid #eeeeee;
 				
 				@media (max-width: $md2+px) {
@@ -183,6 +200,7 @@
 		&:nth-child(n+2){
 			.schedule-v2-laptop__content-item {
 				padding: 29px;
+				background-color: #ffff;
 				border-bottom: 1px solid #eeeeee;
 
 				@media (max-width: $md2+px) {
