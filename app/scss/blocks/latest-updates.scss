@@ -1,0 +1,44 @@
+.latest-updates {
+	padding: 135px 0px;
+	// .latest-updates__title
+
+	&__title {
+		text-align: center;
+
+		.title__main {
+			margin: 0px 0px 50px 0px;
+		}
+	
+		.title__descr {
+			margin: 0px 0px 50px 0px;
+		}
+	}
+
+	// .latest-updates__row
+
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		margin: -15px;
+	}
+
+	// .latest-updates__column
+
+	&__column {
+		flex: 0 1 33.333%;
+		padding: 15px;
+	}
+
+	// .latest-updates__post-blog
+
+	&__post-blog {
+	}
+
+	// .latest-updates__btn
+
+	&__btn {
+		display: flex;
+		justify-content: center;
+		margin: 45px 0px 0px 0px;
+	}
+}

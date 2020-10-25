@@ -22,10 +22,14 @@
 		height: 545px;
 		width: 545px;
 		left: 115px;
-		bottom: -50%;
-		transform: translateY(-50%);
+		bottom: -37%;
 		z-index: 1;
 		background: url("../img/main-screen/ellipse_2.png") 0 0 no-repeat;
+
+		@media (max-width: $md1+px) {
+			bottom: -52%;
+			left: 30px;
+		}
 	}
 	
 	&__bg {
@@ -42,7 +46,7 @@
 		position: relative;
 		text-align: center;
 		margin-left: auto;
-		max-width: 560px;
+		max-width: 570px;
 		z-index: 1;
 		padding: 375px 0px 285px 0px;
 

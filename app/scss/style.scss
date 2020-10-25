@@ -48,8 +48,12 @@
 @import "blocks/page-contact-v1";
 @import "blocks/page-contact-v2";
 @import "blocks/tables";
+@import "blocks/location";
+@import "blocks/latest-updates";
+@import "blocks/take-part";
 @import "blocks/progess-bars";
 @import "blocks/footer/footer";
+@import "blocks/footer/footer-v3";
 
 // Components
 @import "components/menu";
@@ -89,6 +93,26 @@ body {
 }
 .page {
 	flex: 1 1 auto;
+
+	&__schedule-v2 {
+		
+	}
+
+	&__pricing-card-vertically {
+		background-color: #f9f9f9;
+	}
+
+	&__informed {
+		
+	}
+
+	&__speakers-v2 {
+		background-color: #f9f9f9;
+	}
+	
+	&__latest-updates {
+		background-color: #f9f9f9;
+	}
 }
 
 .ibg{
@@ -182,7 +206,6 @@ input {padding: 0px 20px;}
 		letter-spacing: 0.36px;
 		@include adaptive-font(36, 28);
 		font-weight: 700;
-
 
 		&--bottom-line {
 			@include adaptive-font(48, 36);

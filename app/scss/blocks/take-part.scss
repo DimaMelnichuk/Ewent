@@ -1,0 +1,97 @@
+.take-part {
+	// .take-part__row
+
+	&__row {
+		position: relative;
+		z-index: 2;
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0px -15px;
+	}
+
+	// .take-part__column
+
+	&__column {
+		flex: 0 1 50%;
+		padding: 90px 15px;
+		position: relative;
+
+		@media (max-width: $md1+px) {
+			padding: 70px 15px;
+		}
+
+		@media (max-width: $md2+px) {
+			padding: 60px 15px;
+			flex: 0 1 100%;
+		}
+
+		@media (max-width: $md4+px) {
+			padding: 50px 15px;
+		}
+
+		&:first-child {
+			background-color: #594174;
+
+			@media (max-width: $md2+px) {
+				text-align: center;
+			}
+
+			&::before {
+				content: "";
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				background-color: #594174;
+				top: 0;
+				left: -100%;
+			}
+		}
+
+		&:last-child {
+			background-color: #36f2e3;
+
+			&::before {
+				content: "";
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				background-color: #36f2e3;
+				top: 0;
+				right: -100%;
+			}
+		}
+	}
+
+	// .take-part__title
+
+	&__title {
+		color: #ffffff;
+		@include adaptive-font(48, 28);
+		font-weight: 400;
+		margin: 0px 0px 15px 0px;
+	}
+
+	// .take-part__descr
+
+	&__descr {
+		color: #b1b1b1;
+		font-family: "Oxygen";
+		font-size: 18px;
+		font-weight: 400;
+
+		@media (max-width: $md4+px) {
+			font-size: 15px;
+		}
+	}
+
+	// .take-part__countdown
+
+	&__countdown {
+		display: flex;
+		justify-content: center;
+
+		.countdown__time {
+			margin: 0px 85 / $maxWidthContainer * 100vw 0px 0px;
+		}
+	}
+}

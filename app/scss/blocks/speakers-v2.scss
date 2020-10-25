@@ -13,6 +13,19 @@
 		padding: 50px 0px;
 	}
 
+	&__title {
+		text-align: center;
+
+		.title__main {
+			margin: 0px 0px 50px 0px;
+		}
+
+		.title__descr {
+			margin: 0 auto 50px;
+			max-width: 700px;
+		}
+	}
+
 	// .speakers-v2__row
 
 	&__row {
@@ -172,5 +185,12 @@
 			}
 
 		}
+	}
+
+	// .speakers-v2__btn
+	&__btn {
+		display: flex;
+		justify-content: center;
+		margin: 45px 0px 0px 0px;
 	}
 }

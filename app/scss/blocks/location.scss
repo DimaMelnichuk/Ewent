@@ -1,0 +1,116 @@
+.location {
+
+	// .location__row
+
+	&__row {
+		display: flex;
+	}
+
+	// .location__column
+
+	&__column {
+		flex: 0 1 33.333%;
+	}
+
+	// .location__img
+
+	&__img {
+		
+		img {
+			max-width: 100%;
+		}
+	}
+
+	// .location__info
+
+	&__info {
+		padding: 125px 95px 135px;
+		background-color: #594174;
+	}
+
+	// .location__info-title
+
+	&__info-title {
+		text-align: center;
+
+		.title__main {
+			margin: 0px 0px 60px 0px;
+		}
+	}
+
+	// .location__info-venue
+
+	&__info-venue {
+		display: flex;
+		margin: 0px 0px 55px 0px;
+
+		&:last-child {
+			margin: 0;
+		}
+	}
+
+	// .location__map
+
+	&__map {
+
+		img {
+			max-width: 100%;
+		}
+	}
+}
+
+.venue-info {
+
+	// .venue-info__icon
+
+	&__icon {
+		margin: 0px 30px 0px 0px;
+	}
+
+	// .venue-info__content
+
+	&__content {
+	}
+
+	// .venue-info__content-label
+
+	&__content-label {
+		text-transform: uppercase;
+		color: #b1b1b1;
+		font-size: 14px;
+		font-weight: 400;
+		margin: 0px 0px 15px 0px;
+	}
+
+	// .venue-info__content-text
+
+	&__content-text {
+		display: block;
+		color: #ffffff;
+		font-family: "Oxygen";
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 30px;
+
+		span {
+			display: block;
+		}
+	}
+
+	&__content-btn {
+		display: inline-block;
+		color: #ba89f4;
+		font-family: "Oxygen";
+		font-size: 16px;
+		font-weight: 700;
+		margin: 25px 0px 0px 0px;
+		border-bottom: 1px solid transparent;
+		transition: border .3s;
+
+		@media (min-width: $md2+px) {
+			&:hover {
+				border-bottom: 1px solid #ba89f4;
+			}
+		}
+	}
+}
