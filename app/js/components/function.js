@@ -1,15 +1,12 @@
 let searchIcon = document.querySelector('.header__search-icon');
-let searchMenu = document.querySelector('.header__search-box');
+let searchBox = document.querySelector('.search');
+let searchClose = document.querySelector('.search__icon');
 searchIcon.addEventListener("click", function (e) {
-	searchMenu.classList.toggle('active');
+	searchBox.classList.toggle('active');
 });
-
-document.documentElement.addEventListener("click", function (e) {
-	if (!e.target.closest('.header__search')) {
-		searchMenu.classList.remove('active');
-	}
+searchClose.addEventListener("click", function (e) {
+	searchBox.classList.remove('active');
 });
-
 /***************** Menu-btn ********************/
 let menu_burger = document.querySelector('.menu__burger');
 let menu = document.querySelector('.menu');
@@ -18,6 +15,14 @@ menu_burger.addEventListener("click", function (e) {
 	menu.classList.toggle('active');
 	menu_burger.classList.toggle('active');
 	menu_lock.classList.toggle('lock');
+});
+document.documentElement.addEventListener("click", function (e) {
+	if (!e.target.closest('.menu__burger, .menu')) {
+		menu.classList.remove('active');
+		menu_burger.classList.remove('active');
+		menu_lock.classList.remove('lock');
+	}
+	
 });
 
 /***************** WebP ********************/

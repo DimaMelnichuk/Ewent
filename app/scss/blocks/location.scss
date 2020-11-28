@@ -4,28 +4,72 @@
 
 	&__row {
 		display: flex;
+		flex-wrap: wrap;
 	}
 
 	// .location__column
 
 	&__column {
 		flex: 0 1 33.333%;
+
+		@media (max-width: $md2+px) {
+			flex: 0 1 50%;
+
+			&:last-child {
+				flex: 0 1 100%;
+			}
+		}
+
+		@media (max-width: $md3+px) {
+			flex: 0 1 100%;
+		}
 	}
 
-	// .location__img
+	&__item {
+		position: relative;
+		height: 100%;
+		min-height: 300px;
 
-	&__img {
-		
-		img {
-			max-width: 100%;
+		@media (max-width: $md2+px) {
+			
 		}
+	}
+
+	// .location__item-img
+
+	&__item-img {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
 	}
 
 	// .location__info
 
 	&__info {
-		padding: 125px 95px 135px;
+		padding: 125px 15px;
 		background-color: #594174;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+
+		@media (max-width: $md1+px) {
+			padding: 80px 25px;
+		}
+
+		@media (max-width: $md2+px) {
+			padding: 70px 15px;
+		}
+
+		@media (max-width: $md3+px) {
+			padding: 60px 15px;
+		}
+
+		@media (max-width: $md4+px) {
+			padding: 50px 15px;
+		}
 	}
 
 	// .location__info-title
@@ -35,6 +79,18 @@
 
 		.title__main {
 			margin: 0px 0px 60px 0px;
+
+			@media (max-width: $md1+px) {
+				margin: 0px 0px 50px 0px;
+			}
+
+			@media (max-width: $md3+px) {
+				margin: 0px 0px 40px 0px;
+			}
+
+			@media (max-width: $md4+px) {
+				margin: 0px 0px 30px 0px;
+			}
 		}
 	}
 
@@ -44,17 +100,16 @@
 		display: flex;
 		margin: 0px 0px 55px 0px;
 
+		@media (max-width: $md1+px) {
+			margin: 0px 0px 45px 0px;
+		}
+
+		@media (max-width: $md4+px) {
+			margin: 0px 0px 35px 0px;
+		}
+
 		&:last-child {
 			margin: 0;
-		}
-	}
-
-	// .location__map
-
-	&__map {
-
-		img {
-			max-width: 100%;
 		}
 	}
 }
@@ -65,13 +120,15 @@
 
 	&__icon {
 		margin: 0px 30px 0px 0px;
+
+		@media (max-width: $md1+px) {
+			margin: 0px 20px 0px 0px;
+		}
+
+		@media (max-width: $md4+px) {
+			margin: 0px 15px 0px 0px;
+		}
 	}
-
-	// .venue-info__content
-
-	&__content {
-	}
-
 	// .venue-info__content-label
 
 	&__content-label {
@@ -80,6 +137,10 @@
 		font-size: 14px;
 		font-weight: 400;
 		margin: 0px 0px 15px 0px;
+
+		@media (max-width: $md1+px) {
+			margin: 0px 0px 10px 0px;
+		}
 	}
 
 	// .venue-info__content-text
@@ -91,6 +152,16 @@
 		font-size: 20px;
 		font-weight: 700;
 		line-height: 30px;
+
+		@media (max-width: $md1+px) {
+			font-size: 18px;
+			line-height: 28px;
+		}
+
+		@media (max-width: $md4+px) {
+			font-size: 14px;
+			line-height: 24px;
+		}
 
 		span {
 			display: block;

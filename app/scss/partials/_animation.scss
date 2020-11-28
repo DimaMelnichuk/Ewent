@@ -1,11 +1,15 @@
- @keyframes pulse {
-	0% {
-		-webkit-transform: scale(0, 0);
+@keyframes pulse-1 {
+	50% {
 		opacity: 1;
-	 }
-	 100% {
-		-webkit-transform: scale(1.2, 1.2);
-		opacity: 0;
-	 }
+	}
 }
-
+@keyframes pulse-2 {
+	50% {
+		opacity: .6;
+	}
+}
+@keyframes pulse-3 {
+	50% {
+		opacity: .3;
+	}
+}

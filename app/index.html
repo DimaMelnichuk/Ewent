@@ -6,9 +6,7 @@
 <body>
 
 	<div class="wrapper">
-		@@include('_header.html',{
-			"logo-img":"img/header/logo.png"
-		})
+		@@include('_header.html')
 		<main class="page">
 			<div class="main-screen">
 				<div class="main-screen__bg ibg">
@@ -26,16 +24,16 @@
 				</div>
 			</div>
 
-			<div class="about">
+			<div class="about main__about">
 				<div class="container">
 					<div class="about__row">
 						<div class="about__column">
 							<div class="about__img">
-								<img src="img/pexels-stephan-seeber-1054218.jpg" alt="">
+								<img src="img/about/01.png" alt="">
 							</div>
 						</div>
 						<div class="about__column">
-							<div class="about__title title">
+							<div class="about__title title title--left">
 								<div class="title__main title__main--bottom-line  title__main--theme-black">
 									What Is <span>GDConf?</span>
 								</div>
@@ -93,101 +91,103 @@
 				</div>
 			</div>
 
-			<div class="speakers">
+			<div class="page__speakers-v1 speakers-v1 padding">
 				<div class="container">
-					<div class="speakers__content">
+					<div class="speakers-v1__content">
 						<div class="speakers__title title">
 							<div class="title__main title__main--bottom-line title__main--theme-black">
 								Speakers
 							</div>
 							<div class="title__descr title__descr--theme-black">Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis.</div>
 						</div>
-						<div class="speakers__row">
-							<div class="speakers__column">
-								<div class="speakers__item">
-									<div class="speakers__item-img">
-										<img src="img/pexels-stephan-seeber-1054218.jpg" alt="">
+						<div class="speakers-v1__row">
+							<div class="speakers-v1__column">
+								<div class="speakers-v1__item">
+									<div class="speakers-v1__item-img">
+										<img src="img/speakers/01.jpg" alt="">
 									</div>
-									<div class="speakers__item-name">John McCoist</div>
-									<div class="speakers__item-job">
+									<div class="speakers-v1__item-name">John McCoist</div>
+									<div class="speakers-v1__item-job">
 										CEO & Co-Founder at
 										<a href="#">Insider</a>
 									</div>
-									<a class="speakers__item-link" href="#">@JohnMcCoist</a>
+									<a class="speakers-v1__item-link" href="#">@JohnMcCoist</a>
 								</div>
 							</div>
-							<div class="speakers__column">
-								<div class="speakers__item">
-									<div class="speakers__item-img">
-										<img src="img/pexels-stephan-seeber-1054218.jpg" alt="">
+							<div class="speakers-v1__column">
+								<div class="speakers-v1__item">
+									<div class="speakers-v1__item-img">
+										<img src="img/speakers/02.png" alt="">
 									</div>
-									<div class="speakers__item-name">John McCoist</div>
-									<div class="speakers__item-job">
-										CEO & Co-Founder at
-										<a href="#">Insider</a>
+									<div class="speakers-v1__item-name">John McCoist</div>
+									<div class="speakers-v1__item-job">
+										Lead designer at 
+										<a href="#">Facebook</a>
 									</div>
-									<a class="speakers__item-link" href="#">@JohnMcCoist</a>
+									<a class="speakers-v1__item-link" href="#">@ivanawong</a>
 								</div>
 							</div>
-							<div class="speakers__column">
-								<div class="speakers__item">
-									<div class="speakers__item-img">
-										<img src="img/pexels-stephan-seeber-1054218.jpg" alt="">
+							<div class="speakers-v1__column">
+								<div class="speakers-v1__item">
+									<div class="speakers-v1__item-img">
+										<img src="img/speakers/03.png" alt="">
 									</div>
-									<div class="speakers__item-name">John McCoist</div>
-									<div class="speakers__item-job">
-										CEO & Co-Founder at
-										<a href="#">Insider</a>
+									<div class="speakers-v1__item-name">John McCoist</div>
+									<div class="speakers-v1__item-job">
+										CEO at 
+										<a href="#">Basecamp</a>
 									</div>
-									<a class="speakers__item-link" href="#">@JohnMcCoist</a>
+									<a class="speakers-v1__item-link" href="#">@bradleygrosh</a>
 								</div>
 							</div>
-							<div class="speakers__column">
-								<div class="speakers__item">
-									<div class="speakers__item-img">
-										<img src="img/pexels-stephan-seeber-1054218.jpg" alt="">
+							<div class="speakers-v1__column">
+								<div class="speakers-v1__item">
+									<div class="speakers-v1__item-img">
+										<img src="img/speakers/speaker07-384x384.jpg" alt="">
 									</div>
-									<div class="speakers__item-name">John McCoist</div>
-									<div class="speakers__item-job">
-										CEO & Co-Founder at
-										<a href="#">Insider</a>
+									<div class="speakers-v1__item-name">John McCoist</div>
+									<div class="speakers-v1__item-job">
+										Senior User Assistance Developer at 
+										<a href="#">Vimeo</a>
 									</div>
-									<a class="speakers__item-link" href="#">@JohnMcCoist</a>
+									<a class="speakers-v1__item-link" href="#">@markjohnson</a>
 								</div>
 							</div>
-							<div class="speakers__column">
-								<div class="speakers__item">
-									<div class="speakers__item-img">
-										<img src="img/pexels-stephan-seeber-1054218.jpg" alt="">
+							<div class="speakers-v1__column">
+								<div class="speakers-v1__item">
+									<div class="speakers-v1__item-img">
+										<img src="img/speakers/speaker10-430x430.jpg" alt="">
 									</div>
-									<div class="speakers__item-name">John McCoist</div>
-									<div class="speakers__item-job">
+									<div class="speakers-v1__item-name">John McCoist</div>
+									<div class="speakers-v1__item-job">
 										CEO & Co-Founder at
 										<a href="#">Insider</a>
 									</div>
-									<a class="speakers__item-link" href="#">@JohnMcCoist</a>
+									<a class="speakers-v1__item-link" href="#">@JohnMcCoist</a>
 								</div>
 							</div>
-							<div class="speakers__column">
-								<div class="speakers__item">
-									<div class="speakers__item-img">
-										<img src="img/pexels-stephan-seeber-1054218.jpg" alt="">
+							<div class="speakers-v1__column">
+								<div class="speakers-v1__item">
+									<div class="speakers-v1__item-img">
+										<img src="img/speakers/speaker12-430x430.jpg" alt="">
 									</div>
-									<div class="speakers__item-name">John McCoist</div>
-									<div class="speakers__item-job">
+									<div class="speakers-v1__item-name">John McCoist</div>
+									<div class="speakers-v1__item-job">
 										CEO & Co-Founder at
 										<a href="#">Insider</a>
 									</div>
-									<a class="speakers__item-link" href="#">@JohnMcCoist</a>
+									<a class="speakers-v1__item-link" href="#">@JohnMcCoist</a>
 								</div>
 							</div>
 						</div>
-						<a class="speakers__btn btn btn--size-md btn--theme-yellow-gradient" href="all-speaker-v1.html">View All Speakers</a>
+						<div class="speakers-v1__btn">
+							<a class="btn btn--size-md btn--theme-yellow-gradient" href="#">View All Speakers</a>
+						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="icon-boxes">
+			<div class="icon-boxes icon-boxes--theme-violet padding">
 				<div class="container">
 					<div class="icon-boxes__content">
 						<div class="icon-boxes__title title">
@@ -196,21 +196,21 @@
 						<div class="icon-boxes__row">
 							<div class="icon-boxes__column">
 								<div class="icon-boxes__icon">
-									<img src="img/icon-boxes/icon-3.png" alt="">
-								</div>
-								<div class="icon-boxes__label">Learning</div>
-								<div class="icon-boxes__descr">Vestibulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer adipis. Mauris accumsan nulla vel diam. </div>
-							</div>
-							<div class="icon-boxes__column">
-								<div class="icon-boxes__icon">
-									<img src="img/icon-boxes/icon-2.png" alt="">
+									<img src="img/icon-boxes/networking-v2--bg.png" alt="">
 								</div>
 								<div class="icon-boxes__label">Networking</div>
 								<div class="icon-boxes__descr">Vestibulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer adipis. Mauris accumsan nulla vel diam. </div>
 							</div>
 							<div class="icon-boxes__column">
 								<div class="icon-boxes__icon">
-									<img src="img/icon-boxes/icon-1.png" alt="">
+									<img src="img/icon-boxes/learning-v2--bg.png" alt="">
+								</div>
+								<div class="icon-boxes__label">Learning</div>
+								<div class="icon-boxes__descr">Vestibulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer adipis. Mauris accumsan nulla vel diam. </div>
+							</div>
+							<div class="icon-boxes__column">
+								<div class="icon-boxes__icon">
+									<img src="img/icon-boxes/exposure-v2--bg.png" alt="">
 								</div>
 								<div class="icon-boxes__label">Exposure</div>
 								<div class="icon-boxes__descr">Vestibulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer adipis. Mauris accumsan nulla vel diam. </div>
@@ -223,7 +223,7 @@
 				</div>
 			</div>
 
-			<div class="schedule">
+			<div class="schedule padding">
 				<div class="container">
 					<div class="schedule__title title">
 						<div class="title__main title__main--bottom-line title__main--theme-black">Schedule</div>
@@ -252,12 +252,35 @@
 										<div class="schedule__about">Donec in velit vel ipsum auctor pulvinar. Vestibulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer adipis. Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. Nulla venenatis. In pede mi, aliquet sit amet, euismod in,auctor ut, ligula.</div>
 										<div class="schedule__coach">
 											<div class="schedule__coach-img">
-												<img src="img/photo.jpg" alt="">
+												<img src="img/schedule/60x60_photo1.jpg" alt="">
 											</div>
 											<div class="schedule__coach-name">
 												John McCoist
 												<div class="schedule__coach-job">CEO & Co-Founder at 
 													<a href="#">Insider</a>
+												</div>
+											</div>
+										</div>
+										<div class="schedule__coach">
+											<div class="schedule__coach-img">
+												<img src="img/schedule/60x60_photo7.jpg" alt="">
+											</div>
+											<div class="schedule__coach-name">
+												Ivana Wong
+												<div class="schedule__coach-job">Lead designer at 
+													<a href="#">Facebook</a>
+												</div>
+											</div>
+										</div>
+										<div class="schedule__coach">
+											<div class="schedule__coach-img">
+												<img src="img/schedule/60x60_photo4.jpg" alt="">
+											</div>
+											<div class="schedule__coach-name">
+												Mark Johnson
+												<div class="schedule__coach-job">Senior User Assistance Developer
+													at 
+													<a href="#">Vimeo</a>
 												</div>
 											</div>
 										</div>
@@ -280,7 +303,7 @@
 										<div class="schedule__about">Donec in velit vel ipsum auctor pulvinar. Vestibulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer adipis. Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. Nulla venenatis. In pede mi, aliquet sit amet, euismod in,auctor ut, ligula.</div>
 										<div class="schedule__coach">
 											<div class="schedule__coach-img">
-												<img src="img/photo.jpg" alt="">
+												<img src="img/schedule/60x60_photo2.jpg" alt="">
 											</div>
 											<div class="schedule__coach-name">
 												Mark Johnson
@@ -301,7 +324,7 @@
 										<div class="schedule__about">Donec in velit vel ipsum auctor pulvinar. Vestibulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer adipis. Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. Nulla venenatis. In pede mi, aliquet sit amet, euismod in,auctor ut, ligula.</div>
 										<div class="schedule__coach">
 											<div class="schedule__coach-img">
-												<img src="img/photo.jpg" alt="">
+												<img src="img/" alt="">
 											</div>
 											<div class="schedule__coach-name">
 												Mark Johnson
@@ -764,17 +787,17 @@
 				</div>
 			</div>
 
-			<div class="last-year">
+			<div class="last-year padding">
 				<div class="last-year__bg ibg">
 					<img src="img/pexels-stephan-seeber-1054218.jpg" alt="">
 				</div>
 				<div class="container">
 					<div class="last-year__title title">
 						<div class="title__main title__main--bottom-line title__main--theme-white">What Happened Last Year</div>
-						<div class="title__text">n pede mi, aliquet sit amet, euismod in, auctor ut, ligula. Aliquam dapibus tincidunt metus. </div>
+						<div class="title__descr title__descr--theme-white">n pede mi, aliquet sit amet, euismod in, auctor ut, ligula. Aliquam dapibus tincidunt metus. </div>
 					</div>
 					<a class="last-year__play" href="#">
-						<span></span>
+						<span class="last-year__play-circles"></span>
 						<img src="img/icons/play.svg" alt="">
 					</a>
 				</div>
@@ -924,45 +947,47 @@
 				</div>
 			</div>
 
-			<div class="informed">
+			<div class="informed padding">
 				<div class="container">
-					<div class="informed__title title">
-						<div class="title__main title__main--theme-white">Stay Informed</div>
-						<div class="title__descr title__descr--theme-white">Subscribe to our newsletter to get the latest news
+					<div class="informed__content">
+						<div class="informed__title title">
+							<div class="title__main title__main--theme-white title__main--bottom-line">Stay Informed</div>
+							<div class="title__descr title__descr--theme-white">Subscribe to our newsletter to get the latest news
+							</div>
 						</div>
-					</div>
-					<form class="informed__form" action="#">
-						<input class="informed__form-input" type="text" placeholder="Enter email address" required>
-						<button class="informed__form-btn btn btn--size-b btn--theme-yellow-gradient">Subscribe</button>
-					</form>
-					<div class="informed__socials">
-						<ul class="informed__socials-list">
-							<li class="informed__socials-item">
-								<a class="informed__socials-link" href="">
-									<i class="icon-facebook"></i>
-								</a>
-							</li>
-							<li class="informed__socials-item">
-								<a class="informed__socials-link" href="">
-									<i class="icon-twitter"></i>
-								</a>
-							</li>
-							<li class="informed__socials-item">
-								<a class="informed__socials-link" href="">
-									<i class="icon-gplus"></i>
-								</a>
+						<form class="informed__form" action="#">
+							<input class="informed__form-input" type="text" placeholder="Enter email address" required>
+							<button class="informed__form-btn btn btn--size-b btn--theme-yellow-gradient">Subscribe</button>
+						</form>
+						<div class="informed__socials socials">
+							<ul class="socials__list">
+								<li class="socials__list-item">
+									<a class="socials__list-link" href="#">
+										<i class="icon-facebook"></i>
+									</a>
 								</li>
-							<li class="informed__socials-item">
-								<a class="informed__socials-link" href="">
-									<i class="icon-youtube-play"></i>
-								</a>
-							</li>
-							<li class="informed__socials-item">
-								<a class="informed__socials-link" href="">
-									<i class="icon-instagram"></i>
-								</a>
-							</li>
-						</ul>
+								<li class="socials__list-item">
+									<a class="socials__list-link" href="#">
+										<i class="icon-twitter"></i>
+									</a>
+								</li>
+								<li class="socials__list-item">
+									<a class="socials__list-link" href="#">
+										<i class="icon-gplus"></i>
+									</a>
+								</li>
+								<li class="socials__list-item">
+									<a class="socials__list-link" href="#">
+										<i class="icon-youtube-play"></i>
+									</a>
+								</li>
+								<li class="socials__list-item">
+									<a class="socials__list-link" href="#">
+										<i class="icon-instagram"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>

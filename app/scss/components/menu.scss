@@ -2,20 +2,32 @@
 
 	@media (max-width: $md2+px) {
 		position: fixed;
+		visibility: hidden;
+		opacity: 0;
 		top: 0;
 		left: 0;
 		width: 100%;
 		height: 100%;
-		padding: 150px 15px;
+		padding: 100px 15px 50px;
 		overflow: auto;
 		display: block;
 		text-align: center;
-		background-color: rgba(#fff, .9);
-		transform: translateY(-100%);
-		transition: transform 0.6s ease 0s;
+		background-color: rgba(#fff, 1);
+		transition: all .3s;
 
 		&.menu.active {
-			transform: translateY(0%);
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+
+	@media (max-width: $md4+px) {
+		padding: 80px 15px 50px;
+	}
+
+	&--dark {
+		@media (max-width: $md2+px) {
+			background-color: rgba(#000, .9);
 		}
 	}
 	// .menu__list
@@ -46,8 +58,8 @@
 			margin: 10px 0px;
 		}
 		
-		&::after {
-			@media (min-width: $md2+px) {
+		@media (min-width: $md2+px) {
+			&::after {
 				content: "";
 				position: absolute;
 				left: 0;
@@ -67,6 +79,14 @@
 				transform: translateY(0px);
 			}
 		}
+
+		&--white {
+			@media (min-width: $md2+px) {
+				&::after {
+					background: #fff;
+				}
+			}
+		}
 	}
 
 	// .menu__link
@@ -77,13 +97,19 @@
 		font-weight: 400;
 		letter-spacing: 0.4px;
 		font-family: 'Oxygen', sans-serif;
-		color: #313131;
 		text-transform: capitalize;
 		padding: 0px 0px 30px 0px;
 
 		@media (max-width: $md2+px) {
 			font-size: 30px;
 			padding: 15px 0px;
+		}
+
+		&--white {
+			color: #fff;
+		}
+		&--dark {
+			color: #313131;
 		}
 	}
 
@@ -117,6 +143,31 @@
 		background: rgba(#212121, .9);
 		transform: translateY(30px);
 		transition: all .3s;
+
+		&--wide {
+			width: 1350px;
+			right: -300px;
+			left: auto;
+
+			@media (max-width: 1500px) {
+				width: 900px;
+			}
+		}
+	}
+
+	&__dropdown-row {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__column {
+		flex: 0 1 25%;
+	}
+
+	&__dropdown-title {
+		color: #b1b1b1;
+		font-size: 16px;
+		margin-bottom: 25px;
 	}
 
 	// .menu__dropdown-item
@@ -205,6 +256,16 @@
 
 		@media (max-width: $md4+px) {
 			top: 20px;
+		}
+
+		&--white {
+			@media (max-width: $md2+px) {
+				span,
+				&::after,
+				&::before {
+					background-color: #fff;
+				}
+			}
 		}
 
 	}

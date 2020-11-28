@@ -44,6 +44,14 @@
 			width: 100%;
 			height: 300px;
 			object-fit: cover;
+
+			@media (max-width: $md1+px) {
+				height: 250px;
+			}
+
+			@media (max-width: $md4+px) {
+				height: 200px;
+			}
 		}
 
 		&--border img{
@@ -69,6 +77,15 @@
 
 	&__content {
 		padding: 27px 29px 41px 29px;
+
+		@media (max-width: $md1+px) {
+			padding: 20px 20px 25px 20px;
+		}
+
+		@media (max-width: $md3+px) {
+			padding: 15px;
+		}
+
 	}
 
 	// .blog-post__content
@@ -94,6 +111,10 @@
 		display: flex;
 		align-items: center;
 		margin: 0px 0px 20px 0px;
+
+		@media (max-width: $md3+px) {
+			margin: 0px 0px 10px 0px;
+		}
 	}
 
 	// .blog-post__header-date
@@ -108,6 +129,10 @@
 		font-weight: 400;
 		padding: 0px 0px 0px 31px;
 		margin: 0px 20px 0px 0px;
+
+		@media (max-width: $md3+px) {
+			margin: 0px 13px 0px 0px;
+		}
 
 		&::before {
 			content: "";
@@ -146,10 +171,21 @@
 	&__title {
 		display: block;
 		color: #313131;
-		font-size: 28px;
+		@include adaptive-font(28, 21);
 		font-weight: 500;
 		line-height: 30px;
 		margin: 0px 0px 20px 0px;
+		transition: color .3s;
+
+		@media (max-width: $md3+px) {
+			margin: 0px 0px 10px 0px;
+		}
+
+		@media (min-width: $md2+px) {
+			&:hover {
+				color: #936cc1;
+			}
+		}
 	}
 
 	// .blog-post__descr
@@ -161,6 +197,11 @@
 		font-weight: 400;
 		line-height: 30px;
 		margin: 0px 0px 25px 0px;
+
+		@media (max-width: $md3+px) {
+			margin: 0px 0px 15px 0px;
+			line-height: 26px;
+		}
 	}
 
 	// .blog-post__btn

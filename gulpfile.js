@@ -1,5 +1,5 @@
-let project_folder = "dist";
 let source_folder = "app";
+let project_folder = "dist";
 
 let fs = require('fs');
 

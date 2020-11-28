@@ -20,6 +20,10 @@
 		display: flex;
 		flex-wrap: wrap;
 		margin: -15px;
+
+		@media (max-width: $md3+px) {
+			margin: -7.5px;
+		}
 	}
 
 	// .latest-updates__column
@@ -27,6 +31,18 @@
 	&__column {
 		flex: 0 1 33.333%;
 		padding: 15px;
+
+		@media (max-width: $md2+px) {
+			flex: 0 1 50%;
+		}
+
+		@media (max-width: $md3+px) {
+			padding: 7.5px;
+		}
+
+		@media (max-width: 600px) {
+			flex: 0 1 100%;
+		}
 	}
 
 	// .latest-updates__post-blog

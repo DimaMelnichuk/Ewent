@@ -14,6 +14,10 @@
 			top: 175px;
 			right: 35px;
 		}
+
+		@media (max-width: $md2+px) {
+			content: none;
+		}
 	}
 
 	&::before {
@@ -29,6 +33,10 @@
 		@media (max-width: $md1+px) {
 			bottom: -52%;
 			left: 30px;
+		}
+
+		@media (max-width: $md2+px) {
+			content: none;
 		}
 	}
 	

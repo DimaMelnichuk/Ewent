@@ -1,32 +1,7 @@
 .schedule-v2 {
-	padding: 135px 0px 105px;
-
-	@media (max-width: $md1+px) {
-		padding: 80px 0px;
-	}
-
-	@media (max-width: $md2+px) {
-		padding: 60px 0px;
-	}
-
-	@media (max-width: $md3+px) {
-		padding: 50px 0px;
-	}
 
 	&--theme-violet {
 		background-color: #8965b4;
-	}
-
-	&__title {
-		text-align: center;
-
-		.title__main {
-			margin: 0px 0px 50px 0px;
-		}
-
-		.title__descr {
-			margin: 0px 0px 65px 0px;
-		}
 	}
 	
 	// .schedule-v2__laptop
