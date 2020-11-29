@@ -1,5 +1,4 @@
 .testimonials {
-	padding: 137px 0px;
 	background: #F9F9F9;
 	// .testimonials__title
 
@@ -100,10 +99,12 @@
 
 		a {
 			color: #936cc1;
-
+			border-bottom: 1px solid transparent;
+			transition: border .2s;
+			
 			@media (min-width: $md2+px) {
 				&:hover {
-					text-decoration: underline;
+					border-bottom: 1px solid #936cc1;
 				}
 			}
 		}

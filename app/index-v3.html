@@ -7,6 +7,7 @@
 <body>
 
 	<div class="wrapper">
+
 		<header class="header">
 			<div class="header__container">
 	
@@ -19,7 +20,7 @@
 				<div class="menu__burger menu__burger--white">
 					<span></span>
 				</div>
-					<nav class="menu menu--dark">
+				<nav class="menu menu--dark">
 					<ul class="menu__list">           
 						<li class="menu__item menu__item--white menu__item-dropdown"><a class="menu__link menu__link--white" href="">Home</a>
 							<ul class="menu__dropdown">
@@ -88,27 +89,35 @@
 						<li class="menu__item menu__item--white"><a class="menu__link menu__link--white" href="">Shop</a></li>
 					</ul>
 				</nav>
-	
+
 				<div class="header__search">
 					<div class="header__search-icon header__search-icon--white">
 						<i class="icon-search"></i>
-					</div>
-					<div class="header__search-box search">
-						<form class="search__form" action="search__form">
-							<input class="search__form-input" type="text" name="search__form-input" placeholder="Search" required>
-							<button class="search__form-btn"><i class="icon-search"></i></button>
-						</form>
 					</div>
 				</div>
 				
 				<a class="header__btn btn btn--size-b btn--theme-yellow-gradient" href="#">Buy Tickets</a>
 			</div>
 		</header>
+
+		<div class="search">
+			<div class="search__inner">
+				<div class="search__icon">
+					<img src="img/icons/lnr-cross.svg" alt="">
+				</div>
+				<div class="search__title">What are you looking for?</div>
+				<form class="search__form" action="search__form">
+					<input class="search__form-input" type="text" name="search__form-input" placeholder="Search" required>
+					<button type="submit" class="btn btn--size-md btn--theme-yellow-gradient" href="#">Search</button>
+				</form>
+			</div>
+		</div>
+
 		<main class="page">
 
 			<div class="main-screen-v3">
 				<div class="main-screen-v3__bg ibg">
-					<img src="img/pexels-stephan-seeber-1054218.jpg" alt="">
+					<img src="img/main-screen/bg-v2.jpg" alt="">
 				</div>
 				<div class="container">
 					<div class="main-screen-v3__content">
@@ -196,13 +205,12 @@
 				</div>
 			</div>
 
-			<div class="page__schedule-v2 schedule-v2 schedule-v2--theme-violet">
+			<div class="page__schedule-v2 schedule-v2 schedule-v2--theme-violet padding">
 				<div class="container">
 					<div class="schedule-v2__title title">
 						<div class="title__main title__main--theme-white title__main--bottom-line">Schedule</div>
 						<div class="title__descr title__descr--theme-white">Integer rutrum ante eu lacus. Vestibulum libero nisl, porta vel, scelerisque eget.</div>
 					</div>
-
 
 					<div class="schedule-v2__laptop schedule-v2-laptop">
 						<div class="schedule-v2-laptop__body">
@@ -1091,7 +1099,7 @@
 				</div>
 			</div>
 
-			<div class="page__speakers-v2 speakers-v2">
+			<div class="page__speakers-v2 speakers-v2 ">
 				<div class="container">
 					<div class="speakers-v2__title title">
 						<div class="title__main title__main--bottom-line">Speakers</div>
@@ -1242,7 +1250,7 @@
 				</div>
 			</div>
 
-			<div class="page__informed informed">
+			<div class="page__informed informed padding">
 				<div class="informed__bg ibg">
 					<img src="img/pexels-stephan-seeber-1054218.jpg" alt="">
 				</div>

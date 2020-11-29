@@ -13,6 +13,18 @@
 			
 	}
 
+	&--theme-bg {
+		background: rgb(249,249,249);
+		background: linear-gradient(180deg, rgba(249,249,249,1) 0%, rgba(255,255,255,1) 100%);
+
+		.icon-boxes__label,
+		.icon-boxes__descr,
+		.icon-boxes__item-label,
+		.icon-boxes__item-descr {
+			color: #fff;
+		}
+	}
+
 	&__bg {
 		position: absolute;
 		height: 100%;

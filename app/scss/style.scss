@@ -108,6 +108,23 @@ body {
 		padding: 50px 0px;
 	}
 }
+.padding-bg {
+	padding: 290px 0px;
+	margin: -100px 0px;
+
+	@media (max-width: $md1+px) {
+		margin: -120px 0px;
+	}
+
+	@media (max-width: $md2+px) {
+		
+	}
+
+	@media (max-width: $md4+px) {
+		margin: -220px 0px;
+		padding: 300px 0px;
+	}
+}
 .page {
 	flex: 1 1 auto;
 
