@@ -8,13 +8,21 @@
 	bottom: 0;
 	height: 100%;
 	width: 100%;
-	background: #FFFFFF;
 	transition: all .3s;
 	z-index: 999;
 
 	&.active {
 		visibility: visible;
 		opacity: 1;
+
+		&.search--white {
+			background: #FFFFFF;
+		}
+	
+		&.search--dark {
+			background: #313131;
+			color: #fff;
+		}
 	}
 
 	// .search__inner
@@ -53,6 +61,7 @@
 			font-size: 21px;
 			line-height: 29px;
 		}
+
 	}
 
 	// .search__icon
@@ -86,7 +95,7 @@
 		box-shadow: 0 7px 27px rgba(0, 0, 0, 0.05);
 		border: 1px solid #eeeeee;
 		background-color: #ffffff;
-		border-radius: 7px 0px 0px 7px;
+		border-radius: 7px;
 		padding: 16px 19px;
 		color: #919191;
 		font-family: Oxygen;

@@ -1,17 +1,7 @@
 .latest-updates {
-	padding: 135px 0px;
-	// .latest-updates__title
 
-	&__title {
-		text-align: center;
-
-		.title__main {
-			margin: 0px 0px 50px 0px;
-		}
-	
-		.title__descr {
-			margin: 0px 0px 50px 0px;
-		}
+	&--theme-gray {
+		background-color: #f9f9f9;
 	}
 
 	// .latest-updates__row

@@ -1,6 +1,36 @@
 .icon-boxes {
 	position: relative;
 
+	&--decoration {
+		&::after {
+			content: "";
+			position: absolute;
+			right: 18%;
+			bottom: -110px;
+			height: 198px;
+			width: 198px;
+			background: url("../img/icon-boxes/decoration-3.png") no-repeat;
+
+			@media (max-width: $md2+px) {
+				content: none;
+			}
+		}
+
+		&::before {
+			content: "";
+			position: absolute;
+			right: 16%;
+			bottom: -110px;
+			width: 143px;
+			height: 143px;
+			background: url("../img/icon-boxes/decoration-2.png") no-repeat;
+
+			@media (max-width: $md2+px) {
+				content: none;
+			}
+		}
+	}
+
 	&--theme-violet {
 		background: #8965b4;
 

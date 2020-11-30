@@ -128,54 +128,6 @@ body {
 .page {
 	flex: 1 1 auto;
 
-	&__schedule-v2 {
-		
-	}
-
-	&__pricing-card-vertically {
-		background-color: #f9f9f9;
-	}
-
-	&__informed {
-		
-	}
-
-	&__icon-boxes {
-		position: relative;
-
-		&::after {
-			content: "";
-			position: absolute;
-			right: 18%;
-			bottom: -110px;
-			height: 198px;
-			width: 198px;
-			background: url("../img/icon-boxes/decoration-3.png") no-repeat;
-
-			@media (max-width: $md2+px) {
-				content: none;
-			}
-		}
-
-		&::before {
-			content: "";
-			position: absolute;
-			right: 16%;
-			bottom: -110px;
-			width: 143px;
-			height: 143px;
-			background: url("../img/icon-boxes/decoration-2.png") no-repeat;
-
-			@media (max-width: $md2+px) {
-				content: none;
-			}
-		}
-	}
-	
-	&__latest-updates {
-		background-color: #f9f9f9;
-	}
-
 	&__about {
 		padding: 135px 0px 185px;
 	}

@@ -1,42 +1,9 @@
 .sponsors {
-	padding: 140px 0px 105px;
-
-	@media (max-width: $md1+px) {
-		padding: 80px 0px;
-	}
-
-	@media (max-width: $md2+px) {
-		padding: 60px 0px;
-	}
-
-	@media (max-width: $md3+px) {
-		padding: 50px 0px;
-	}
-	// .sponsors__title
-
-	&__title {
-		text-align: center;
-
-		.title__main {
-			margin: 0px 0px 50px 0px;
-
-			@media (max-width: $md2+px) {
-				margin: 0px 0px 40px 0px;
-			}
-
-			@media (max-width: $md3+px) {
-				margin: 0px 0px 35px 0px;
-			}
-
-			@media (max-width: $md4+px) {
-				margin: 0px 0px 30px 0px;
-			}
-		}
-	}
 
 	// .sponsors__item
 
 	&__item {
+		text-align: center;
 		margin: 0px 0px 50px 0px;
 
 		@media (max-width: $md2+px) {
