@@ -47,13 +47,13 @@
 		}
 	}
 }
-.testimonials__slider .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
-	left: 50%;
-	transform: translateX(-50%);
-}
+.testimonials__slider .swiper-button-prev, .swiper-container-rtl .swiper-button-next,
 .testimonials__slider .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
-	left: 50%;
-	transform: translateX(-50%);
+	left: 47%;
+
+	@media (max-width: $md4+px) {
+		left: 41%;
+	}
 }
 
 .swiper-button-prev::after,
