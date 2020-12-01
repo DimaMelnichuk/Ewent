@@ -62,6 +62,13 @@
 		@media (max-width: $md4+px) {
 			margin: 0px 0px 20px 0px;
 		}
+
+		img {
+
+			@media (max-width: $md4+px) {
+				height: 60px;
+			}
+		}
 	}
 
 	// .about-tickets__title

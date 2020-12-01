@@ -76,6 +76,18 @@
 		}
 
 		&--address {
+
+			.page-contact-v2__item-link {
+				border-bottom: 1px solid transparent;
+				transition: border-bottom .3s;
+		
+				@media (min-width: $md2+px) {
+					&:hover {
+						border-bottom: 1px solid #936cc1;
+					}
+				}
+			}
+
 			&::after {
 				background: url("../img/page-contact-v2/map--orange.png") 0 0 no-repeat;
 				height: 144px;
@@ -84,6 +96,19 @@
 		}
 
 		&--phone {
+
+			.page-contact-v2__item-contact {
+				border-bottom: 1px solid transparent;
+				transition: border-bottom .3s, color .3s;
+		
+				@media (min-width: $md2+px) {
+					&:hover {
+						border-bottom: 1px solid #936cc1;
+						color: #936cc1;
+					}
+				}
+			}
+
 			&::after {
 				background: url("../img/page-contact-v2/phone--orange.png") 0 0 no-repeat;
 				width: 175px;
@@ -92,6 +117,19 @@
 		}
 
 		&--email {
+
+			.page-contact-v2__item-contact {
+				border-bottom: 1px solid transparent;
+				transition: border-bottom .3s, color .3s;
+		
+				@media (min-width: $md2+px) {
+					&:hover {
+						border-bottom: 1px solid #936cc1;
+						color: #936cc1;
+					}
+				}
+			}
+
 			&::after {
 				background: url("../img/page-contact-v2/envelope--orange.png") 0 0 no-repeat;
 				width: 175px;
@@ -142,13 +180,6 @@
 		font-weight: 700;
 		margin: 20px 0px 0px 0px;
 		border-bottom: 1px solid transparent;
-		transition: border .3s;
-
-		@media (min-width: $md2+px) {
-			&:hover {
-				border-bottom: 1px solid #936cc1;
-			}
-		}
 	}
 
 	// .page-contact-v2__socials

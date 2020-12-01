@@ -72,9 +72,18 @@
 		right: 30px;
 		top: 30px;
 
+		@media (max-width: $md2+px) {
+			right: 17px;
+			top: 23px;
+		}
+
+		@media (max-width: $md4+px) {
+			top: 13px;
+		}
+
 		img {
-			height: 30px;
-			width: 30px;
+			height: 35px;
+			width: 35px;
 		}
 	}
 
