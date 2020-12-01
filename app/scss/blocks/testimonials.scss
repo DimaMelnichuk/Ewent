@@ -35,6 +35,10 @@
 		text-align: left;
 		margin: 0px 0px 27px 0px;
 		padding: 0px 0px 0px 77px;
+		
+		@media (max-width: $md4+px) {
+			padding: 0px 0 0 60px;
+		}
 
 		&::before {
 			content: "“";
@@ -55,6 +59,10 @@
 	&__author {
 		display: flex;
 		padding: 0px 0px 0px 77px;
+
+		@media (max-width: $md4+px) {
+			padding: 0px 0 0 60px;
+		}
 	}
 
 	// .item-slider__author-img

@@ -22,6 +22,7 @@
 @import "blocks/header/search";
 @import "blocks/main-screen/main-screen";
 @import "blocks/main-screen/main-screen-v3";
+@import "blocks/hero";
 @import "blocks/about";
 @import "blocks/counters";
 @import "blocks/speakers-v1";
@@ -116,10 +117,6 @@ body {
 		margin: -120px 0px;
 	}
 
-	@media (max-width: $md2+px) {
-		
-	}
-
 	@media (max-width: $md4+px) {
 		margin: -220px 0px;
 		padding: 300px 0px;
@@ -127,10 +124,6 @@ body {
 }
 .page {
 	flex: 1 1 auto;
-
-	&__about {
-		padding: 135px 0px 185px;
-	}
 }
 .main__about {
 
@@ -259,45 +252,6 @@ input {padding: 0px 20px;}
 		}
 	}
 
-}
-
-.hero {
-	background-color: #f9f9f9;
-	padding: 210px 0px 90px;
-	text-align: center;
-
-	@media (max-width: $md1+px) {
-		padding: 140px 0px 60px;
-	}
-
-	@media (max-width: $md3+px) {
-		padding: 110px 0px 30px;
-	}
-
-	// .hero__title
-
-	&__title {
-		margin: 0px 0px 30px 0px;
-
-		@media (max-width: $md2+px) {
-			margin: 0px 0px 25px 0px;
-		}
-
-		@media (max-width: $md3+px) {
-			margin: 0px 0px 20px 0px;
-		}
-
-		@media (max-width: $md4+px) {
-			margin: 0px 0px 10px 0px;
-		}
-	}
-
-	// .hero__breadcrumbs
-
-	&__breadcrumbs {
-		display: flex;
-		justify-content: center;
-	}
 }
 
 /* &::after {

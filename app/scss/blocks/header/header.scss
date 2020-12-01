@@ -70,6 +70,12 @@
 		position: relative;
 		z-index: 5;
 		flex: 1 1 auto;
+
+		img {
+			@media (max-width: $md4+px) {
+				width: 100px;
+			}
+		}
 	}
 
 	// .header__logo-link

@@ -1,0 +1,35 @@
+.hero {
+	background-color: #f9f9f9;
+	padding: 210px 0px 90px;
+	text-align: center;
+
+	@media (max-width: $md1+px) {
+		padding: 140px 0px 60px;
+	}
+
+
+	// .hero__title
+
+	&__title {
+		margin: 0px 0px 30px 0px;
+
+		@media (max-width: $md2+px) {
+			margin: 0px 0px 25px 0px;
+		}
+
+		@media (max-width: $md3+px) {
+			margin: 0px 0px 20px 0px;
+		}
+
+		@media (max-width: $md4+px) {
+			margin: 0px 0px 10px 0px;
+		}
+	}
+
+	// .hero__breadcrumbs
+
+	&__breadcrumbs {
+		display: flex;
+		justify-content: center;
+	}
+}

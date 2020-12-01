@@ -4,13 +4,30 @@
 	@media (max-width: $md4+px) {
 		padding: 0px 0px 30px 0px;
 	}
+
+	&--padding {
+		padding: 135px 0px 185px;
+
+		@media (max-width: $md1+px) {
+			padding: 80px 0px 130px;
+		}
+	
+		@media (max-width: $md2+px) {
+			padding: 60px 0px;
+		}
+	
+		@media (max-width: $md4+px) {
+			padding: 50px 0px;
+		}
+	}
+
 	// .about__row
 
 	&__row {
 		display: flex;
 		align-items: center;
 
-		@media (max-width: $md3+px) {
+		@media (max-width: $md2+px) {
 			flex-direction: column;
 		}
 	}
@@ -32,10 +49,6 @@
 		}
 
 		@media (max-width: $md2+px) {
-			margin: 0px 60 / $maxWidthContainer * 100vw 0px 0px;
-		}
-
-		@media (max-width: $md3+px) {
 			margin: 0px 0px 30px 0px;
 		}
 
@@ -69,16 +82,11 @@
 				top: 295px;
 			}
 
-			@media (max-width: $md2+px) {
-				left: 0;
-				top: 230px;
-				width: 74px;
-				height: 74px;
-				border-radius: 100%;
-			}
-
-			@media (max-width: $md3+px) {
+			@media (max-width: $md4+px) {
 				top: 180px;
+				width: 64px;
+				height: 64px;
+				border-radius: 100%;
 			}
 		}
 
@@ -94,12 +102,7 @@
 				height: 410px;
 			}
 
-			@media (max-width: $md2+px) {
-				width: 310px;
-				height: 310px;
-			}
-
-			@media (max-width: $md3+px) {
+			@media (max-width: $md4+px) {
 				width: 260px;
 				height: 260px;
 			}
@@ -114,15 +117,34 @@
 		right: 35px;
 		bottom: -90px;
 
+		@media (max-width: $md2+px) {
+			right: -70px;
+    		bottom: 20px;
+		}
+
+		@media (max-width: $md3+px) {
+			right: -20px;
+    		bottom: 20px;
+		}
+
+		@media (max-width: $md4+px) {
+			right: -40px;
+    		bottom: 20px;
+		}
+
 		&::before {
 			content: "";
 			position: absolute;
 			z-index: -1;
-			width: 315px;
-			height: 315px;
+			height: 100%;
+			width: 100%;
 			left: -20px;
 			top: -20px;
-			background: url("../img/about/decoration-3.png") no-repeat;
+			right: 0;
+			bottom: 0;
+			background-image: url("../img/about/decoration-3.png");
+			background-repeat: no-repeat;
+			background-size: contain;
 		}
 
 
@@ -132,6 +154,16 @@
 			border-radius: 100%;
 			object-fit: cover;
 			background-color: #2e4379;
+
+			@media (max-width: $md3+px) {
+				width: 280px;
+				height: 280px;
+			}
+
+			@media (max-width: $md4+px) {
+				width: 180px;
+				height: 180px;
+			}
 		}
 	}
 
