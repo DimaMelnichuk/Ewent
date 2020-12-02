@@ -1,10 +1,21 @@
 .hero {
 	background-color: #f9f9f9;
-	padding: 210px 0px 90px;
 	text-align: center;
 
-	@media (max-width: $md1+px) {
-		padding: 140px 0px 60px;
+	&--size-bg {
+		padding: 210px 0px 90px;
+
+		@media (max-width: $md1+px) {
+			padding: 140px 0px 60px;
+		}
+	}
+
+	&--size-sm {
+		padding: 160px 0px 40px;
+
+		@media (max-width: $md3+px) {
+			padding: 130px 0px 40px;
+		}
 	}
 
 

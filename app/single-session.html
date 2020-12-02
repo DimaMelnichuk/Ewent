@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('_head.html',{
+"title":"Single Session"
+})
+
+<body>
+
+	<div class="wrapper">
+		@@include('_header.html')
+		<main class="page">
+
+			<div class="hero hero--size-sm">
+				<nav class="hero__breadcrumbs breadcrumb">
+					<ul class="breadcrumb__list">
+						<li>
+							<a class="breadcrumb__link" href="index.html">Home</a>
+						</li>
+						<li>
+							<span class="breadcrumb__item">Single Session</span>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="single-session">
+				<div class="container">
+					<div class="single-session__row">
+
+						<div class="single-session__content content-session">
+
+							<div class="content-session__comments comments">
+								<div class="comments__title">Comments</div>
+								<div class="comments__item">
+									<div class="comments__img">
+										<img src="" alt="">
+									</div>
+									
+								</div>
+							</div>
+
+							<div class="content-session__reply reply">
+								<div class="reply__title">Leave a Reply</div>
+								<div class="reply__subtitle">Your email address will not be published.</div>
+								<form class="reply__form" action="#">
+									<input class="reply__form-input" type="text" placeholder="Name" required>
+									<input class="reply__form-input" type="email" placeholder="Email address" required>
+									<input class="reply__form-input" type="text" placeholder="Website (optional)" required>
+									<textarea class="reply__form-textarea" name="" placeholder="Message" required></textarea>
+									<button class="btn btn--size-md btn--theme-yellow-gradient" type="submit">Submit</button>
+								</form>
+							</div>
+						</div>
+
+						<aside class="single-session__aside aside-session">
+							<div class="aside-session__events aside-events">
+								<div class="aside-events__title">Today Upcoming Events</div>
+								<ul class="aside-events__list">
+									<li class="aside-events__item">
+										<a class="aside-events__link" href="#">Automating UI development</a>
+										<span class="aside-events__date">11:00 - 12:00</span>
+									</li>
+									<li class="aside-events__item">
+										<a class="aside-events__link" href="#">Tip top testing in JavaScript</a>
+										<span class="aside-events__date">12:00 - 13:00</span>
+									</li>
+									<li class="aside-events__item">
+										<a class="aside-events__link" href="#">Philosophy, ethics and design</a>
+										<span class="aside-events__date">15:00 - 16:00</span>
+									</li>
+								</ul>
+							</div>
+
+							<div class="aside-session__ticket aside-ticket">
+								<div class="aside-ticket__title title">
+									<div class="title__main title__main--bottom-line">Get Your Ticket Now!</div>
+									<div class="title__descr">Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend</div>
+								</div>
+								<a class="aside-ticket__btn btn btn--size-b btn--theme-yellow-gradient" href="#">Buy Ticket</a>
+							</div>
+
+							<div class="aside-session__events aside-events">
+								<div class="aside-events__title">Upcoming Events</div>
+								<ul class="aside-events__list">
+									<li class="aside-events__item">
+										<a class="aside-events__link" href="#">Designing for AI</a>
+										<span class="aside-events__date">May 11, 8:45 - 9:45</span>
+									</li>
+									<li class="aside-events__item">
+										<a class="aside-events__link" href="#">Designers, developers – we’re all
+											creators</a>
+										<span class="aside-events__date">May 11, 11:15 - 12:15</span>
+									</li>
+									<li class="aside-events__item">
+										<a class="aside-events__link" href="#">Learning from building(s)</a>
+										<span class="aside-events__date">May 11, 12:15 - 13:15</span>
+									</li>
+									<li class="aside-events__item">
+										<a class="aside-events__link" href="#">Headless architecture and the
+											future of websites</a>
+										<span class="aside-events__date">May 11, 14:15 - 15:15</span>
+									</li>
+									<li class="aside-events__item">
+										<a class="aside-events__link" href="#">UX, process, design research</a>
+										<span class="aside-events__date">May 11, 15:15 - 16:15</span>
+									</li>
+									<li class="aside-events__item">
+										<a class="aside-events__link" href="#">Boost your productivity with Chrome Dev Tools</a>
+										<span class="aside-events__date">May 11, 16:45 - 17:45</span>
+									</li>
+								</ul>
+							</div>
+						</aside>
+
+					</div>
+				</div>
+			</div>
+
+		</main>
+		@@include('_footer.html')
+
+		<div class="scroll-up">
+			<i class="icon-up-open-big"></i>
+		</div>
+	</div>
+
+	@@include('_js.html')
+</body>
+
+</html>

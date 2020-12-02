@@ -1,17 +1,4 @@
 .speakers-v3 {
-	padding: 135px 0px 105px;
-
-	@media (max-width: $md1+px) {
-		padding: 80px 0px;
-	}
-
-	@media (max-width: $md2+px) {
-		padding: 60px 0px;
-	}
-
-	@media (max-width: $md3+px) {
-		padding: 50px 0px;
-	}
 	// .speakers-v3__row
 
 	&__row {
@@ -100,6 +87,7 @@
 		position: absolute;
 		bottom: 22px;
 		left: 50%;
+		width: 70%;
 		transform: translate(-50%, 30px);
 		text-align: center;
 		color: #ffffff;
@@ -118,6 +106,10 @@
 		font-size: 24px;
 		font-weight: 500;
 		margin: 0px 0px 15px 0px;
+
+		@media (max-width: $md1+px) {
+			margin: 0px 0px 5px 0px;
+		}
 	}
 
 	// .speakers-v3__overlay-job
@@ -130,6 +122,10 @@
 		line-height: 30px;
 		text-align: center;
 		letter-spacing: 0.7px;
+
+		@media (max-width: $md1+px) {
+			line-height: 25px;
+		}
 
 		a {
 			color: #fff;
