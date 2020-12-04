@@ -39,6 +39,7 @@
 @import "blocks/informed";
 @import "blocks/contact";
 @import "blocks/faq";
+@import "blocks/countdowns";
 @import "blocks/alert-boxe";
 @import "blocks/coming-soon";
 @import "blocks/about-tickets";
@@ -210,21 +211,6 @@ input {padding: 0px 20px;}
 		transform: translateY(0px);
 	}
 } */
-
-.call-actions,
-.all-counters  {
-	padding: 140px 0px;
-
-	// .call-actions__title
-
-	&__title {
-		color: #313131;
-		font-size: 36px;
-		font-weight: 700;
-		letter-spacing: 0.36px;
-		margin: 0px 0px 40px 0px;
-	}
-}
 
 .socials {
 

@@ -1,5 +1,11 @@
 .countdown {
 	
+	&--dark {
+		color: #313131;
+	}
+	&--white {
+		color: #fff;
+	}
 	// .countdown__time
 
 	&__time {
@@ -13,7 +19,6 @@
 			display: block;
 			text-align: center;
 			padding: 10px 0px 0px 0px;
-			color: #313131;
 			font-family: Oxygen;
 			font-size: 15px;
 		}
@@ -21,6 +26,7 @@
 		&:last-child {
 			margin: 0;
 		}
+
 	}
 
 	// .countdown__item
@@ -28,7 +34,6 @@
 	&__item {
 		position: relative;
 		display: block;
-		color: #313131;
 		font-size: 48px;
 		font-weight: 400;
 

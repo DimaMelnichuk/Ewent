@@ -1,0 +1,36 @@
+.countdowns {
+
+	// .countdowns__item
+
+	&__item {
+		position: relative;
+		padding: 95px 0px;
+	}
+
+	// .countdowns__item-countdown
+
+	&__item-countdown {
+		position: relative;
+		position: relative;
+		z-index: 1;
+		display: flex;
+		justify-content: center;
+	}
+
+	// .countdowns__item--blue
+
+	&__item--blue {
+		background-color: #36f2e3;
+	}
+
+	// .countdowns__item-bg
+
+	&__item-bg {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
