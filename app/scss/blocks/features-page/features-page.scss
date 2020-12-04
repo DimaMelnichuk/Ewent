@@ -1,0 +1,25 @@
+.features-page {
+
+	// .features-page__title
+
+	&__title {
+		color: #313131;
+		font-size: 36px;
+		font-weight: 400;
+		letter-spacing: 0.36px;
+		margin: 0px 0px 40px 0px;
+		text-transform: capitalize;
+	}
+
+	// .features-page__alert-boxes
+
+	&__alert-boxes {
+		margin: 0px 0px 115px 0px;
+	}
+
+	// .features-page__buttons
+
+	&__buttons {
+	}
+
+}

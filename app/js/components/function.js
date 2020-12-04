@@ -1,3 +1,18 @@
+/***************** Alert-close ********************/
+/* let alertClose = document.querySelector(".alert-boxe__close");
+let alertBox = document.querySelector(".alert");
+alertClose.addEventListener("click", function (e) {
+	alertBox.classList.add("alert--close");
+}); */
+
+document.querySelectorAll('.alert-boxe__close').forEach((item) =>
+	item.addEventListener('click', () => {
+		const parent = item.parentNode.parentElement;
+		parent.classList.add("alert--close");
+	})
+)
+
+/***************** Header-search ********************/
 let searchIcon = document.querySelector('.header__search-icon');
 let searchBox = document.querySelector('.search');
 let searchClose = document.querySelector('.search__icon');
