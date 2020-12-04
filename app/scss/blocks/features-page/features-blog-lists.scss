@@ -1,0 +1,38 @@
+.features-blog-lists {
+
+	// .features-blog-lists__row
+
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		margin: -45px -15px;
+
+		@media (max-width: $md2+px) {
+			margin: -25px -15px;
+		}
+	}
+
+	// .features-blog-lists__column
+
+	&__column {
+		flex: 33.333%;
+		padding: 45px 15px;
+
+		@media (max-width: 1150px) {
+			flex: 0 1 50%;
+		}
+
+		@media (max-width: $md2+px) {
+			padding: 25px 15px;
+		}
+
+		@media (max-width: $md3+px) {
+			flex: 0 1 100%;
+		}
+	}
+
+	// .features-blog-lists__post-blog
+
+	&__post-blog {
+	}
+}

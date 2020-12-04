@@ -44,9 +44,8 @@
 @import "blocks/about-tickets";
 @import "blocks/call-action";
 @import "blocks/sponsors";
-@import "blocks/blog-lists";
 @import "blocks/highlights-tooltips-listings";
-@import "blocks/blog-lists";
+@import "blocks/blog-post";
 @import "blocks/dropcaps-blockquotes";
 @import "blocks/page-contact-v1";
 @import "blocks/page-contact-v2";
@@ -63,6 +62,8 @@
 @import "blocks/features-page/features-page";
 @import "blocks/features-page/features-alert-boxes";
 @import "blocks/features-page/features-buttons";
+@import "blocks/features-page/features-blog-lists";
+@import "blocks/features-page/features-dividers";
 
 // Components
 @import "components/menu";
@@ -74,6 +75,7 @@
 @import "components/countdown";
 @import "components/tooltip";
 @import "components/title";
+@import "components/divider";
 
 /* ==========================================================================
   General Styles
@@ -257,14 +259,6 @@ input {padding: 0px 20px;}
 
 .features-page {
 
-	// .features-page__title
-
-	&__title {
-
-		.title__main {
-			margin: 0px 0px 40px 0px;
-		}
-	}
 
 	// .features-page__row
 

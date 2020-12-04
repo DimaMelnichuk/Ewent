@@ -1,0 +1,68 @@
+.divider {
+	max-width: 100%;
+	// .divider__line
+
+	&__line {
+
+		&--sm {
+			height: 1px;
+			max-width: 100%;
+		}
+
+		&--md{
+			height: 2px;
+			max-width: 100%;
+		}
+
+		&--bg {
+			height: 3px;
+			width: 50px;
+		}
+
+		&--gray {
+			background-color: #eeeeee;
+		}
+
+		&--black {
+			background-color: #313131;
+		}
+		&--violet {
+			background-color: #805ea8;
+		}
+		&--yellow {
+			background-color: #efd855;
+		}
+		&--green {
+			background-color: #28b2a7;
+		}
+		&--pink {
+			background-color: #f4c9df;
+		}
+
+
+		&--gradient-gray {
+			background-color: #40cc14;
+			background-image: linear-gradient(to left, #f3f3f3 0%, #cccccc 100%);
+		}
+		&--gradient-black {
+			background-color: #40cc14;
+			background-image: linear-gradient(to left, rgba(145, 145, 145, 0.8) 0%, rgba(33, 33, 33, 0.8) 100%);
+		}
+		&--gradient-violet {
+			background-color: #40cc14;
+			background-image: linear-gradient(to left, #ba89f4 0%, #594174 100%);
+		}
+		&--gradient-yellow {
+			background-color: #efd855;
+			background-image: linear-gradient(to left, #fffbb6 0%, #efd855 100%);
+		}
+		&--gradient-green {
+			background-color: #edc1e4;
+			background-image: linear-gradient(to left, rgba(230, 255, 175, 0.8) 0%, rgba(54, 242, 227, 0.8) 100%);
+		}
+		&--gradient-pink {
+			background-color: #40cc14;
+			background-image: linear-gradient(to left, #f4c9df 0%, #c99cff 100%);
+		}
+	}
+}
