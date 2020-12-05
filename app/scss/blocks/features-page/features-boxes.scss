@@ -1,0 +1,142 @@
+.features-boxes {
+
+	// .features-boxes__v1
+
+	&__v1 {
+		margin: 0px 0px 60px 0px;
+
+		@media (max-width: $md4+px) {
+			margin: 0px 0px 50px 0px;
+		}
+	}
+
+	// .features-boxes__v1-row
+
+	&__v1-row {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: -15px;
+	}
+
+	// .features-boxes__v1-column
+
+	&__v1-column {
+		flex: 0 1 33.333%;
+		padding: 15px;
+
+		@media (max-width: $md2+px) {
+			flex: 0 1 50%;
+		}
+
+		@media (max-width: 500px) {
+			flex: 0 1 100%;
+		}
+	}
+
+	// .features-boxes__v1-item
+
+	&__v1-item {
+	}
+
+	// .features-boxes__v2
+
+	&__v2 {
+		margin: 0px 0px 105px 0px;
+
+		@media (max-width: $md1+px) {
+			margin: 0px 0px 80px 0px;
+		}
+
+		@media (max-width: $md2+px) {
+			margin: 0px 0px 70px 0px;
+		}
+
+		@media (max-width: $md3+px) {
+			margin: 0px 0px 60px 0px;
+		}
+		@media (max-width: $md4+px) {
+			margin: 0px 0px 50px 0px;
+		}
+	}
+
+	// .features-boxes__v2-row
+
+	&__v2-row {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	// .features-boxes__v2-column
+
+	&__v2-column {
+		flex: 0 1 50%;
+
+		@media (max-width: $md3+px) {
+			flex: 0 1 100%;
+		}
+
+		&:nth-child(even){
+			.features-boxes__v2-item {
+				flex-direction: column-reverse;
+
+				@media (max-width: $md3+px) {
+					flex-direction: column;
+				}
+			}
+		}
+	}
+
+	// .features-boxes__v2-item
+
+	&__v2-item {
+		display: flex;
+    	flex-direction: column;
+	}
+
+	// .features-boxes__v3
+
+	&__v3 {
+	}
+
+	// .features-boxes__v3-row
+
+	&__v3-row {
+		display: flex;
+		flex-wrap: wrap;
+		margin: -15px;
+	}
+
+	// .features-boxes__v3-column
+
+	&__v3-column {
+		flex: 0 1 50%;
+		padding: 15px;
+
+		@media (max-width: $md2+px) {
+			flex: 0 1 100%;
+		}
+	}
+
+	// .features-boxes__v3-item
+
+	&__v3-item {
+		padding: 0px 240px 80px 0px;
+
+		@media (max-width: $md1+px) {
+			padding: 0 210px 80px 0;
+		}
+
+		@media (max-width: 1250px) {
+			padding: 0 90px 60px 0;
+		}
+
+		@media (max-width: $md2+px) {
+			padding: 0 190px 80px 0;
+		}
+
+		@media (max-width: $md3+px) {
+			padding: 0;
+		}
+	}
+}
