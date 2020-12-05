@@ -1,0 +1,23 @@
+.features-bar {
+
+
+	// .features-bar __row
+
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		margin: -15px;
+	}
+
+	// .features-bar __column
+
+	&__column {
+		flex: 0 1 50%;
+		padding: 15px;
+
+		@media (max-width: $md3+px) {
+			flex: 0 1 100%;
+		}
+	}
+
+}
