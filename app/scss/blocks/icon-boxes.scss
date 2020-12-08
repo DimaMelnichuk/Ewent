@@ -222,6 +222,26 @@
 		}
 	}
 
+	// .icon-boxes__link
+
+	&__link {
+		display: inline-block;
+		margin: 25px 0px 0px 0px;
+		color: #efd855;
+		font-family: Oxygen;
+		font-size: 18px;
+		line-height: 25px;
+		font-weight: 700;
+		border-bottom: 1px solid transparent;
+		transition: all .3s;
+
+		@media (min-width: $md2+px) {
+			&:hover {
+				border-bottom: 1px solid #efd855;
+			}
+		}
+	}
+
 	// .icon-boxes__btn
 
 	&__btn {

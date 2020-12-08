@@ -38,6 +38,8 @@
 @import "blocks/error";
 @import "blocks/informed";
 @import "blocks/contact";
+@import "blocks/venue-info";
+@import "blocks/nearby-hotels";
 @import "blocks/faq";
 @import "blocks/countdowns";
 @import "blocks/alert-boxe";
@@ -45,10 +47,10 @@
 @import "blocks/about-tickets";
 @import "blocks/call-action";
 @import "blocks/sponsors";
+@import "blocks/socials";
 @import "blocks/highlights-tooltips-listings";
 @import "blocks/blog-post";
 @import "blocks/image-boxe-v1";
-@import "blocks/dropcaps-blockquotes";
 @import "blocks/page-contact-v1";
 @import "blocks/page-contact-v2";
 @import "blocks/tables";
@@ -70,7 +72,12 @@
 @import "blocks/features-page/features-boxes";
 @import "blocks/features-page/features-gallery";
 @import "blocks/features-page/features-sponsors";
-@import "blocks/features-page/features-bar";
+@import "blocks/features-page/features-tabs";
+@import "blocks/features-page/features-dropcaps";
+@import "blocks/features-page/features-headings-paragraphs";
+@import "blocks/features-page/features-tooltips-highlights";
+@import "blocks/features-page/features-listings";
+
 
 // Components
 @import "components/menu";
@@ -84,6 +91,8 @@
 @import "components/title";
 @import "components/divider";
 @import "components/alert";
+@import "components/blockquotes";
+@import "components/dropcaps";
 
 /* ==========================================================================
   General Styles
@@ -110,6 +119,65 @@ body {
 	flex-direction: column;
 	&.loaded {
 	}
+}
+p {
+	color: #616161;
+	font-family: Oxygen;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 30px;
+	letter-spacing: 0.16px;
+	margin: 0px 0px 30px 0px;
+
+	&:last-child {
+		margin: 0;
+	}
+}
+h1 {
+	font-size: 60px;
+	font-style: normal;
+	letter-spacing: 0.6px;
+	line-height: 75px;
+
+	@media (max-width: $md4+px) {
+		font-size: 50px;
+		line-height: 65px;
+	}
+}
+h2 {
+	font-size: 48px;
+	font-style: normal;
+	letter-spacing: 0.48px;
+	line-height: 60px;
+
+	@media (max-width: $md4+px) {
+		font-size: 43px;
+		line-height: 55px;
+	}
+}
+h3 {
+	font-size: 36px;
+	font-style: normal;
+	letter-spacing: 0.36px;
+	line-height: 45px;
+}
+h4 {
+	font-size: 30px;
+	font-style: normal;
+	letter-spacing: 0.3px;
+	line-height: 30px;
+}
+h5 {
+	font-size: 24px;
+	font-style: normal;
+	letter-spacing: 0.24px;
+	line-height: 30px;
+}
+h6 {
+	font-size: 18px;
+	font-style: normal;
+	letter-spacing: 0.18px;
+	line-height: 30px;
 }
 .padding {
 	padding: 135px 0px;
@@ -187,35 +255,4 @@ textarea {
 }
 textarea {resize: none;padding: 16px 20px;}
 input {padding: 0px 20px;}
-
-.socials {
-
-	// .socials__list
-
-	&__list {
-		display: flex;
-	}
-
-	// .socials__list-item
-
-	&__list-item {
-	}
-
-	// .socials__list-link
-
-	&__list-link {
-		color: #313131;
-		font-size: 20px;
-		font-weight: 400;
-		opacity: 0.7;
-		transition: color .3s, opacity .3s;
-
-		@media (min-width: $md2+px) {
-			&:hover {
-				color: #313131;
-				opacity: 1;
-			}
-		}
-	}
-}
 

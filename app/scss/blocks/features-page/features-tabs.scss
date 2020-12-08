@@ -1,0 +1,21 @@
+.features-tabs {
+
+	// .features-tabs__row
+
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		margin: -15px;
+	}
+
+	// .features-tabs__column
+
+	&__column {
+		flex: 0 1 50%;
+		padding: 15px;
+
+		@media (max-width: $md2+px) {
+			flex: 0 1 100%;	
+		}
+	}
+}

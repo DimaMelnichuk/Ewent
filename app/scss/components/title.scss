@@ -2,6 +2,10 @@
 	margin: 0px 0px 50px 0px;
 	text-align: center;
 
+	@media (max-width: $md3+px) {
+		margin: 0px 0px 40px 0px;
+	}
+
 	&--left {
 		text-align: left;
 	}
@@ -9,15 +13,23 @@
 	&__main {
 		position: relative;
 		z-index: 1;
-		display: inline-flex;
+		display: inline;
 		text-transform: capitalize;
 		letter-spacing: 0.36px;
-		@include adaptive-font(36, 28);
+		font-size: 36px;
 		font-weight: 700;
 
 		&--bottom-line {
-			@include adaptive-font(48, 36);
+			font-size: 48px;
 			letter-spacing: 0.48px;
+
+			@media (max-width: $md2+px) {
+				font-size: 40px;
+			}
+
+			@media (max-width: $md4+px) {
+				font-size: 36px;
+			}
 
 			&::after {
 				content: "";
@@ -28,9 +40,17 @@
 				height: 10px;
 				border-radius: 7px;
 				left: 0;
-				top: 35px;
+				top: 47px;
 				background-image: linear-gradient(to right, rgba(53,244,228,1) 0%, rgba(246,251,251,0.1) 100%);
 				opacity: 0.6;
+
+				@media (max-width: $md2+px) {
+					top: 37px;
+				}
+
+				@media (max-width: $md4+px) {
+					top: 35px;
+				}
 			}
 		}
 
@@ -54,6 +74,10 @@
 		font-weight: 400;
 		max-width: 700px;
 		margin: 45px auto 0;
+
+		@media (max-width: $md3+px) {
+			margin: 35px auto 0;
+		}
 
 		&--theme-white {
 			color: #ffffff;

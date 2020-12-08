@@ -1,107 +1,3 @@
-.highlights-tooltips-listings {
-	padding: 140px 0px;
-
-	@media (max-width: $md1+px) {
-		padding: 80px 0px;
-	}
-
-	@media (max-width: $md2+px) {
-		padding: 60px 0px;
-	}
-
-	@media (max-width: $md3+px) {
-		padding: 50px 0px;
-	}
-
-	// .highlights-tooltips-listings__row
-
-	&__row {
-		display: flex;
-		flex-wrap: wrap;
-		margin: -25px;
-	}
-
-	// .highlights-tooltips-listings__column
-
-	&__column {
-		flex: 0 1 50%;
-		padding: 25px;
-
-		@media (max-width: $md3+px) {
-			flex: 0 1 100%;
-		}
-	}
-
-	// .highlights-tooltips-listings__title
-
-	&__title {
-
-		.title__main {
-			margin: 0px 0px 40px 0px;
-		}
-	}
-
-	// .highlights-tooltips-listings__text
-
-	&__text {
-		color: #616161;
-		font-family: "Oxygen";
-		font-size: 16px;
-		font-weight: 400;
-		line-height: 30px;
-
-		p {
-			margin: 0px 0px 25px 0px;
-
-			&:last-child {
-				margin: 0;
-			}
-		}
-	}
-}
-
-
-.listings {
-
-	// .listings__title
-
-	&__title {
-
-		.title__main {
-			margin: 0px 0px 40px 0px;
-		}
-	}
-
-	// .listings__row
-
-	&__row {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		margin: -15px;
-	}
-
-	// .listings__column
-
-	&__column {
-		flex: 0 1 25%;
-		padding: 15px;
-
-		@media (max-width: $md2+px) {
-			flex: 0 1 50%;
-		}
-
-		@media (max-width: $md4+px) {
-			flex: 0 1 100%;
-		}
-	}
-
-	// .listings__item
-
-	&__item {
-	}
-}
-
 .listing {
 
 	&--icon-marker {
@@ -109,7 +5,7 @@
 			&::before {
 				width: 14px;
 				height: 21px;
-				background: url("../img/highlights-tooltips-listings/marker-location.png");
+				background: url("../img/icons/marker-location.png");
 			}
 		}
 	}
@@ -117,7 +13,9 @@
 	&--icon-check {
 		.listing__item {
 			&::before {
-
+				width: 22px;
+				height: 16px;
+				background: url("../img/icons/check.png");
 			}
 		}
 	}
@@ -127,7 +25,7 @@
 			&::before {
 				width: 20px;
 				height: 21px;
-				background: url("../img/highlights-tooltips-listings/plus-round.png");
+				background: url("../img/icons/plus-round.png");
 			}
 		}
 	}
@@ -135,15 +33,11 @@
 	&--icon-pointer {
 		.listing__item {
 			&::before {
-
+				width: 20px;
+				height: 20px;
+				background: url("../img/icons/cursor-pointer.png");
 			}
 		}
-	}
-
-	// .listing__list
-
-	&__list {
-
 	}
 
 	// .listing__under-list

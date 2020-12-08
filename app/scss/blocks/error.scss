@@ -20,19 +20,46 @@
 		font-family: Oxygen;
 
 		.title__main {
-			@include adaptive-font(326, 130);
+			font-size: 326px;
 			margin: 0px 0px 45px 0px;
 
 			@media (max-width: $md1+px) {
 				margin: 0px 0px 35px 0px;
+				font-size: 300px;
+			}
+
+			@media (max-width: $md2+px) {
+				font-size: 270px;
 			}
 
 			@media (max-width: $md3+px) {
 				margin: 0px 0px 25px 0px;
+				font-size: 230px;
 			}
 
 			@media (max-width: $md4+px) {
 				margin: 0px 0px 15px 0px;
+				font-size: 130px;
+			}
+		}
+
+		.title__main--bottom-line::after {
+			top: 330px;
+
+			@media (max-width: $md1+px) {
+				top: 303px;
+			}
+
+			@media (max-width: $md2+px) {
+				top: 273px;
+			}
+
+			@media (max-width: $md3+px) {
+				top: 233px;
+			}
+
+			@media (max-width: $md4+px) {
+				top: 130px;
 			}
 		}
 
@@ -112,7 +139,7 @@
 	&__form-input {
 		max-width: 552px;
 		width: 100%;
-		height: 45px;
+		height: 48px;
 		box-shadow: 0 7px 27px rgba(0, 0, 0, 0.05);
 		border: 1px solid #eeeeee;
 		background-color: #ffffff;

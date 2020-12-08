@@ -1,0 +1,22 @@
+.dropcaps {
+
+	// .dropcaps__text
+
+	&__text {
+		color: #616161;
+		font-family: "Oxygen";
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 30px;
+	}
+
+	// .dropcaps__icon
+
+	&__icon {
+
+		img {
+			float: left;
+			margin: 9px 15px 0px 0px;
+		}
+	}
+}

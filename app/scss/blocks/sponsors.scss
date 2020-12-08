@@ -3,13 +3,9 @@
 	// .sponsors__filter
 
 	&__filter {
-		margin: 0px 0px 45px 0px;
-	}
-
-	// .sponsors__filter-list
-
-	&__filter-list {
 		display: flex;
+		justify-content: center;
+		margin: 0px 0px 45px 0px;
 
 		@media (max-width: 530px) {
 			flex-wrap: wrap;
@@ -24,11 +20,12 @@
 		border-radius: 7px;
 		color: #313131;
 		font-family: Oxygen;
+		background: transparent;
 		font-size: 14px;
 		font-weight: 400;
 		letter-spacing: 0.35px;
 
-		&--active {
+		&.mixitup-control-active {
 			box-shadow: 0 7px 13px rgba(0, 0, 0, 0.1);
 			background-image: linear-gradient(-16deg, #cccccc 0%, #f3f3f3 100%);
 		}
@@ -99,10 +96,27 @@
 		}
 	}
 
+	// .sponsors__mix
+
+	&__mix {
+		padding: 15px;
+		flex: 0 1 16.666%;
+		height: 100%;
+
+		@media (max-width: $md2+px) {
+			flex: 0 1 33.333%;
+		}
+
+		@media (max-width: $md4+px) {
+			flex: 0 1 50%;
+			padding: 10px;
+		}
+	}
+
 	// .sponsors__img
 
 	&__img {
-		display: flex;
+		display: block;
 		padding: 0px 0px 52.1% 0px;
 		overflow: hidden;
 		position: relative;

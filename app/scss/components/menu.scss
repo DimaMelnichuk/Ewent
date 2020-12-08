@@ -188,8 +188,8 @@
 		border-bottom: 1px solid transparent;
 		transition: all .3s;
 
-		&:hover {
-			@media (min-width: $md2+px) {
+		@media (min-width: $md2+px) {
+			&:hover {
 				border-bottom: 1px solid #fff;
 			}
 		}

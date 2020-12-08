@@ -1,10 +1,4 @@
 /***************** Alert-close ********************/
-/* let alertClose = document.querySelector(".alert-boxe__close");
-let alertBox = document.querySelector(".alert");
-alertClose.addEventListener("click", function (e) {
-	alertBox.classList.add("alert--close");
-}); */
-
 document.querySelectorAll('.alert-boxe__close').forEach((item) =>
 	item.addEventListener('click', () => {
 		const parent = item.parentNode.parentElement;

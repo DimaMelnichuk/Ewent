@@ -64,11 +64,13 @@
 	// .main-screen__date
 
 	&__date {
-		color: #2bbfb3;
+		display: block;
+		color: #2bbfb3 !important;
 		font-family: Oxygen;
 		font-size: 24px;
 		font-weight: 400;
 		margin: 0px 0px 60px 0px;
+		text-decoration: none !important; 
 
 		@media (max-width: $md1+px) {
 			margin: 0 0 45px 0;

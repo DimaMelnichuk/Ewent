@@ -1,0 +1,21 @@
+.features-headings-paragraphs {
+
+	// .features-headings-paragraphs__row
+
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		margin: -25px -15px;
+	}
+
+	// .features-headings-paragraphs__column
+
+	&__column {
+		flex: 0 1 50%;
+		padding: 25px 15px;
+
+		@media (max-width: $md3+px) {
+			flex: 0 1 100%;
+		}
+	}
+}

@@ -124,4 +124,36 @@
 		margin: 0px 0px 105px 0px;
 	}
 
+	// .progess-bars__tabs
+
+	&__tabs {
+		&:first-child {
+			margin: 0px 0px 115px 0px;
+		}
+	}
+
+	// .progess-bars__dropcaps
+
+	&__dropcaps {
+		margin: 0px 0px 115px 0px;
+
+		&:last-child {
+			margin: 0;
+		}
+		
+	}
+
+	// .progess-bars__tooltips-highlights
+
+	&__tooltips-highlights {
+		margin: 0px 0px 115px 0px;
+	}
+
+	&__testimonials {
+		margin: 0px 0px 115px 0px;
+
+		&:last-child {
+			margin: 0;
+		}
+	}
 }

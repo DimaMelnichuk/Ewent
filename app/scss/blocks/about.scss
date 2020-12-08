@@ -132,6 +132,10 @@
     		bottom: 20px;
 		}
 
+		@media (max-width: 380px) {
+			right: -20px;
+		}
+
 		&::before {
 			content: "";
 			position: absolute;

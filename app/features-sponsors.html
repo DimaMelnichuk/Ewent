@@ -34,86 +34,49 @@
 						<div class="container">
 							<div class="features-page__title">Partners v1</div>
 							<div class="sponsors">
-								<div class="sponsors__filter">
-									<ul class="sponsors__filter-list">
-										<li class="sponsors__filter-item">
-											<a class="sponsors__filter-link sponsors__filter-link--active" href="#">All</a>
-										</li>
-										<li class="sponsors__filter-item">
-											<a class="sponsors__filter-link" href="#">Platinum</a>
-										</li>
-										<li class="sponsors__filter-item">
-											<a class="sponsors__filter-link" href="#">Gold</a>
-										</li>
-										<li class="sponsors__filter-item">
-											<a class="sponsors__filter-link" href="#">Silver</a>
-										</li>
-										<li class="sponsors__filter-item">
-											<a class="sponsors__filter-link" href="#">Bronze</a>
-										</li>
-									</ul>
-								</div>
-								<div class="sponsors__item">
-									<div class="sponsors__row">
-										<div class="sponsors__column">
-											<a class="sponsors__img" href="#">
-												<img src="img/sponsors/circle.png" alt="">
-											</a>
-										</div>
-										<div class="sponsors__column">
-											<a class="sponsors__img" href="#">
-												<img src="img/sponsors/foxhub.png" alt="">
-											</a>
-										</div>
-										<div class="sponsors__column">
-											<a class="sponsors__img" href="#">
-												<img src="img/sponsors/hexa.png" alt="">
-											</a>
-										</div>
-										<div class="sponsors__column">
-											<a class="sponsors__img" href="#">
-												<img src="img/sponsors/hexlab.png" alt="">
-											</a>
-										</div>
-										<div class="sponsors__column">
-											<a class="sponsors__img" href="#">
-												<img src="img/sponsors/treva.png" alt="">
-											</a>
-										</div>
-										<div class="sponsors__column">
-											<a class="sponsors__img" href="#">
-												<img src="img/sponsors/twilio.png" alt="">
-											</a>
-										</div>
-										<div class="sponsors__column">
-											<a class="sponsors__img" href="#">
-												<img src="img/sponsors/circle.png" alt="">
-											</a>
-										</div>
-										<div class="sponsors__column">
-											<a class="sponsors__img" href="#">
-												<img src="img/sponsors/foxhub.png" alt="">
-											</a>
-										</div>
-										<div class="sponsors__column">
-											<a class="sponsors__img" href="#">
-												<img src="img/sponsors/hexa.png" alt="">
-											</a>
-										</div>
-										<div class="sponsors__column">
-											<a class="sponsors__img" href="#">
-												<img src="img/sponsors/hexlab.png" alt="">
-											</a>
-										</div>
-										<div class="sponsors__column">
-											<a class="sponsors__img" href="#">
-												<img src="img/sponsors/treva.png" alt="">
-											</a>
-										</div>
-										<div class="sponsors__column">
-											<a class="sponsors__img" href="#">
-												<img src="img/sponsors/twilio.png" alt="">
-											</a>
+								<div class="container">
+									<div class="sponsors__title-main title">
+										<div class="title__main title__main--bottom-line">Our Sponsors</div>
+									</div>
+									<div class="sponsors__filter">
+										<button class="sponsors__filter-link" type="button" data-filter="all">All</button>
+										<button class="sponsors__filter-link" type="button" data-filter=".platinum">Platinum</button>
+										<button class="sponsors__filter-link" type="button" data-filter=".gold">Gold</button>
+										<button class="sponsors__filter-link" type="button" data-filter=".silver">Silver</button>
+										<button class="sponsors__filter-link" type="button" data-filter=".bronze">Bronze</button>
+									</div>
+									<div class="sponsors__item">
+										<div class="sponsors__row">
+											<div class="sponsors__mix mix platinum" data-order="1">
+												<a class="sponsors__img" href="#">
+													<img src="img/sponsors/circle.png" alt="Logo sponsor">
+												</a>
+											</div>
+											<div class="sponsors__mix mix bronze silver" data-order="2">
+												<a class="sponsors__img" href="#">
+													<img src="img/sponsors/foxhub.png" alt="Logo sponsor">
+												</a>
+											</div>
+											<div class="sponsors__mix  mix gold" data-order="3">
+												<a class="sponsors__img" href="#">
+													<img src="img/sponsors/hexa.png" alt="Logo sponsor">
+												</a>
+											</div>
+											<div class="sponsors__mix mix bronze" data-order="4">
+												<a class="sponsors__img" href="#">
+													<img src="img/sponsors/hexlab.png" alt="Logo sponsor">
+												</a>
+											</div>
+											<div class="sponsors__mix  mix bronze silver" data-order="4">
+												<a class="sponsors__img" href="#">
+													<img src="img/sponsors/treva.png" alt="Logo sponsor">
+												</a>
+											</div>
+											<div class="sponsors__mix  mix gold" data-order="4">
+												<a class="sponsors__img" href="#">
+													<img src="img/sponsors/twilio.png" alt="Logo sponsor">
+												</a>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -354,6 +317,9 @@
 	</div>
 
 	@@include('_js.html')
+	<script>
+		var mixer = mixitup('.sponsors__row');
+	</script>
 </body>
 
 </html>

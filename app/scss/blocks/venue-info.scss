@@ -1,0 +1,173 @@
+.venue-info {
+
+	// .venue-info__row
+
+	&__row {
+		display: flex;
+	}
+
+	// .venue-info__column
+
+	&__column {
+		border: 1px solid red;
+		&--1 {
+			flex: 0 1 25%;
+		}
+		&--2 {
+			flex: 0 1 25%;
+		}
+		&--3 {
+			flex: 0 1 50%;
+		}
+	}
+
+	&__item {
+		height: 100%;
+	}
+
+	// .venue-info__img-hight
+
+	&__img-hight {
+		padding: 0px 0px 163% 0px;
+		overflow: hidden;
+		position: relative;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+
+	// .venue-info__date
+
+	&__date {
+		position: relative;
+		padding: 45px 45px 50px 45px;
+		background-color: #594174;
+
+		&::after {
+			content: "";
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			width: 174px;
+			height: 174px;
+			background: url("../img/venue-info/calendar.png") 0 0 no-repeat;
+		}
+	}
+
+	// .venue-info__date-title
+
+	&__date-title {
+		color: #fff;
+		font-size: 14px;
+		font-weight: 400;
+		text-transform: uppercase;
+		margin: 0px 0px 20px 0px;
+	}
+
+	// .venue-info__date-time
+
+	&__date-time {
+		color: #ffffff;
+		font-family: Oxygen;
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 30px;
+
+		span {
+			display: block;
+		}
+	}
+
+	// .venue-info__map
+
+	&__map {
+		iframe {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	// .venue-info__img
+
+	&__img {
+		padding: 0px 0px 58% 0px;
+		overflow: hidden;
+		position: relative;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+
+	// .venue-info__location
+
+	&__location {
+		position: relative;
+		padding: 45px 45px 40px 45px;
+		background-color: #fffbb6;
+
+		&::after {
+			content: "";
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			width: 170px;
+			height: 186px;
+			background: url("../img/venue-info/map-marker.png") 0 0 no-repeat;
+		}
+	}
+
+	// .venue-info__location-title
+
+	&__location-title {
+		color: #616161;
+		font-size: 14px;
+		font-weight: 400;
+		text-transform: uppercase;
+		margin: 0px 0px 20px 0px;
+	}
+
+	// .venue-info__location-name
+
+	&__location-name {
+		color: #313131;
+		font-family: Oxygen;
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 30px;
+		margin: 0px 0px 25px 0px;
+
+		span {
+			display: block;
+		}
+	}
+
+	// .venue-info__location-btn
+
+	&__location-btn {
+		color: #936cc1;
+		font-family: Oxygen;
+		font-size: 16px;
+		font-weight: 700;
+		letter-spacing: 0.4px;
+		border-bottom: 1px solid transparent;
+		transition: all .3s;
+
+		@media (min-width: $md2+px) {
+			&:hover {
+				border-bottom: 1px solid #936cc1;
+			}
+		}
+	}
+}

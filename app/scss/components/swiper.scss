@@ -29,13 +29,12 @@
 }
 
 // buttons 
-.testimonials__slider .swiper-button-prev,
-.testimonials__slider .swiper-button-next {
-	background-color: transparent;
+.swiper-button-prev::after,
+.swiper-button-next::after {
+	font-family: "fontello";
+	font-size: 24px;
 	color: #313131;
-	position: relative;
-	display: inline-flex;
-	margin: 60px 0px 0px 0px;
+	transition: color .3s;
 
 	@media (min-width: $md2+px) {
 		&:hover {
@@ -47,6 +46,59 @@
 		}
 	}
 }
+
+.testimonials__slider .swiper-button-prev,
+.testimonials__slider .swiper-button-next {
+	background-color: transparent;
+	color: #313131;
+	position: relative;
+	display: inline-flex;
+	margin: 60px 0px 0px 0px;
+}
+
+
+.testimonials__slider-v2  .swiper-button-prev::after,
+.testimonials__slider-v2  .swiper-button-next::after {
+	position: absolute;
+	font-family: "fontello";
+	font-size: 24px;
+	color: #313131;
+	transition: color .3s;
+
+
+}
+
+.testimonials__slider-v2 .swiper-button-prev,
+.testimonials__slider-v2 .swiper-button-next {
+
+	@media (max-width: $md2+px) {
+		position: relative;
+		display: inline-flex;
+		margin: 60px 0px 0px 0px;
+	}
+}
+
+.testimonials__slider-v2 .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+	right: 30px;
+	top: 10px;
+	left: auto;
+
+	@media (max-width: $md2+px) {
+		left: 47%;
+		bottom: 0;
+	}
+}
+.testimonials__slider-v2 .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+	right: 0px;
+	top: 10px;
+	left: auto;
+
+	@media (max-width: $md2+px) {
+		left: 47%;
+		bottom: 0;
+	}
+}
+
 .testimonials__slider .swiper-button-prev, .swiper-container-rtl .swiper-button-next,
 .testimonials__slider .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
 	left: 47%;
@@ -56,16 +108,7 @@
 	}
 }
 
-.swiper-button-prev::after,
-.swiper-button-next::after {
-	position: absolute;
-	font-family: "fontello";
-	font-size: 24px;
-	color: #313131;
-	transition: color .3s;
-	// svg
-	/* display: none; */
-}
+
 
 .swiper-button-prev::after {
 	content: "\e803";
@@ -73,17 +116,4 @@
 
 .swiper-button-next::after {
 	content: "\e804";
-}
-
-// numbers
-.swiper-pagination-fraction {
-	
-}
-
-.swiper-pagination-current {
-
-}
-
-.swiper-pagination-total {
-
 }

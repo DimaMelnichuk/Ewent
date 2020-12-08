@@ -180,10 +180,20 @@
 	// .speakers-v1__item-name
 
 	&__item-name {
+		display: inline-block;
 		color: #313131;
 		font-size: 24px;
+		line-height: 28px;
 		font-weight: 500;
 		margin: 0px 0px 20px 0px;
+		border-bottom: 1px solid transparent;
+		transition: border .2s;
+		
+		@media (min-width: $md2+px) {
+			&:hover {
+				border-bottom: 1px solid #313131;
+			}
+		}
 
 		@media (max-width: $md3+px) {
 			margin: 0px 0px 15px 0px;

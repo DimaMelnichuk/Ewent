@@ -218,7 +218,7 @@
 
 	&__title {
 
-		.title__main {
+		&.title {
 			margin: 0px 0px 39px 0px;
 
 			@media (max-width: $md3+px) {
@@ -232,15 +232,15 @@
 
 		.title__descr {
 			max-width: 847px;
-			margin: 0 auto 50px;
+			margin: 50px auto 0px;
 			color: #616161;
 
 			@media (max-width: $md3+px) {
-				margin: 0 auto 40px;
+				margin: 40px auto 0px;
 			}
 
 			@media (max-width: $md4+px) {
-				margin: 0 auto 30px;
+				margin: 30px auto 0px;
 			}
 		}
 	}

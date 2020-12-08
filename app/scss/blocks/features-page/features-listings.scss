@@ -1,0 +1,27 @@
+.features-listings {
+
+	// .features-listings__row
+
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin: -15px;
+	}
+
+	// .features-listings__column
+
+	&__column {
+		flex: 0 1 25%;
+		padding: 15px;
+
+		@media (max-width: $md2+px) {
+			flex: 0 1 50%;
+		}
+
+		@media (max-width: $md4+px) {
+			flex: 0 1 100%;
+		}
+	}
+
+}
