@@ -141,10 +141,6 @@
 				margin: 0px 0px 25px 0px;
 			}
 		}
-
-		.title__main--bottom-line {
-			font-size: calc(27px + 12 * ((100vw - 320px)/ 1600));
-		}
 	}
 
 	// .session-article__img
@@ -387,6 +383,13 @@
 		line-height: 30px;
 		font-weight: 500;
 		margin: 20px 0px 0px 0px;
+		transition: color .3s;
+
+		@media (min-width: $md2+px) {
+			&:hover {
+				color: #936cc1;
+			}
+		}
 
 		@media (max-width: $md3+px) {
 			font-size: 20px;
@@ -719,7 +722,7 @@
 	// .aside-events__link
 
 	&__link {
-		display: block;
+		display: inline-block;
 		color: #936cc1;
 		font-family: Oxygen;
 		font-size: 16px;
