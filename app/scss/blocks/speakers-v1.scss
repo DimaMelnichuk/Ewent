@@ -25,9 +25,12 @@
 		text-align: center;
 	}
 
-	// .speakers-v1__filter-btn
+	// .speakers-v1__filter
 
 	&__filter {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
 		margin: 0px 0px 45px 0px;
 
 		@media (max-width: $md2+px) {
@@ -40,30 +43,6 @@
 
 		@media (max-width: $md4+px) {
 			margin: 0px 0px 20px 0px;
-			display: flex;
-			align-items: center;
-			flex-wrap: wrap;
-		}
-	}
-
-	// .speakers-v1__filter-btn
-
-	&__filter-btn {
-		color: #313131;
-		font-family: 'Oxygen';
-		font-size: 14px;
-		font-weight: 400;
-		margin: 0px 15px 0px 0px;
-		box-shadow: none;
-
-		@media (max-width: $md4+px) {
-			flex: 0 1 50%;
-			margin: 0;
-			padding: 15.5px 15px;
-		}
-
-		&:last-child {
-			margin: 0;
 		}
 	}
 
@@ -169,9 +148,11 @@
 		}
 
 		img {
+			display: block;
 			border-radius: 100%;
 			object-fit: cover;
 			filter: grayscale(100%);
+			background-color: #1da7ba;
 			height: 100%;
 			max-width: 100%;
 		}

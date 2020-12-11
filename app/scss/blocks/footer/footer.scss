@@ -141,10 +141,6 @@
 		}
 	}
 
-	&__news {
-
-	}
-
 	// .footer__news-item
 
 	&__news-item {
@@ -221,9 +217,30 @@
 	// .footer__images-item
 
 	&__images-item {
+		position: relative;
 		display: block;
 		width: 90px;
 		height: 90px;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			opacity: 0;
+			background: rgba(29, 27, 26, 0.6);
+			transition: all .3s;
+		}
+
+		@media (min-width: $md2+px) {
+			&:hover {
+				&::before {
+					opacity: 1;
+				}
+			}
+		}
 
 		@media (max-width: 650px) {
 			width: 80px;
