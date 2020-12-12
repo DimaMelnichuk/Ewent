@@ -1,15 +1,21 @@
+/***************** Alert-close ********************/
+document.querySelectorAll('.alert-boxe__close').forEach((item) =>
+	item.addEventListener('click', () => {
+		const parent = item.parentNode.parentElement;
+		parent.classList.add("alert--close");
+	})
+)
+
+/***************** Header-search ********************/
 let searchIcon = document.querySelector('.header__search-icon');
-let searchMenu = document.querySelector('.header__search-box');
+let searchBox = document.querySelector('.search');
+let searchClose = document.querySelector('.search__icon');
 searchIcon.addEventListener("click", function (e) {
-	searchMenu.classList.toggle('active');
+	searchBox.classList.toggle('active');
 });
-
-document.documentElement.addEventListener("click", function (e) {
-	if (!e.target.closest('.header__search')) {
-		searchMenu.classList.remove('active');
-	}
+searchClose.addEventListener("click", function (e) {
+	searchBox.classList.remove('active');
 });
-
 /***************** Menu-btn ********************/
 let menu_burger = document.querySelector('.menu__burger');
 let menu = document.querySelector('.menu');
@@ -18,6 +24,14 @@ menu_burger.addEventListener("click", function (e) {
 	menu.classList.toggle('active');
 	menu_burger.classList.toggle('active');
 	menu_lock.classList.toggle('lock');
+});
+document.documentElement.addEventListener("click", function (e) {
+	if (!e.target.closest('.menu__burger, .menu')) {
+		menu.classList.remove('active');
+		menu_burger.classList.remove('active');
+		menu_lock.classList.remove('lock');
+	}
+	
 });
 
 /***************** WebP ********************/
@@ -159,8 +173,9 @@ document.querySelectorAll('.schedule__icon').forEach((item) =>
 
 	})
 )
-let swiperTestimonials = new Swiper('.swiper-container', {
-	slidesPerView: 2,
+let swiperTestimonials = new Swiper('.testimonials__slider', {
+	slidesPerView: 1,
+	slidesPerGroup: 1,
 	loop: true,
 	spaceBetween: 80,
 
@@ -170,16 +185,41 @@ let swiperTestimonials = new Swiper('.swiper-container', {
 	},
 
 	breakpoints: {
-		320: {
-			slidesPerView: 1,
-		},
-		767.98: {
-			slidesPerView: 2,
-			loop: true,
-			spaceBetween: 60,
-		},
 		991.98: {
+			slidesPerView: 2,
+			slidesPerGroup: 1,
+			loop: true,
 			spaceBetween: 80,
+		}
+	}
+});
+
+let swiperTestimonials2 = new Swiper('.testimonials__slider-v2', {
+	slidesPerView: 1,
+	spaceBetween: 80,
+	loop: true,
+
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+
+	
+});
+
+let swiperTestimonials3 = new Swiper('.testimonials__slider-v3', {
+	slidesPerView: 1,
+	spaceBetween: 80,
+	loop: true,
+
+	breakpoints: {
+		991.98: {
+			slidesPerView: 2,
+			slidesPerColumn: 2,
+			slidesPerGroup: 2,
+			slidesPerColumnFill: 'row',
+			spaceBetween: 80,
+			loop: false,
 		}
 	}
 });
@@ -213,7 +253,7 @@ let swiperTestimonials = new Swiper('.swiper-container', {
 }); */
 
 const scrollUp = document.querySelector('.scroll-up');
-const offset = 1000;
+const offset = 300;
 const getTop = () => window.pageYOffset || document.documentElement.scrollTop;
 
 // onScroll
@@ -252,13 +292,13 @@ scrollUp.addEventListener('click', () => {
 }); */
 
 
-/*document.querySelectorAll('.accordion__item-title').forEach((item) =>
+document.querySelectorAll('.accordion__item-title').forEach((item) =>
 	item.addEventListener('click', () => {
 		item.parentNode.classList.toggle('accordion__item--active');
 	})
-)*/
+)
 
-document.querySelectorAll('.accordion__item-title').forEach((item) =>
+/* document.querySelectorAll('.accordion__item-title').forEach((item) =>
 	item.addEventListener('click', () => {
 		const parent = item.parentNode;
 
@@ -273,7 +313,7 @@ document.querySelectorAll('.accordion__item-title').forEach((item) =>
 		}
 
 	})
-)
+) */
 // Dynamic Adapt v.1
 // HTML data-da="where(uniq class name),position(digi),when(breakpoint)"
 // e.x. data-da="item,2,992"
