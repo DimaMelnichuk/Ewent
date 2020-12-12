@@ -1,6 +1,8 @@
 .alert {
 	position: fixed;
-	width: 565px;
+	z-index: 9999;
+	max-width: 565px;
+	width: 94%;
 	right: 15px;
 	bottom: 15px;
 	transform: translateY(120px);

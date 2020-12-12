@@ -18,13 +18,13 @@
 }); */
 
 
-/*document.querySelectorAll('.accordion__item-title').forEach((item) =>
+document.querySelectorAll('.accordion__item-title').forEach((item) =>
 	item.addEventListener('click', () => {
 		item.parentNode.classList.toggle('accordion__item--active');
 	})
-)*/
+)
 
-document.querySelectorAll('.accordion__item-title').forEach((item) =>
+/* document.querySelectorAll('.accordion__item-title').forEach((item) =>
 	item.addEventListener('click', () => {
 		const parent = item.parentNode;
 
@@ -39,4 +39,4 @@ document.querySelectorAll('.accordion__item-title').forEach((item) =>
 		}
 
 	})
-)
+) */

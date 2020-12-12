@@ -1,0 +1,24 @@
+.features-cirles {
+
+	// .features-cirles__row
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		margin: -15px;
+		flex-wrap: wrap;
+
+		@media (max-width: 1150px) {
+			
+		}
+	}
+
+	// .features-cirles__column
+
+	&__column {
+		flex: 0 1 240px;
+		padding: 15px;
+		display: flex;
+		flex-direction: column;
+	}
+}

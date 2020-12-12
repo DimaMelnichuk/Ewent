@@ -65,18 +65,21 @@
 
 // features-page
 @import "blocks/features-page/features-page";
+@import "blocks/features-page/features-accordions-toggles";
 @import "blocks/features-page/features-alert-boxes";
 @import "blocks/features-page/features-buttons";
+@import "blocks/features-page/features-bar";
 @import "blocks/features-page/features-blog-lists";
-@import "blocks/features-page/features-dividers";
 @import "blocks/features-page/features-boxes";
-@import "blocks/features-page/features-gallery";
-@import "blocks/features-page/features-sponsors";
-@import "blocks/features-page/features-tabs";
+@import "blocks/features-page/features-dividers";
 @import "blocks/features-page/features-dropcaps";
+@import "blocks/features-page/features-gallery";
 @import "blocks/features-page/features-headings-paragraphs";
-@import "blocks/features-page/features-tooltips-highlights";
 @import "blocks/features-page/features-listings";
+@import "blocks/features-page/features-tooltips-highlights";
+@import "blocks/features-page/features-tabs";
+@import "blocks/features-page/features-cirles";
+@import "blocks/features-page/features-sponsors";
 
 
 // Components

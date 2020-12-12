@@ -10,6 +10,7 @@
 	// .location__column
 
 	&__column {
+		position: relative;
 		flex: 0 1 33.333%;
 
 		@media (max-width: $md2+px) {
@@ -43,6 +44,32 @@
 		width: 100%;
 		top: 0;
 		left: 0;
+	}
+
+	// .location__item-map
+
+	&__item-map {
+
+		@media (max-width: $md2+px) {
+			padding: 0px 0px 40% 0px;
+			overflow: hidden;
+			position: relative;
+		}
+
+		@media (max-width: $md3+px) {
+			padding: 0px 0px 50% 0px;
+		}
+		@media (max-width: $md4+px) {
+			padding: 0px 0px 80% 0px;
+		}
+
+		iframe{
+			left:0;
+			top:0;
+			height:100%;
+			width:100%;
+			position:absolute;
+	  }
 	}
 
 	// .location__info
