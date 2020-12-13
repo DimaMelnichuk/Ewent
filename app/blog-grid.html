@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('_head.html',{
+"title":"Blog Grid"
+})
+
+<body>
+
+	<div class="wrapper">
+		@@include('_header.html')
+		<main class="page">
+
+			<div class="hero">
+				<div class="hero__title title">
+					<div class="title__main title__main--bottom-line">Blog Grid</div>
+				</div>
+				<nav class="hero__breadcrumbs breadcrumb">
+					<ul class="breadcrumb__list">
+						<li>
+							<a class="breadcrumb__link" href="index.html">Home</a>
+						</li>
+						<li>
+							<span class="breadcrumb__item">Blog Grid</span>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="blog-grid padding">
+				<div class="container">
+
+					<div class="blog-grid__filter filter">
+						<button class="filter__btn" type="button" data-filter="all">All</button>
+						<button class="filter__btn" type="button" data-filter=".interviews">Interviews</button>
+						<button class="filter__btn" type="button" data-filter=".tutorials">Tutorials</button>
+						<button class="filter__btn" type="button" data-filter=".news">News</button>
+						<button class="filter__btn" type="button" data-filter=".opinions">Opinions</button>
+					</div>
+
+					<div class="blog-grid__row">
+
+						<div class="blog-grid__column mix interviews opinions">
+							<div class="blog-grid__post-blog blog-post">
+								<a class="blog-post__img blog-post__img--overlay blog-post__img--border" href="#">
+									<img src="img/blog-post/01.jpg" alt="blog-post image">
+								</a>
+								<div class="blog-post__overlay blog-post__overlay--white">
+									<div class="blog-post__header">
+										<div class="blog-post__header-date">December 27, 2020</div>
+										<div class="blog-post__header-author">Admin</div>
+									</div>
+									<a class="blog-post__title" href="#">Aliquam Dapibus Tincidunt</a>
+									<div class="blog-post__descr">Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante
+										eu lacus. Vestibulum libero nisl, porta vel, scelerisque eget, malesuada at, neque.
+									</div>
+									<a class="blog-post__btn" href="#">Read More</a>
+								</div>
+							</div>
+						</div>
+						<div class="blog-grid__column mix news">
+							<div class="blog-grid__post-blog blog-post">
+								<div class="blog-post__content">
+									<div class="blog-post__header">
+										<div class="blog-post__header-date">December 24, 2020</div>
+										<div class="blog-post__header-author">Admin</div>
+									</div>
+									<a class="blog-post__title" href="#">Donec Eget Tellus Non Erat</a>
+									<div class="blog-post__descr">Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante
+										eu lacus. Vestibulum libero nisl, porta vel, scelerisque eget, malesuada at, neque.
+									</div>
+									<a class="blog-post__btn" href="#">Read More</a>
+								</div>
+							</div>
+						</div>
+						<div class="blog-grid__column mix tutorials opinions">
+							<div class="blog-grid__post-blockquotes blockquotes blockquotes--theme-gradient">
+								<div class="blockquotes__text">Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit.</div>
+								<div class="blockquotes__name">John McCoist</div>
+								<div class="blockquotes__job">Creative Director at Swift Creatives</div>
+							</div>
+						</div>
+
+						<div class="blog-grid__column mix tutorials">
+							<div class="blog-grid__post-blog blog-post">
+								<div class="blog-post__content">
+									<div class="blog-post__header">
+										<div class="blog-post__header-date">December 20, 2020</div>
+										<div class="blog-post__header-author">Admin</div>
+									</div>
+									<a class="blog-post__title" href="#">Quis Autem Vel Eum Iure Reing Elit</a>
+									<div class="blog-post__descr">Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante
+										eu lacus. Vestibulum libero nisl, porta vel, scelerisque eget, malesuada at, neque.
+									</div>
+									<a class="blog-post__btn" href="#">Read More</a>
+								</div>
+							</div>
+						</div>
+						<div class="blog-grid__column mix interviews">
+							<div class="blog-grid__post-blog blog-post">
+								<a class="blog-post__img blog-post__img--overlay blog-post__img--border" href="#">
+									<img src="img/blog-post/04.jpg" alt="blog-post image">
+								</a>
+								<div class="blog-post__overlay blog-post__overlay--white">
+									<div class="blog-post__header">
+										<div class="blog-post__header-date">December 17, 2020</div>
+										<div class="blog-post__header-author">Admin</div>
+									</div>
+									<a class="blog-post__title" href="#">Ut Enim ad Minima Veniam</a>
+									<div class="blog-post__descr">Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante
+										eu lacus. Vestibulum libero nisl, porta vel, scelerisque eget, malesuada at, neque.
+									</div>
+									<a class="blog-post__btn" href="#">Read More</a>
+								</div>
+							</div>
+						</div>
+						<div class="blog-grid__column mix news">
+							<div class="blog-grid__post-blog blog-post">
+								<div class="blog-post__content">
+									<div class="blog-post__header">
+										<div class="blog-post__header-date">December 13, 2020</div>
+										<div class="blog-post__header-author">Admin</div>
+									</div>
+									<a class="blog-post__title" href="#">Donec Eget Tellus Non Erat</a>
+									<div class="blog-post__descr">Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante
+										eu lacus. Vestibulum libero nisl, porta vel, scelerisque eget, malesuada at, neque.
+									</div>
+									<a class="blog-post__btn" href="#">Read More</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="blog-grid__column mix news opinions">
+							<div class="blog-grid__post-blog blog-post">
+								<a class="blog-post__img blog-post__img--overlay blog-post__img--border" href="#">
+									<img src="img/blog-post/05.jpg" alt="blog-post image">
+								</a>
+								<div class="blog-post__overlay blog-post__overlay--white">
+									<div class="blog-post__header">
+										<div class="blog-post__header-date">December 10, 2020</div>
+										<div class="blog-post__header-author">Admin</div>
+									</div>
+									<a class="blog-post__title" href="#">Vivamus Eget Nibh</a>
+									<div class="blog-post__descr">Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante
+										eu lacus. Vestibulum libero nisl, porta vel, scelerisque eget, malesuada at, neque.
+									</div>
+									<a class="blog-post__btn" href="#">Read More</a>
+								</div>
+							</div>
+						</div>
+						<div class="blog-grid__column mix interviews">
+							<div class="blog-grid__post-blog blog-post">
+								<div class="blog-post__content">
+									<div class="blog-post__header">
+										<div class="blog-post__header-date">December 7, 2020</div>
+										<div class="blog-post__header-author">Admin</div>
+									</div>
+									<a class="blog-post__title" href="#">Neque Porro Quisquam Est, Qui Dolorem Ipsum</a>
+									<div class="blog-post__descr">Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante
+										eu lacus. Vestibulum libero nisl, porta vel, scelerisque eget, malesuada at, neque.
+									</div>
+									<a class="blog-post__btn" href="#">Read More</a>
+								</div>
+							</div>
+						</div>
+						<div class="blog-grid__column mix tutorials">
+							<div class="blog-grid__post-blog blog-post">
+								<a class="blog-post__img blog-post__img--overlay blog-post__img--border" href="#">
+									<img src="img/blog-post/06.jpg" alt="blog-post image">
+								</a>
+								<div class="blog-post__overlay blog-post__overlay--white">
+									<div class="blog-post__header">
+										<div class="blog-post__header-date">December 5, 2020</div>
+										<div class="blog-post__header-author">Admin</div>
+									</div>
+									<a class="blog-post__title" href="#">Aliquam Dapibus Tincidunt</a>
+									<div class="blog-post__descr">Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante
+										eu lacus. Vestibulum libero nisl, porta vel, scelerisque eget, malesuada at, neque.
+									</div>
+									<a class="blog-post__btn" href="#">Read More</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="blog-grid__column mix news opinions">
+							<div class="blog-grid__post-blockquotes  blockquotes blockquotes--theme-gradient">
+								<div class="blockquotes__text">Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit.</div>
+								<div class="blockquotes__name">John McCoist</div>
+								<div class="blockquotes__job">Creative Director at Swift Creatives</div>
+							</div>
+						</div>
+						<div class="blog-grid__column mix tutorials">
+							<div class="blog-grid__post-blog blog-post">
+								<a class="blog-post__img blog-post__img--overlay blog-post__img--border" href="#">
+									<img src="img/blog-post/07.jpg" alt="blog-post image">
+								</a>
+								<div class="blog-post__overlay blog-post__overlay--white">
+									<div class="blog-post__header">
+										<div class="blog-post__header-date">December 2, 2020</div>
+										<div class="blog-post__header-author">Admin</div>
+									</div>
+									<a class="blog-post__title" href="#">Pellentesque Sed Dolor</a>
+									<div class="blog-post__descr">Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante
+										eu lacus. Vestibulum libero nisl, porta vel, scelerisque eget, malesuada at, neque.
+									</div>
+									<a class="blog-post__btn" href="#">Read More</a>
+								</div>
+							</div>
+						</div>
+						<div class="blog-grid__column mix interviews">
+							<div class="blog-grid__post-blog blog-post">
+								<div class="blog-post__content">
+									<div class="blog-post__header">
+										<div class="blog-post__header-date">December 24, 2020</div>
+										<div class="blog-post__header-author">Admin</div>
+									</div>
+									<a class="blog-post__title" href="#">Fusce Euismod Consequat</a>
+									<div class="blog-post__descr">Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante
+										eu lacus. Vestibulum libero nisl, porta vel, scelerisque eget, malesuada at, neque.
+									</div>
+									<a class="blog-post__btn" href="#">Read More</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="blog-grid__pagination pagination">
+						<a class="pagination__arrow pagination__arrow--left" href="#">
+							<svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14"><g><g><path d="M.288 6.31L6.326.29a.986.986 0 0 1 1.39 0 .979.979 0 0 1 0 1.386L2.375 7.003l5.342 5.326a.978.978 0 0 1 0 1.386.986.986 0 0 1-1.39 0L.288 7.695a.975.975 0 0 1 0-1.385z"/></g></g></svg>
+						</a>
+						<ul class="pagination__list">
+							<li>
+								<a class="pagination__link" href="#">1</a>
+							</li>
+							<li>
+								<a class="pagination__link pagination__link--active" href="#">2</a>
+							</li>
+							<li>
+								<a class="pagination__link" href="#">3</a>
+							</li>
+						</ul>
+						<a class="pagination__arrow pagination__arrow--right" href="#">
+							<svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14"><g><g><path d="M7.712 7.69l-6.038 6.02a.985.985 0 0 1-1.39 0 .978.978 0 0 1 0-1.386l5.342-5.327L.284 1.671a.978.978 0 0 1 0-1.386.985.985 0 0 1 1.39 0l6.038 6.02a.976.976 0 0 1 0 1.385z"/></g></g></svg>
+						</a>
+					</div>
+
+				</div>
+			</div>
+
+		</main>
+		@@include('_footer.html')
+
+		<div class="scroll-up">
+			<i class="icon-up-open-big"></i>
+		</div>
+	</div>
+
+	@@include('_js.html')
+	<script>
+		var mixer = mixitup('.blog-grid');
+	</script>
+</body>
+
+</html>

@@ -5,6 +5,20 @@
 	// .pagination__arrow
 
 	&__arrow {
+
+		&--left {
+			margin: 0px 30px 0px 0px;
+		}
+
+		&--right {
+			margin: 0px 0px 0px 30px;
+		}
+
+		@media (min-width: $md2+px) {
+			&:hover {
+				color: #936cc1;
+			}
+		}
 	}
 
 	// .pagination__list
@@ -13,15 +27,31 @@
 		display: flex;
 
 		li {
+			margin: 0px 30px 0px 0px;
 
+			&:last-child {
+				margin: 0;
+			}
 		}
 	}
 
 	// .pagination__link
 
 	&__link {
+		color: #313131;
+		font-family: Oxygen;
+		font-size: 24px;
+		font-weight: 400;
+		transition: color .3s;
 
 		&--active {
+			color: #936cc1;
+		}
+
+		@media (min-width: $md2+px) {
+			&:hover {
+				color: #936cc1;
+			}
 		}
 	}
 
