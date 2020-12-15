@@ -1,5 +1,4 @@
 .blog-post {
-	height: 100%;
 	position: relative;
 	border-radius: 7px;
 	box-shadow: 0 7px 27px rgba(0, 0, 0, 0.05);
@@ -9,7 +8,6 @@
 	&__img {
 		display: block;
 		position: relative;
-		height: 100%;
 		
 		img {
 			background-color: #1da7ba;

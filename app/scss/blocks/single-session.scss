@@ -722,7 +722,6 @@
 	// .aside-events__link
 
 	&__link {
-		display: inline-block;
 		color: #936cc1;
 		font-family: Oxygen;
 		font-size: 16px;
@@ -754,6 +753,10 @@
 	}
 }
 .aside-ticket {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	text-align: center;
 	padding: 75px 40px;
 	border-radius: 7px;

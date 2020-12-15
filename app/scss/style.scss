@@ -57,12 +57,17 @@
 @import "blocks/grid-gallery";
 @import "blocks/masonry-gallery";
 @import "blocks/location";
+@import "blocks/blog-classic";
 @import "blocks/blog-grid";
 @import "blocks/latest-updates";
 @import "blocks/take-part";
 @import "blocks/progess-bars";
 @import "blocks/footer/footer";
 @import "blocks/footer/footer-v3";
+
+// aside blocks
+@import "blocks/aside/aside-categories";
+@import "blocks/aside-blog";
 
 // features-page
 @import "blocks/features-page/features-page";
@@ -277,6 +282,37 @@ input {padding: 0px 20px;}
 		&.mixitup-control-active {
 			box-shadow: 0 7px 13px rgba(0, 0, 0, 0.1);
 			background-image: linear-gradient(-16deg, #cccccc 0%, #f3f3f3 100%);
+		}
+	}
+}
+.aside-list {
+
+	// .aside-list__item
+
+	&__item {
+		margin: 0px 0px 20px 0px;
+
+		&:last-child {
+			margin: 0;
+		}
+	}
+
+	// .aside-list__link
+
+	&__link {
+		color: #ba89f4;
+		font-family: Oxygen;
+		font-size: 16px;
+		line-height: 20px;
+		font-weight: 400;
+		letter-spacing: 0.16px;
+		border-bottom: 1px solid transparent;
+		transition: border .3s;
+
+		@media (min-width: $md2+px) {
+			&:hover {
+				border-bottom: 1px solid #ba89f4;
+			}
 		}
 	}
 }
