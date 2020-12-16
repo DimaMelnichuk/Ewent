@@ -1,0 +1,54 @@
+.content-session {
+
+	// .content-session__reply
+
+	&__reply {
+
+		@media (max-width: $md2+px) {
+			margin: 0px 0px 70px 0px;
+		}
+
+		@media (max-width: $md3+px) {
+			margin: 0px 0px 50px 0px;
+		}
+	}
+
+	// .content-session__comments
+
+	&__comments {
+		margin: 0px 0px 115px 0px;
+
+		@media (max-width: $md2+px) {
+			margin: 0px 0px 70px 0px;
+		}
+
+		@media (max-width: $md3+px) {
+			margin: 0px 0px 50px 0px;
+		}
+	}
+
+	// .content-session__article
+
+	&__article {
+		margin: 0px 0px 40px 0px;
+
+		@media (max-width: $md3+px) {
+			margin: 0px 0px 30px 0px;
+		}
+	}
+
+	// .content-session__next-article
+
+	&__next-article {
+		margin: 0px 0px 115px 0px;
+
+		@media (max-width: $md2+px) {
+			margin: 0px 0px 70px 0px;
+		}
+
+		@media (max-width: $md3+px) {
+			margin: 0px 0px 50px 0px;
+		}
+	}
+
+}
