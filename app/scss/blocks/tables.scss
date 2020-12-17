@@ -56,10 +56,12 @@
 
 		@media (max-width: $md4+px) {
 			font-size: 18px;
+			padding: 20px 8px;
 		}
 
-		@media (max-width: $md4+px) {
-			padding: 20px 8px;
+		@media (max-width: 450px) {
+			font-size: 16px;
+			padding: 15px 3px;
 		}
 	}
 
@@ -83,6 +85,29 @@
 		@media (max-width: $md4+px) {
 			font-size: 14px;
 			padding: 15px 8px;
+		}
+
+		@media (max-width: 450px) {
+			padding: 15px 3px;
+		}
+
+		a {
+			color: #936cc1;
+			font-family: Oxygen;
+			font-size: 16px;
+			font-weight: 700;
+			border-bottom: 1px solid transparent;
+			transition: border .3s;
+
+			@media (max-width: $md2+px) {
+				font-size: 15px;
+			}
+
+			@media (min-width: $md2+px) {
+				&:hover {
+					border-bottom: 1px solid #936cc1;
+				}
+			}
 		}
 	}
 

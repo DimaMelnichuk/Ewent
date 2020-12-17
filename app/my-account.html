@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('_head.html',{
+"title":"My Account"
+})
+
+<body>
+
+	<div class="wrapper">
+		@@include('_header.html')
+		<main class="page">
+
+			<div class="hero">
+				<div class="hero__title title">
+					<div class="title__main title__main--bottom-line">My Account</div>
+				</div>
+				<nav class="hero__breadcrumbs breadcrumb">
+					<ul class="breadcrumb__list">
+						<li>
+							<a class="breadcrumb__link" href="index.html">Home</a>
+						</li>
+						<li>
+							<span class="breadcrumb__item">My Account</span>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="single-page">
+				<div class="container">
+					<div class="single-page__row">
+
+						<div class="single-page__content content-my-account">
+
+							<div class="content-my-account__order-history order-history">
+								<div class="order-history__title">Order History</div>
+								<table class="order-history__tables tables tables--horizontally">
+									<tr>
+										<th>Order #</th>
+										<th>Date</th>
+										<th>Status</th>
+										<th>Total</th>
+										<th></th>
+									</tr>
+									<tr>
+										<td>12345</td>
+										<td>December 17, 2019</td>
+										<td>Pending</td>
+										<td>$5.99</td>
+										<td>
+											<a href="#">View</a>
+										</td>
+									</tr>
+									<tr>
+										<td>12346</td>
+										<td>December 16, 2019</td>
+										<td>Pending</td>
+										<td>$31.30</td>
+										<td>
+											<a href="#">View</a>
+										</td>
+									</tr>
+									<tr>
+										<td>12347</td>
+										<td>December 14, 2019</td>
+										<td>Pending</td>
+										<td>$96.27</td>
+										<td>
+											<a href="#">View</a>
+										</td>
+									</tr>
+								</table>
+							</div>
+
+							<div class="content-my-account__dashboard dashboard">
+								<div class="dashboard__title">My Dashboard</div>
+								<div class="dashboard__title-h3">Hello, John Doe (not John Doe? <a class="dashboard__greating-link" href="#">Sign out</a>)</div>
+								<div class="dashboard__text">From your account dashboard you can view your recent orders, manage your shipping and billing addresses and edit your password and account details.</div>
+								<div class="dashboard__title-h3">My Addresses</div>
+								<div class="dashboard__text">The following addresses will be used on the checkout page by default.</div>
+								<div class="dashboard__row">
+									<div class="dashboard__column">
+										<div class="dashboard__title-h3">Billing Address</div>
+										<ul class="dashboard__list">
+											<li class="dashboard__item">John Doe</li>
+											<li class="dashboard__item">Green street</li>
+											<li class="dashboard__item">12345 New York</li>
+											<li class="dashboard__item">USA</li>
+										</ul>
+										<a class="dashboard__btn btn btn--theme-silver-gradient" href="#">Edit</a>
+									</div>
+									<div class="dashboard__column">
+										<div class="dashboard__title-h3">Shipping Address</div>
+										<ul class="dashboard__list">
+											<li class="dashboard__item">John Doe</li>
+											<li class="dashboard__item">Green street</li>
+											<li class="dashboard__item">12345 New York</li>
+											<li class="dashboard__item">USA</li>
+										</ul>
+										<a class="dashboard__btn btn btn--theme-silver-gradient" href="#">Edit</a>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+						<aside class="single-page__aside aside-blog">
+
+							<div class="aside-blog__search aside-search">
+								<form action="#" class="aside-search__forum">
+									<input class="aside-search__input" type="text" placeholder="Search">
+									<button class="aside-search__btn" type="submit"><i class="icon-search"></i></button>
+								</form>
+							</div>
+
+							<div class="aside-blog__categories aside-categories">
+								<div class="aside-blog__title">Categories</div>
+								<ul class="aside-list">
+									<li class="aside-list__item">
+										<a class="aside-list__link" href="#">Interviews</a>
+									</li>
+									<li class="aside-list__item">
+										<a class="aside-list__link" href="#">Tutorials</a>
+									</li>
+									<li class="aside-list__item">
+										<a class="aside-list__link" href="#">News</a>
+									</li>
+									<li class="aside-list__item">
+										<a class="aside-list__link" href="#">Opinions</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="aside-blog__products aside-products">
+								<a class="aside-products__item" href="#">
+									<div class="aside-products__img">
+										<img src="img/890x315_img1.jpg" alt="Product">
+									</div>
+									<div class="aside-products__label">
+										Black T-shirt
+										<span class="aside-products__price">$25.00</span>
+									</div>
+								</a>
+								<a class="aside-products__item" href="#">
+									<div class="aside-products__img">
+										<img src="img/890x315_img1.jpg" alt="Product">
+									</div>
+									<div class="aside-products__label">
+										Fancy Mug
+										<span class="aside-products__price">$35.00</span>
+									</div>
+								</a>
+								<a class="aside-products__item" href="#">
+									<div class="aside-products__img">
+										<img src="img/890x315_img1.jpg" alt="Product">
+									</div>
+									<div class="aside-products__label">
+										Warm Hoodie
+										<span class="aside-products__price">$38.00</span>
+									</div>
+								</a>
+							</div>						
+
+							<div class="aside-blog__like-us aside-like-us">
+								<div class="aside-blog__title">Like Us on Facebook</div>
+								<img src="img/like-us.jpg" alt="Like us">
+							</div>
+
+						</aside>
+
+					</div>
+				</div>
+			</div>
+
+		</main>
+		@@include('_footer.html')
+
+		<div class="scroll-up">
+			<i class="icon-up-open-big"></i>
+		</div>
+	</div>
+
+	@@include('_js.html')
+
+</body>
+
+</html>

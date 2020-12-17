@@ -1,0 +1,29 @@
+.content-my-account {
+
+	// .content-my-account__order-history
+
+	&__order-history {
+		margin: 0px 0px 115px 0px;
+
+		@media (max-width: $md2+px) {
+			margin: 0px 0px 70px 0px;
+		}
+
+		@media (max-width: $md3+px) {
+			margin: 0px 0px 50px 0px;
+		}
+	}
+
+	// .content-my-account__dashboard
+
+	&__dashboard {
+
+		@media (max-width: $md2+px) {
+			margin: 0px 0px 70px 0px;
+		}
+
+		@media (max-width: $md3+px) {
+			margin: 0px 0px 50px 0px;
+		}
+	}
+}
