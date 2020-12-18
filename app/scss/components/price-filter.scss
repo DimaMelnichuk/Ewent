@@ -1,8 +1,8 @@
 .price-filter {
 
 	&__slider {
-		height: 5px;
-		background-color: #DDDDDDFF;
+		height: 13px;
+		background-color: #eeeeee;
 		margin: 0px 11px 28px;
 		position: relative;
 	
@@ -10,23 +10,25 @@
 		&::after {
 			position: absolute;
 			content: "";
-			background-color: #DDDDDDFF;
+			background-color: #eeeeee;
 			width: 9px;
-			height: 5px;
+			height: 13px;
 			top: 0;
 		}
 	
 		&::before {
 			left: -9px;
+			border-radius: 7px 0 0 7px;
 		}
 	
 		&::after {
 			right: -9px;
+			border-radius: 0px 7px 7px 0;
 		}
 
 		.noUi-base {
 			position: relative;
-			height: 5px;
+			height: 6px;
 		}
 	
 		.noUi-origin,
@@ -36,40 +38,31 @@
 			width: 10%;
 			z-index: 1;
 			height: 5px;
-			top: 0;
+			top: 50%;
+
 			right: 0;
 			transform-origin: 0 0;
 			transform-style: flat;
 		}
 	
 		.noUi-connect {
-			background-color: #888888FF;
-			width: 100%;
 			height: 100%;
+			background-color: #ffffff;
+			background-image: linear-gradient(to left, #f4c9df 0%, #c99cff 100%);
+			width: 100%;
 		}
 	
 		.noUi-handle {
-			height: 20px;
-			width: 20px;
+			height: 24px;
+			width: 24px;
 			background-color: #fff;
-			border: 1px solid #DDDDDDFF;
+			box-shadow: 0 7px 27px rgba(0, 0, 0, 0.05);
+			border: 7px solid #936cc1;
 			border-radius: 50%;
 			position: absolute;
-			top: -7.5px;
+			top: -9.5px;
 			right: -10px;
 			cursor: pointer;
-	
-			&::after {
-				content: "";
-				width: 15px;
-				height: 15px;
-				position: absolute;
-				left: 50%;
-				top: 50%;
-				transform: translate(-50%, -50%);
-				background-color: #FF5959FF;
-				border-radius: 50%;
-			}
 		}
 		
 		.noUi-tooltip {
@@ -83,24 +76,45 @@
 
 	&__values {
 		display: flex;
-		flex-direction: column;
-		margin: -10px;
-	}
-
-	&__values-column {
-		flex: 0 1 50%;
-		padding: 10px;
-		display: flex;
+		justify-content: space-between;
 		align-items: center;
 	}
 
-	&__values-label {
-		font-size: 12px;
+	&__values-prices {
+		
 	}
 
-	&__values-input {
-		flex: 1 1 auto;
-		padding: 0px 0px 0px 15px;
+	&__values-text {
+		color: #616161;
+		font-family: Oxygen;
+		font-size: 14px;
+		font-weight: 400;
+		letter-spacing: 0.14px;
+	}
+
+	&__values-price {
+		position: relative;
+		color: #616161;
+		font-family: Oxygen;
+		font-size: 14px;
+		font-weight: 400;
+		letter-spacing: 0.14px;
+
+		&::before{
+			content: "$";
+			
+		}
+	}
+
+	&__values-line {
+		&::after {
+			content: " - ";
+			display: inline-flex;
+		}
+	}
+
+	&__btn {
+		padding: 10px 20px;
 	}
 
 }

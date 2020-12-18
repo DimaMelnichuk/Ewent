@@ -1,0 +1,32 @@
+.toolbar {
+
+	// .toolbar__results
+
+	&__results {
+		color: #616161;
+		font-family: Oxygen;
+		font-size: 16px;
+		font-weight: 400;
+
+		@media (max-width: $md4+px) {
+			margin: 0px 0px 15px 0px;
+		}
+
+	}
+
+	// .toolbar__sorting
+
+	&__sorting {
+	}
+
+	// .toolbar__sorting-select
+
+	&__sorting-select {
+		max-width: 269px;
+		padding: 13px 20px;
+		box-shadow: 0 7px 27px rgba(0, 0, 0, 0.05);
+		border: 1px solid #eeeeee;
+		background-color: #ffffff;
+		border-radius: 7px;
+	}
+}

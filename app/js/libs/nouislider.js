@@ -589,7 +589,7 @@
 
     var defaultFormatter = {
         to: function(value) {
-            return value !== undefined && value.toFixed(2);
+            return value !== undefined && value.toFixed(0);
         },
         from: Number
     };

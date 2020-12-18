@@ -63,6 +63,9 @@
 @import "blocks/footer/footer";
 @import "blocks/footer/footer-v3";
 @import "blocks/dashboard";
+@import "blocks/product-cards";
+@import "blocks/card";
+@import "blocks/toolbar";
 
 // single blocks
 @import "blocks/single-page/single-blocks";
@@ -70,6 +73,7 @@
 @import "blocks/single-page/content-blog";
 @import "blocks/single-page/content-session";
 @import "blocks/single-page/content-my-account";
+@import "blocks/single-page/content-product";
 
 // aside blocks
 @import "blocks/aside/aside-blocks";
@@ -109,6 +113,8 @@
 @import "components/blockquotes";
 @import "components/dropcaps";
 @import "components/pagination";
+@import "components/price-filter";
+@import "components/rating";
 
 /* ==========================================================================
   General Styles
