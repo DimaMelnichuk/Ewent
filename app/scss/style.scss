@@ -66,6 +66,10 @@
 @import "blocks/product-cards";
 @import "blocks/card";
 @import "blocks/toolbar";
+@import "blocks/interested";
+@import "blocks/cart-totals";
+@import "blocks/shop-cart";
+@import "blocks/checkout-page";
 
 // single blocks
 @import "blocks/single-page/single-blocks";
@@ -115,6 +119,7 @@
 @import "components/pagination";
 @import "components/price-filter";
 @import "components/rating";
+@import "components/checkbox";
 
 /* ==========================================================================
   General Styles

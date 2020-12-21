@@ -117,4 +117,58 @@
 		font-family: "Oxygen";
 		font-weight: 700;
 	}
+
+	&__checkbox {
+		margin: 0px 0px 20px 0px;
+	}
+
+	// .tables__product
+
+	&__product {
+		display: flex;
+	}
+
+	// .tables__product-img
+
+	&__product-img {
+		margin: 0px 20px 0px 0px;
+
+		img {
+			width: 75px;
+			height: 75px;
+			object-fit: cover;
+			background-color: #ba89f4;
+			border-radius: 7px;
+		}
+	}
+
+	// .tables__sale
+
+	&__sale {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	// .tables__form
+
+	&__form {
+		display: flex;
+		align-items: center;
+	}
+
+	// .tables__form-input
+
+	&__form-input {
+		width: 100%;
+		max-width: 400px;
+		height: 45px;
+		margin: 0px 5px 0px 0px;
+	}
+
+	// .tables__btn
+
+	&__btn {
+		text-align: right;
+	}
+
 }

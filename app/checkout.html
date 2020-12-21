@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('_head.html',{
+"title":"Checkout"
+})
+
+<body>
+
+	<div class="wrapper">
+		@@include('_header.html')
+		<main class="page">
+
+			<div class="hero">
+				<div class="hero__title title">
+					<div class="title__main title__main--bottom-line">Checkout</div>
+				</div>
+				<nav class="hero__breadcrumbs breadcrumb">
+					<ul class="breadcrumb__list">
+						<li>
+							<a class="breadcrumb__link" href="index.html">Home</a>
+						</li>
+						<li>
+							<span class="breadcrumb__item">Checkout</span>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="checkout-page padding">
+				<div class="container">
+
+					<div class="checkout-page__services">
+						<div class="checkout-page__services-item">
+							Returning customer?
+							<a class="checkout-page__services-link" href="#">Click here to login</a>
+						</div> 
+						<div class="checkout-page__services-item">
+							Have a coupon?
+							<a class="checkout-page__services-link" href="#">Click here to enter your code</a>
+						</div>
+					</div>
+
+					<div class="checkout-page__details">
+						<div class="checkout-page__row">
+							<div class="checkout-page__column">
+								<div class="checkout-page__title">Billing Details</div>
+								 <form class="checkout-page__form" action="#">
+									 <div class="checkout-page__form-row">
+										 <div class="checkout-page__form-column">
+											 <label class="checkout-page__form-label">
+												First Name
+												<input class="checkout-page__form-input" type="text" required>
+											 </label>
+										 </div>
+										 <div class="checkout-page__form-column">
+											 <label class="checkout-page__form-label">
+												Last Name
+												<input class="checkout-page__form-input" type="text" required>
+											 </label>
+										 </div>
+									 </div>
+									 <label class="checkout-page__form-label">
+										Company Name (optional)
+										<input class="checkout-page__form-input" type="text" required>
+									 </label>
+									 <div class="checkout-page__form-address">
+										 <label class="checkout-page__form-label">
+											Address
+											<input class="checkout-page__form-input" type="text" placeholder="Street address" required>
+											<input class="checkout-page__form-input" type="text" placeholder="Apartment, suit, unit, etc. (optional)" required>
+										 </label>
+									 </div>
+									 <label class="checkout-page__form-label">
+										Town/City
+										<input class="checkout-page__form-input" type="text" required>
+									 </label>
+									 <label class="checkout-page__form-label">
+										Post code/Zip
+										<input class="checkout-page__form-input" type="text" required>
+									 </label>
+									 <div class="checkout-page__form-row">
+										<div class="checkout-page__form-column">
+											<label class="checkout-page__form-label">
+											  Phone
+											  <input class="checkout-page__form-input" type="text" required>
+											</label>
+										</div>
+										<div class="checkout-page__form-column">
+											<label class="checkout-page__form-label">
+											  Email Address
+											  <input class="checkout-page__form-input" type="text" required>
+											</label>
+										</div>
+									 </div>
+									 <div class="checkout-page__checkbox checkbox">
+										 <label class="checkbox__label">Create an account 
+											 <input class="checkbox__input" type="checkbox" checked="checked">
+											 <span class="checkbox__checkmark"></span>
+										 </label>
+									 </div>
+								 </form>
+							</div>
+							<div class="checkout-page__column">
+								<div class="checkout-page__title">Shipping to a Different Address</div>
+								<form action="#">
+									<label class="checkout-page__form-label">
+										Order Notes
+										<textarea class="checkout-page__form-textarea" name="" placeholder="Notes about your order, e.g. special notes for delivery." required></textarea>
+									</label>
+								</form>
+							</div>
+						</div>
+					</div>
+
+					<div class="checkout-page__order">
+						<div class="checkout-page__title">Your Order</div>
+
+						<div class="checkout-page__order-table">
+							<table class="tables tables--horizontally">
+								<tr>
+									<th>Product</th>
+									<th>Total</th>
+									<th></th>
+								</tr>
+								<tr>
+									<td>Black T-shirt</td>
+									<td>$25.00</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Fancy Mug</td>
+									<td>$35.00</td>
+									<td></td>
+								</tr>
+							</table>
+							<table class="tables tables--vertically">
+								<tr>
+									<th>Cart Subtotal</th>
+									<td>$60.00</td>
+								</tr>
+								<tr>
+									<th>Shipping</th>
+									<td>
+										<div class="tables__checkbox checkbox">
+											<label class="checkbox__label">Free shipping
+												<input class="checkbox__input" type="radio" checked="checked" name="radio">
+												<span class="checkbox__checkmark checkbox__checkmark--radio"></span>
+											</label>
+											<label class="checkbox__label">Flat shipping
+												<input class="checkbox__input" type="radio" name="radio">
+												<span class="checkbox__checkmark checkbox__checkmark--radio"></span>
+											</label>
+										</div>
+									</td>
+								</tr>
+								<tr class="tables__total">
+									<th>Order Total</th>
+									<td>$60.00</td>
+								</tr>
+							</table>
+						</div>
+
+						<form class="checkout-page__order-from order-form" action="#">
+							<div class="order-form__radio checkbox">
+								<label class="checkbox__label">
+									<div class="checkbox__label-title">Checkout Payments
+										<span>Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</span>
+									</div>
+									<input class="checkbox__input" type="radio" checked="checked" name="payments">
+									<span class="checkbox__checkmark checkbox__checkmark--radio"></span>
+								</label>
+								<label class="checkbox__label">
+									<div class="checkbox__label-title">PayPal</div>
+									<a class="checkbox__label-link" href="#">What is PayPal?</a>
+									<input class="checkbox__input" type="radio" name="payments">
+									<span class="checkbox__checkmark checkbox__checkmark--radio"></span>
+								</label>
+								<img class="order-form__img" src="img/checkout-page/paypal.png" alt="PayPal">
+							</div>
+							<div class="order-form__checkbox checkbox">
+								<label class="checkbox__label">I’ve read and accept the <a class="checkbox__label-link" href="#"> Terms & Conditions</a>
+									<input class="checkbox__input" type="checkbox" checked="checked">
+									<span class="checkbox__checkmark"></span>
+								</label>
+							</div>
+							<button class="btn btn--size-b btn--theme-yellow-gradient" type="submit">Place Order</button>
+						</form>
+					</div>
+
+				</div>
+			</div>
+
+		</main>
+		@@include('_footer.html')
+
+		<div class="scroll-up">
+			<i class="icon-up-open-big"></i>
+		</div>
+	</div>
+
+	@@include('_js.html')
+
+</body>
+
+</html>

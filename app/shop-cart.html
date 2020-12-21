@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('_head.html',{
+"title":"Cart"
+})
+
+<body>
+
+	<div class="wrapper">
+		@@include('_header.html')
+		<main class="page">
+
+			<div class="hero">
+				<div class="hero__title title">
+					<div class="title__main title__main--bottom-line">Cart</div>
+				</div>
+				<nav class="hero__breadcrumbs breadcrumb">
+					<ul class="breadcrumb__list">
+						<li>
+							<a class="breadcrumb__link" href="index.html">Home</a>
+						</li>
+						<li>
+							<span class="breadcrumb__item">Cart</span>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="shop-cart padding">
+				<div class="container">
+
+					<div class="shop-cart__table-product table-product">
+						<table class="tables tables--horizontally">
+							<tr>
+								<th>Product</th>
+								<th>Price</th>
+								<th>Quantity</th>
+								<th>Total</th>
+							</tr>
+							<tr>
+								<td>
+									<div class="tables__product">
+										<div class="tables__product-img">
+											<img src="img/430x660_img1.jpg" alt="Product image">
+										</div>
+										<div class="tables__product-title">Black T-shirt</div>
+									</div>
+								</td>
+								<td>$25.00</td>
+								<td>1</td>
+								<td>$25.00</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="tables__product">
+										<div class="tables__product-img">
+											<img src="img/430x660_img1.jpg" alt="Product image">
+										</div>
+										<div class="tables__product-title">Black T-shirt</div>
+									</div>
+								</td>
+								<td>$35.00</td>
+								<td>1</td>
+								<td>$35.00</td>
+							</tr>
+							<tr>
+								<th>
+									<div class="tables__sale">
+										<form class="tables__form" action="#">
+											<input class="tables__form-input" type="text" placeholder="Enter coupon code" required>
+											<button class="tables__form-btn btn btn--size-md btn--theme-yellow-gradient" type="submit">Apply Coupon</button>
+										</form>
+									</div>
+								</th>
+								<th>
+
+								</th>
+								<th></th>
+								<th>
+									<div class="tables__btn">
+										<button class="btn btn--size-md btn--theme-yellow-gradient" type="submit">Update Cart</button>
+									</div>
+								</th>
+							</tr>
+						</table>
+					</div>
+
+					<div class="shop-cart__row">
+						<div class="shop-cart__column">
+							<div class="shop-cart__interested interested">
+								<div class="interested__title">You May Be Interested In...</div>
+								<div class="interested__row">
+									<div class="interested__column">
+										<div class="interested__item card">
+											<div class="card__body">
+												<div class="card__img">
+													<img src="img/890x315_img1.jpg" alt="Image product">
+													<div class="card__overlay">
+														<div class="card__overlay-label card__overlay-label--new">New</div>
+														<button class="card__overlay-btn btn btn--size-md btn--theme-yellow-gradient" type="submit">Add to Cart</button>
+													</div>
+												</div>
+												<div class="card__rating rating" data-total-value="0">
+													<div class="rating__item" data-item-value="5"><i class="rating__item-icon icon-star"></i></div>
+													<div class="rating__item" data-item-value="4"><i class="rating__item-icon icon-star"></i></div>
+													<div class="rating__item" data-item-value="3"><i class="rating__item-icon icon-star"></i></div>
+													<div class="rating__item" data-item-value="2"><i class="rating__item-icon icon-star"></i></div>
+													<div class="rating__item" data-item-value="1"><i class="rating__item-icon icon-star"></i></div>
+												</div>
+												<div class="card__name">Baseball Cap</div>
+												<div class="card__price"><span class="card__price-old">$33.00</span> $25.00</div>
+											</div>
+										</div>
+									</div>
+									<div class="interested__column">
+										<div class="interested__item card">
+											<div class="card__body">
+												<div class="card__img">
+													<img src="img/890x315_img1.jpg" alt="Image product">
+													<div class="card__overlay">
+														<div class="card__overlay-label card__overlay-label--new">New</div>
+														<button class="card__overlay-btn btn btn--size-md btn--theme-yellow-gradient" type="submit">Add to Cart</button>
+													</div>
+												</div>
+												<div class="card__rating rating" data-total-value="0">
+													<div class="rating__item" data-item-value="5"><i class="rating__item-icon icon-star"></i></div>
+													<div class="rating__item" data-item-value="4"><i class="rating__item-icon icon-star"></i></div>
+													<div class="rating__item" data-item-value="3"><i class="rating__item-icon icon-star"></i></div>
+													<div class="rating__item" data-item-value="2"><i class="rating__item-icon icon-star"></i></div>
+													<div class="rating__item" data-item-value="1"><i class="rating__item-icon icon-star"></i></div>
+												</div>
+												<div class="card__name">Baseball Cap</div>
+												<div class="card__price"><span class="card__price-old">$33.00</span> $25.00</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="shop-cart__column">					
+							<div class="shop-cart__cart-totals cart-totals">
+								<div class="cart-totals__title">Cart Totals</div>
+								<div class="cart-totals__table">
+									<table class="tables tables--vertically">
+										<tr>
+											<th>Subtotal</th>
+											<td>$60.00</td>
+										</tr>
+										<tr>
+											<th>Shipping</th>
+											<td>
+												<div class="tables__checkbox checkbox">
+													<label class="checkbox__label">Free shipping
+														<input class="checkbox__input" type="radio" checked="checked" name="radio">
+														<span class="checkbox__checkmark"></span>
+													</label>
+													<label class="checkbox__label">Flat shipping
+														<input class="checkbox__input" type="radio" name="radio">
+														<span class="checkbox__checkmark"></span>
+													</label>
+												</div>
+												<a class="tables__btn" href="#">Calculate Shipping</a>
+											</td>
+										</tr>
+										<tr class="tables__total">
+											<th>Total</th>
+											<td>$60.00</td>
+										</tr>
+									</table>
+								</div>
+								<div class="cart-totals__btn">
+									<a class="btn btn--size-md btn--theme-yellow-gradient" href="#">Proceed to Checkout</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</main>
+		@@include('_footer.html')
+
+		<div class="scroll-up">
+			<i class="icon-up-open-big"></i>
+		</div>
+	</div>
+
+	@@include('_js.html')
+
+</body>
+
+</html>
