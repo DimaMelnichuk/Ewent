@@ -143,6 +143,13 @@
 		font-size: 18px;
 		font-weight: 500;
 		margin: 8px 0px 0px 0px;
+		transition: color .3s;
+
+		@media (min-width: $md2+px) {
+			&:hover {
+				color: #936cc1;
+			}
+		}
 
 		@media (max-width: $md2+px) {
 			margin: 3px 0px 0px 0px;

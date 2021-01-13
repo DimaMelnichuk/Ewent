@@ -104,9 +104,20 @@
 	// .speakers-v3__overlay-name
 
 	&__overlay-name {
+		display: inline-block;
 		font-size: 24px;
+		line-height: 30px;
 		font-weight: 500;
 		margin: 0px 0px 15px 0px;
+		color: #fff;
+		border-bottom: 1px solid transparent;
+		transition: border .2s;
+
+		@media (min-width: $md2+px) {
+			&:hover {
+				border-bottom: 1px solid #fff;
+			}
+		}
 
 		@media (max-width: $md1+px) {
 			margin: 0px 0px 5px 0px;

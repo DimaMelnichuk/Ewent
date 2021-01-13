@@ -389,11 +389,13 @@
 		@media (max-width: $md2+px) {
 			margin: 0px 0px 15px 0px;
 		}
+
 	}
 
 	// .aside-events__link
 
 	&__link {
+		display: inline-block;
 		color: #936cc1;
 		font-family: Oxygen;
 		font-size: 16px;
@@ -409,8 +411,8 @@
 			margin: 0px 0px 5px 0px;
 		}
 
-		&:hover {
-			@media (min-width: $md2+px) {
+		@media (min-width: $md2+px) {
+			&:hover {
 				border-bottom: 1px solid #936cc1;
 			}
 		}
