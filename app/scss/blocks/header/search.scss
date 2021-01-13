@@ -8,8 +8,9 @@
 	bottom: 0;
 	height: 100%;
 	width: 100%;
+	font-size: 35px;
 	transition: all .3s;
-	z-index: 999;
+	z-index: 1002;
 
 	&.active {
 		visibility: visible;

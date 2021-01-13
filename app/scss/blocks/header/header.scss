@@ -1,23 +1,41 @@
 .header {
-	position: absolute;
+	position: fixed;
 	width: 100%;
 	top: 0;
 	left: 0;
 	z-index: 50;
 	transition: background-color .3s;
 
-	&.fixed {
-		position: fixed;
-		box-shadow: 0 7px 27px rgba(0, 0, 0, 0.05);
-		
-		&.header--white {
+	@media (min-width: $md2+px) {
+		&.fixed {
+			box-shadow: 0 7px 27px rgba(0, 0, 0, 0.05);
+			
+			&.header--white {
+				background-color: #ffffff;
+	
+				&::before {
+					background-color: #fff;
+				}
+			}
+			&.header--dark {
+				background-color: #313131;
+	
+				&::before {
+					background-color: #313131;
+				}
+			}
+		}
+	}
+
+	@media (max-width: $md2+px) {
+		&--white {
 			background-color: #ffffff;
 
 			&::before {
 				background-color: #fff;
 			}
 		}
-		&.header--dark {
+		&--dark {
 			background-color: #313131;
 
 			&::before {

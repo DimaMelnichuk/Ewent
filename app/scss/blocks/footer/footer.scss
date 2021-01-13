@@ -170,12 +170,11 @@
 		padding: 0px 0px 0px 27px;
 
 		&::before {
-			content: "";
+			content: "\e836";
 			position: absolute;
 			left: 0;
-			background: url("../img/icons/calendar-full.svg") 0 0 no-repeat;
-			width: 19px;
-			height: 17px;
+			font-family: 'Linearicons-Free';
+			font-size: 19px;
 		}
 	}
 

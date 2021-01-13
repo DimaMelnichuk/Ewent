@@ -12,7 +12,7 @@ let swiperTestimonials = new Swiper('.testimonials__slider', {
 	breakpoints: {
 		991.98: {
 			slidesPerView: 2,
-			slidesPerGroup: 1,
+			slidesPerGroup: 2,
 			loop: true,
 			spaceBetween: 80,
 		}
@@ -47,4 +47,26 @@ let swiperTestimonials3 = new Swiper('.testimonials__slider-v3', {
 			loop: false,
 		}
 	}
+});
+
+let singleProduct = new Swiper('.single-product__slider', {
+	slidesPerView: 1,
+	loop: true,
+
+	thumbs: {
+		swiper: {
+			el: '.single-product__preview-slider',
+			slidesPerView: 3,
+			spaceBetween: 15,
+
+			breakpoints: {
+				480: {
+					slidesPerView: 4,
+				},
+				1402: {
+					slidesPerView: 6,
+				},
+			}
+		}
+	},
 });

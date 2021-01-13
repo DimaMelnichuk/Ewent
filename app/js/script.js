@@ -6,5 +6,4 @@
 @@include('components/scroll-up.js')
 @@include('components/accordion.js')
 @@include('components/dynamic_adapt.js')
-@@include('components/filter-price.js')
 @@include('components/rating.js')

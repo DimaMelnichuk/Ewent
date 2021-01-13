@@ -17,13 +17,29 @@
 	// .toolbar__sorting
 
 	&__sorting {
+		position: relative;
+		
+		&::after {
+			content: "\e874";
+			font-family: 'Linearicons-Free';
+			display: block;
+			position: absolute;
+			right: 20px;
+			top: 50%;
+			transform: translateY(-50%);
+			font-size: 21px;
+			color: #525252;
+			z-index: 1;
+			cursor: pointer;
+		}
 	}
 
 	// .toolbar__sorting-select
 
 	&__sorting-select {
 		max-width: 269px;
-		padding: 13px 20px;
+		appearance: none;
+		padding: 13px 50px 13px 20px;
 		box-shadow: 0 7px 27px rgba(0, 0, 0, 0.05);
 		border: 1px solid #eeeeee;
 		background-color: #ffffff;

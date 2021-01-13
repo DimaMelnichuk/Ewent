@@ -10,6 +10,10 @@
 		padding: 30px;
 		text-align: center;
 
+		@media (max-width: $md4+px) {
+			padding: 20px;
+		}
+
 		@media (min-width: $md2+px) {
 			&:hover {
 				.card__overlay-btn {
@@ -76,6 +80,11 @@
 		opacity: 0;
 		visibility: hidden;
 		transition: opacity .3s, visibility .3s;
+
+		@media (max-width: $md2+px) {
+			opacity: 1;
+			visibility: visible;
+		}
 	}
 
 	// .card__rating

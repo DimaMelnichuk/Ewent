@@ -5,13 +5,25 @@
 	// .pagination__arrow
 
 	&__arrow {
+		color: #313131;
+		font-size: 40px;
 
 		&--left {
 			margin: 0px 30px 0px 0px;
+
+			&::before {
+				content: "\e879";
+				font-family: 'Linearicons-Free';
+			}
 		}
 
 		&--right {
 			margin: 0px 0px 0px 30px;
+
+			&::before {
+				content: "\e87a";
+				font-family: 'Linearicons-Free';
+			}
 		}
 
 		@media (min-width: $md2+px) {

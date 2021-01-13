@@ -16,6 +16,7 @@ searchIcon.addEventListener("click", function (e) {
 searchClose.addEventListener("click", function (e) {
 	searchBox.classList.remove('active');
 });
+
 /***************** Menu-btn ********************/
 let menu_burger = document.querySelector('.menu__burger');
 let menu = document.querySelector('.menu');

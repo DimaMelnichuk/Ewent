@@ -145,11 +145,20 @@
 	// .schedule__event
 
 	&__event {
+		display: inline-block;
 		font-size: 24px;
-		line-height: 30px;
+		line-height: 26px;
 		font-weight: 500;
 		margin: 0px 0px 10px 0px;
 		color: #313131;
+		border-bottom: 1px solid transparent;
+		transition: border .2s, color .2s;
+		
+		@media (min-width: $md2+px) {
+			&:hover {
+				color: #936cc1;
+			}
+		}
 
 		@media (max-width: $md1+px) {
 			font-size: 22px;
@@ -235,13 +244,21 @@
 		}
 	}
 
-	// .schedule__coach-name
+	// .schedule__coach-link
 
-	&__coach-name {
+	&__coach-link {
+		display: block;
+		margin: 8px 0px 0px 0px;
 		color: #313131;
 		font-size: 18px;
 		font-weight: 500;
-		margin: 8px 0px 0px 0px;
+		transition: color .2s;
+		
+		@media (min-width: $md2+px) {
+			&:hover {
+				color: #936cc1;
+			}
+		}
 	}
 
 	// .schedule__coach-job

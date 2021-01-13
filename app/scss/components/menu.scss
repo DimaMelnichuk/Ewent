@@ -69,7 +69,7 @@
 				background: #313131;
 				opacity: 0;
 				transform: translateY(10px);
-				transition: all .3s;
+				transition: all .2s;
 			}
 		}
 
@@ -141,8 +141,8 @@
 		border-radius: 7px;
 		padding: 30px 27px;
 		background: rgba(#212121, .9);
-		transform: translateY(30px);
-		transition: all .3s;
+		transform: translateY(15px);
+		transition: all .2s;
 
 		&--wide {
 			width: 1350px;
