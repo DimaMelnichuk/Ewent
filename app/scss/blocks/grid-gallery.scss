@@ -1,6 +1,7 @@
 .grid-gallery {
 
 	&__content {
+		padding: 15px 0px;
 
 		&--gap {
 			.grid-gallery__row {
@@ -23,12 +24,15 @@
 			.grid-gallery__column {
 				flex: 0 1 25%;
 
-				@media (max-width: $md3+px) {
+				@media (max-width: $md2+px) {
 					flex: 0 1 33.333%;
 				}
 
-				@media (max-width: $md4+px) {
+				@media (max-width: $md3+px) {
 					flex: 0 1 50%;
+				}
+				@media (max-width: $md4+px) {
+					flex: 0 1 100%;
 				}
 			}
 		}
