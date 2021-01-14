@@ -141,23 +141,19 @@
 							</div>
 
 							<div class="content-blog__pagination pagination">
-								<a class="pagination__arrow pagination__arrow--left" href="#">
-							
-								</a>
+								<a class="pagination__arrow pagination__arrow--left" href="#"></a>
 								<ul class="pagination__list">
 									<li>
-										<a class="pagination__link pagination__link--active" href="#">1</a>
+										<a class="pagination__link" href="#">1</a>
 									</li>
 									<li>
-										<a class="pagination__link" href="#">2</a>
+										<a class="pagination__link pagination__link--active" href="#">2</a>
 									</li>
 									<li>
 										<a class="pagination__link" href="#">3</a>
 									</li>
 								</ul>
-								<a class="pagination__arrow" href="#">
-							
-								</a>
+								<a class="pagination__arrow pagination__arrow--right" href="#"></a>
 							</div>
 						</div>
 
@@ -166,34 +162,34 @@
 							<div class="aside-blog__search aside-search">
 								<form action="#" class="aside-search__forum">
 									<input class="aside-search__input" type="text" placeholder="Search">
-									<button class="aside-search__btn" type="submit"><i class="icon-search"></i></button>
+									<button class="aside-search__btn" type="submit"><i class="lnr lnr-magnifier"></i></button>
 								</form>
 							</div>
 
 							<div class="aside-blog__latest-post aside-latest-post">
 								<div class="aside-blog__title">Latest Posts</div>
 								<div class="aside-latest-post__item">
-									<div class="aside-latest-post__img">
+									<a class="aside-latest-post__img" href="#">
 										<img src="img/grid-gallery/03.jpg" alt="Image last post">
-									</div>
+									</a>
 									<div class="aside-latest-post__content">
 										<div class="aside-latest-post__item-date">December 23, 2019</div>
 										<a class="aside-latest-post__item-title" href="#">Aenean Auctor Wisi Et Urna</a>
 									</div>
 								</div>
 								<div class="aside-latest-post__item">
-									<div class="aside-latest-post__img">
+									<a class="aside-latest-post__img" href="#">
 										<img src="img/grid-gallery/05.jpg" alt="Image last post">
-									</div>
+									</a>
 									<div class="aside-latest-post__content">
 										<div class="aside-latest-post__item-date">December 19, 2019</div>
 										<a class="aside-latest-post__item-title" href="#">Integer Rutrum Ante Eu</a>
 									</div>
 								</div>
 								<div class="aside-latest-post__item">
-									<div class="aside-latest-post__img">
+									<a class="aside-latest-post__img" href="#">
 										<img src="img/grid-gallery/08.jpg" alt="Image last post">
-									</div>
+									</a>
 									<div class="aside-latest-post__content">
 										<div class="aside-latest-post__item-date">December 17, 2019</div>
 										<a class="aside-latest-post__item-title" href="#">Vestibulum Libero Nisl Porta Vel</a>
@@ -366,11 +362,11 @@
 							<div class="aside-blog__pages aside-pages">
 								<div class="aside-blog__title">Pages</div>
 								<div class="aside-pages__select-wrapper">
-									<select class="aside-pages__select" name="select-category">
-										<option class="aside-pages__option" value="1" disabled selected>Please select</option>
-										<option class="aside-pages__option" value="2">Конспекты по учебе</option>
-										<option class="aside-pages__option" value="3">Фотоальбом</option>
-										<option class="aside-pages__option" value="4">Дневник спортсмена</option>
+									<select name="select-category" class="aside-pages__select">
+										<option value="1">Default sorting</option>
+										<option value="2">Конспекты по учебе</option>
+										<option value="3">Фотоальбом</option>
+										<option value="4">Дневник спортсмена</option>
 									</select>
 								</div>
 							</div>
@@ -454,7 +450,7 @@
 		@@include('_footer.html')
 
 		<div class="scroll-up">
-			<i class="icon-up-open-big"></i>
+			<i class="lnr lnr-chevron-up"></i>
 		</div>
 	</div>
 

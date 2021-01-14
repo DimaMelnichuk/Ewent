@@ -10,10 +10,10 @@
 	transition: all .3s;
 	
 	&--animation-1 {
-		animation: downIn 1s 3s forwards;
+		animation: downIn 1s 1s forwards;
 	}
 	&--animation-2 {
-		animation: downIn 1s 7s forwards;
+		animation: downIn 1s 3s forwards;
 	}
 
 	&--close {

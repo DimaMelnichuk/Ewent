@@ -7,6 +7,7 @@
 	&__arrow {
 		color: #313131;
 		font-size: 40px;
+		transition: color .3s;
 
 		&--left {
 			margin: 0px 30px 0px 0px;
@@ -31,6 +32,7 @@
 				color: #936cc1;
 			}
 		}
+
 	}
 
 	// .pagination__list

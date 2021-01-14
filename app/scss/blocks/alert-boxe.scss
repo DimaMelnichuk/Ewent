@@ -7,10 +7,10 @@
 		border-radius: 7px;
 		display: flex;
 		align-items: center;
-		padding: 30px;
+		padding: 30px 45px 30px 30px;
 
 		@media (max-width: 380px) {
-			padding: 15px;
+			padding: 15px 35px 15px 15px;
 		}
 
 		&--theme-green {
@@ -29,10 +29,15 @@
 	
 	&__close {
 		position: absolute;
-		right: 15px;
-		top: 15px;
+		right: 0;
+		top: 0;
+		padding: 15px;
 		cursor: pointer;
 		transform: rotate(90deg);
+
+		@media (max-width: 380px) {
+			padding: 10px;
+		}
 	}
 
 	// .alert-boxe__icon

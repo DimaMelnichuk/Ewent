@@ -96,11 +96,19 @@
 	// .card__name
 
 	&__name {
+		display: block;
 		color: #313131;
 		font-family: Jost;
 		font-size: 20px;
 		font-weight: 500;
 		margin: 0px 0px 20px 0px;
+		transition: color .3s;
+
+		@media (min-width: $md2+px) {
+			&:hover {
+				color: #ba89f4;
+			}
+		}
 	}
 
 	// .card__price

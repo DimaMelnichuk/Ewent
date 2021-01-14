@@ -90,7 +90,7 @@
 		color: #313131;
 		font-size: 18px;
 		font-weight: 500;
-		line-height: 30px;
+		line-height: 26px;
 		letter-spacing: 0.45px;
 		transition: color .3s;
 
@@ -205,6 +205,33 @@
 
 	&__select-wrapper {
 		position: relative;
+		width: 100%;
+
+		&::after {
+			content: "\e874";
+			font-family: 'Linearicons-Free';
+			display: block;
+			position: absolute;
+			right: 20px;
+			top: 50%;
+			transform: translateY(-50%);
+			font-size: 21px;
+			color: #525252;
+			z-index: 1;
+			cursor: pointer;
+		}
+	}
+
+	// .toolbar__select
+
+	&__select {
+		width: 100%;
+		appearance: none;
+		padding: 13px 50px 13px 20px;
+		box-shadow: 0 7px 27px rgba(0, 0, 0, 0.05);
+		border: 1px solid #eeeeee;
+		background-color: #ffffff;
+		border-radius: 7px;
 	}
 
 }
@@ -483,6 +510,7 @@
 	// .aside-list__link
 
 	&__link {
+		display: inline-block;
 		color: #ba89f4;
 		font-family: Oxygen;
 		font-size: 16px;

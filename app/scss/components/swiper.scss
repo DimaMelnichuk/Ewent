@@ -82,11 +82,16 @@
 .testimonials__slider-v2  .swiper-button-next::after {
 	position: absolute;
 	font-size: 24px;
-	transition: color .3s;
 }
 
 .testimonials__slider-v2 .swiper-button-prev,
 .testimonials__slider-v2 .swiper-button-next {
+
+	@media (min-width: $md2+px) {
+		&:hover {
+			color: #fff;
+		}
+	}
 
 	@media (max-width: $md2+px) {
 		position: relative;
